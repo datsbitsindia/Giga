@@ -22,7 +22,7 @@ const App = () => {
       <BrowserRouter>
         <Route exact path="/" component={Home} />
         <Route path="/admin/login" component={Login} />
-        <Route path="/admin/user-list" component={AdminPage} />
+        <Route path="/admin" component={AdminPage} />
       </BrowserRouter>
     </React.Suspense>
   );
