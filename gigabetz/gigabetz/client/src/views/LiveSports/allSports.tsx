@@ -20,6 +20,7 @@ const AllSports = () => {
         style: { marginTop: "5vh" },
       });
     }
+    setsportsid(result.data.data[0].SportID);
     setMenu(result.data.data);
   };
 
@@ -47,14 +48,14 @@ const AllSports = () => {
           <Menu mode="inline" style={{ fontSize: "18px", paddingLeft: "20px" }}>
             {menu &&
               menu.map((item: any) => (
-                <>
+                <Menu defaultSelectedKeys={menu[0].SportID}>
                   <Menu.Item
                     onClick={() => setsportsid(item.SportID)}
                     key={item.SportID}
                   >
                     {item.SportName}
                   </Menu.Item>
-                </>
+                </Menu>
               ))}
           </Menu>
         </Sider>
