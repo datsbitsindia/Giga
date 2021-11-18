@@ -538,21 +538,6 @@ const LeagueMatches = (props: any) => {
     },
   ]);
 
-  // const [err, result] = await asyncWrap(
-  //   axios.get(
-  //     `https://api.b365api.com/v1/bet365/inplay_filter?sport_id=${sportsid}&token=97205-QBhTyEQKRoffkC`,
-  //     headers
-  //   )
-  // );
-  // if (err) {
-  //   message.error({
-  //     content: "Something went wrong",
-  //     style: { marginTop: "5vh" },
-  //   });
-  // }
-  // setLeagues(result.data.data);
-  // };
-
   const matches = leagues.filter((item: any) => item.league.id === leagueId);
 
   // useEffect(() => {
