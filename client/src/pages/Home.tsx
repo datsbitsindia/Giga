@@ -27,8 +27,8 @@ const Home = (props: any) => {
       </Header>
       <Content style={{ padding: "50px 50px 0px 50px" }}>
         <Switch>
-          <Route exact path="/" />
-          <Route path="/sports" component={AllSports} />
+          <Route exact path="/" component={AllSports} />
+          {/* <Route path="/sports" component={AllSports} /> */}
         </Switch>
       </Content>
       <Footer style={{ textAlign: "center" }}>GigaBetz ©2021</Footer>

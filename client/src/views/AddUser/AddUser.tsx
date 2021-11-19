@@ -11,7 +11,7 @@ const tailLayout = {
   wrapperCol: { offset: 12, span: 12 },
 };
 
-const AddUser = () => {
+const AddUser = (props:any) => {
   const submit = async (values: any) => {
     let data = {
       amount: values.amount,

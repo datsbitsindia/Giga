@@ -13,7 +13,7 @@ import ChangeStatusModal from "./Modals/ChangeStatus";
 import GeneratePointsModal from "./Modals/GeneratePointsModal";
 import { PlusCircleFilled } from "@ant-design/icons";
 
-const UserDetails = () => {
+const UserDetails = (props: any) => {
   const [userData, setUserData] = useState<any>();
   const [generateBalance, setGenerateBalance] = useState<boolean>(false);
   const [Deposit, setDeposit] = useState<boolean>(false);
@@ -44,6 +44,7 @@ const UserDetails = () => {
   const addUser = () => {
     return (
       <div
+        onClick={() => props.history.push("/admin/add-user")}
         key={"add"}
         style={{
           width: "90px",

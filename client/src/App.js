@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, withRouter } from "react-router-dom";
 import { setAxiosDefault, setToken } from "./axiosdefaults";
 import { useAuth } from "./context/auth-context";
-import UserDetails from "./views/userDetails/UserDetails";
 
 const Loading = () => (
   <div className="animated fadeIn pt-3 text-center">Loading...</div>

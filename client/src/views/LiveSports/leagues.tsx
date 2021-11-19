@@ -14,6 +14,7 @@ const Leagues = (props: any) => {
   const [leagues, setLeagues] = useState<any>();
   const [gamedata, setgamedata] = useState<any>();
   const [matches, setMatches] = useState<any>();
+  const [tableData, setTableData] = useState<any>([]);
 
   const columns = [
     {
@@ -43,15 +44,11 @@ const Leagues = (props: any) => {
   };
 
   const tableParser = (rawData: any) => {
-    console.log(rawData);
     const aTables = [];
     let table: any;
-    for (let i = 0; i < rawData[0].length; i++) {
-      // console.log(rawData[i]);
-      const item = rawData[0][i];
-      console.log(item);
+    for (let i = 0; i < rawData.length; i++) {
+      const item = rawData[i];
       const { type, NA, OD } = item;
-      console.log(type);
       switch (type) {
         case TABLE_CONSTANTS.MG:
           if (table) {
@@ -77,13 +74,16 @@ const Leagues = (props: any) => {
           break;
       }
     }
+    if (table?.title !== aTables[aTables.length - 1]?.title) {
+      aTables.push(table);
+    }
     console.log(aTables);
     return aTables;
   };
 
   const getMatchesData = async () => {
     const [err, result] = await asyncWrap(
-      axios.get(`/api/matches?match_id=110903573`)
+      axios.get(`/api/matches?match_id=110858797`)
     );
     if (err) {
       return message.error({
@@ -91,9 +91,8 @@ const Leagues = (props: any) => {
         style: { margintop: "5vh" },
       });
     }
-    // console.log(result.data.data.results);
-    setgamedata(result.data.data.results);
-    console.log(tableParser(result.data.data.results));
+    setTableData(tableParser(result.data.data.results[0]));
+    setgamedata(result.data.data.results[0]);
   };
 
   const getData = async () => {
@@ -107,7 +106,36 @@ const Leagues = (props: any) => {
       });
     }
     setLeagues(result.data.data.results);
-    // setMatchId(leagues[0].id);
+  };
+
+  const AddTable = () => {
+    // console.log(tableData);
+    return tableData.map((item, i) => {
+      return (
+        <Collapse activeKey={i}>
+          <Panel header={item.title} key={i}>
+            {item.columns &&
+              item.columns.map((col, keys) => {
+                return <span>{col}</span>;
+              })}
+
+            {item.rows.map((row) => {
+              return (
+                <span>
+                  {Object.keys(row).map(function (key, index) {
+                    return (
+                      <div>
+                        <span>{key}</span>:<span>{row[key]}</span>{" "}
+                      </div>
+                    );
+                  })}
+                </span>
+              );
+            })}
+          </Panel>
+        </Collapse>
+      );
+    });
   };
 
   useEffect(() => {
@@ -118,7 +146,6 @@ const Leagues = (props: any) => {
 
   return (
     <Card title="Top Leagues">
-      {console.log(gamedata)}
       {leagues && (
         <div>
           <Row style={{ display: "flex", justifyContent: "space-around" }}>
@@ -180,21 +207,7 @@ const Leagues = (props: any) => {
               {leagues[7]?.league.name}
             </Button>
           </Row>
-          {/* <Card title={leagues[0].league.name}>
-            <Table
-              dataSource={matches}
-              columns={columns}
-              bordered
-              pagination={false}
-            />
-          </Card> */}
-          {/* <div>
-            {gamedata.map((item, i) => (
-              <Collapse>
-                {item.type === "MG" ? <Panel key={i} header={item.NA} /> : null}
-              </Collapse>
-            ))}
-          </div> */}
+          <Card>{AddTable()}</Card>
         </div>
       )}
     </Card>

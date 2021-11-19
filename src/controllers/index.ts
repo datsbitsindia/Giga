@@ -13,3 +13,4 @@ export * from "./statusContoller";
 export * from "./masterController";
 export * from "./SportsController";
 export * from "./proxy/proxyController";
+export * from "./proxy/matchesController";
