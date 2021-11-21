@@ -57,7 +57,7 @@ const Leagues = (props: any) => {
     let table: any;
     for (let i = 0; i < rawData.length; i++) {
       const item = rawData[i];
-      const { type, NA, OD } = item;
+      const { type, NA, OD, ID, SU, IT, FI } = item;
       switch (type) {
         case TABLE_CONSTANTS.MG:
           if (table) {
@@ -74,9 +74,9 @@ const Leagues = (props: any) => {
           break;
         case TABLE_CONSTANTS.PA:
           if (OD) {
-            table.rows.push({ [NA || table.columns[table.rows.length]]: OD });
+            table.rows.push({ [NA || table.columns[table.rows.length]]: OD, ID, FI });
           } else if (NA) {
-            table.rows.push({ [NA]: NA });
+            table.rows.push({ [NA]: NA, FI, ID });
           }
           break;
         default:
@@ -211,9 +211,10 @@ const Leagues = (props: any) => {
                   {Object.keys(row).map(function (key, index) {
                     return (
                       <div>
+                        {key !== 'ID' && key !== 'FI' ? 
                         <Button onClick={() => setOpenBet(true)}>
                           <span>{key}</span>:<span>{row[key]}</span>{" "}
-                        </Button>
+                        </Button> : ''}
                       </div>
                     );
                   })}
