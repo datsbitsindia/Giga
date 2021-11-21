@@ -2,6 +2,7 @@ import { Layout, Menu } from "antd";
 
 import { Switch, Route } from "react-router-dom";
 import AllSports from "../views/LiveSports/allSports";
+<<<<<<< Updated upstream
 import "../css/spinsporticons.woff2";
 import "../css/style.css";
 import "../css/Interface_Normal.woff2";
@@ -11,11 +12,17 @@ import "../css/demo2.css";
 // import "../js/AceBootstrap.min.js";
 // import "../js/custom2.js";
 
+=======
+import UserLogin from "./userLogin";
+import UserSignup from "./UserSignup";
+import Mybets from "../views/Bets/MyBets";
+>>>>>>> Stashed changes
 
 const { Header, Content, Footer } = Layout;
 
 const Home = (props: any) => {
   return (
+<<<<<<< Updated upstream
     <div >
     <div data-application-root="" data-container="root">
         <div className="layout Application collection vertical" data-widget="Application">
@@ -12833,6 +12840,46 @@ const Home = (props: any) => {
     //   </Content>
     //   <Footer style={{ textAlign: "center" }}>GigaBetz ©2021</Footer>
     // </Layout>
+=======
+    <Layout className="layout" style={{ height: "100%" }}>
+      <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
+        <div className="logo" />
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["2"]}>
+          <Menu.Item
+            style={{ fontSize: "30px", paddingRight: "100px" }}
+            key="1"
+          >
+            GigaBetz
+          </Menu.Item>
+          <Menu.Item key="2" onClick={() => props.history.push("/")}>
+            sports
+          </Menu.Item>
+          <Menu.Item key="3">live casino</Menu.Item>
+          <Menu.Item key="4">esports</Menu.Item>
+          <Menu.Item key="5">Promotions</Menu.Item>
+          <Menu.Item key="6" onClick={() => props.history.push("/login")}>
+            Login
+          </Menu.Item>
+          <Menu.Item key="7" onClick={() => props.history.push("/signup")}>
+            Signup
+          </Menu.Item>
+          <Menu.Item key="8">My Bets</Menu.Item>
+          <Menu.Item key="9">Logout</Menu.Item>
+        </Menu>
+      </Header>
+      <Content
+        className="site-layout"
+        style={{ padding: "0 50px", marginTop: 70 }}
+      >
+        <Switch>
+          <Route exact path="/" component={AllSports} />
+          <Route path="/login" component={UserLogin} />
+          <Route path="/signup" component={UserSignup} />
+        </Switch>
+      </Content>
+      <Footer style={{ textAlign: "center" }}>GigaBetz ©2021</Footer>
+    </Layout>
+>>>>>>> Stashed changes
   );
 };
 

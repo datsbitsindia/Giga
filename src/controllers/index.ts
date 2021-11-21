@@ -1,4 +1,4 @@
-export * from "./SignupApi/SignupNewUser";
+export * from "./signupAdminContoller";
 export * from "./loginController";
 export * from "./userDetailsController";
 export * from "./userBalanceController";
@@ -14,3 +14,5 @@ export * from "./masterController";
 export * from "./SportsController";
 export * from "./proxy/proxyController";
 export * from "./proxy/matchesController";
+export * from "./signupController";
+export * from "./addBetController";

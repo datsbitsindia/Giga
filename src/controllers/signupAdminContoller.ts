@@ -1,14 +1,14 @@
 import { Controller, Middleware, Post } from "@overnightjs/core";
 import { INTERNAL_SERVER_ERROR, OK } from "http-status-codes";
-import { runSP } from "../../Dal/db";
-import { asyncWrap } from "../../utils/asyncWrap";
-import { auth_role, ROLES } from "../middlewares/CustomRole";
+import { runSP } from "../Dal/db";
+import { asyncWrap } from "../utils/asyncWrap";
+import { auth_role, ROLES } from "./middlewares/CustomRole";
 
-@Controller("addUser")
-export class SignupNewUser {
+@Controller("admin/addUser")
+export class SignupAdminContoller {
   @Post("")
   @Middleware(auth_role(ROLES["Super Admin"]))
-  private async signupNewUser(req: any, res: any) {
+  private async addAdmin(req: any, res: any) {
     const {
       fullName,
       email,
