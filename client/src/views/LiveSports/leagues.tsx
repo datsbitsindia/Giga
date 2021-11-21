@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import LeagueMatches from "./LeagueMatches";
 import { MSearch } from "@overnightjs/core";
 import MatchScore from "./matchScore";
+import BetModal from "./BetModal";
 
 const { Panel } = Collapse;
 
@@ -18,7 +19,8 @@ const Leagues = (props: any) => {
   const [gamedata, setgamedata] = useState<any>();
   const [matches, setMatches] = useState<any>();
   const [tableData, setTableData] = useState<any>([]);
-  const [currentMatchId, setCurrentMatchId] = useState<any>('');
+  const [currentMatchId, setCurrentMatchId] = useState<any>("");
+  const [openBet, setOpenBet] = useState<boolean>(false);
 
   const columns = [
     {
@@ -87,16 +89,16 @@ const Leagues = (props: any) => {
   const leagueParser = (rawData: any) => {
     let LeagueData = [];
     let leagueList = [];
-    console.log(rawData)
-    for(let i = 0; i < rawData.length; i++) {
-      if(i === 0 ) {
+    console.log(rawData);
+    for (let i = 0; i < rawData.length; i++) {
+      if (i === 0) {
         setMatchId(rawData[i].league.id);
       }
-      if(rawData[i].league && rawData[i].league.id) {
-        if(LeagueData.indexOf(rawData[i].league.id) === -1) {
+      if (rawData[i].league && rawData[i].league.id) {
+        if (LeagueData.indexOf(rawData[i].league.id) === -1) {
           LeagueData.push(rawData[i].league.id);
-          leagueList.push(rawData[i].league)
-        } 
+          leagueList.push(rawData[i].league);
+        }
       }
     }
     console.log(leagueList);
@@ -104,8 +106,8 @@ const Leagues = (props: any) => {
   };
 
   const getMatchesData = async () => {
-    console.log(currentMatchId)
-    if(currentMatchId) {
+    console.log(currentMatchId);
+    if (currentMatchId) {
       const [err, result] = await asyncWrap(
         axios.get(`/api/matches?match_id=${currentMatchId}`)
       );
@@ -149,37 +151,38 @@ const Leagues = (props: any) => {
   };
 
   const ShowMatchList = () => {
-    if(matchId && leagues) {
-      console.log(leagues)
+    if (matchId && leagues) {
+      console.log(leagues);
       return leagues.map((item, i) => {
-        if(item.league.id === matchId) {
-          return <div onClick={() => setCurrentMatchId(item.id)}>
-            {/* <span>{new Date(parseInt(item.time)).toString()}</span> */}
-            <span>{item.home.name} - </span>
-            <span>{item.away.name} {item.id}</span>
-            {/* {getMatchesScore(item.id)} */}
-            <MatchScore matchId={item.id}></MatchScore>
-          </div>
+        if (item.league.id === matchId) {
+          return (
+            <div onClick={() => setCurrentMatchId(item.id)}>
+              {/* <span>{new Date(parseInt(item.time)).toString()}</span> */}
+              <span>{item.home.name}</span>
+              <span>{item.away.name}</span>
+              {/* {getMatchesScore(item.id)} */}
+              <MatchScore matchId={item.id}></MatchScore>
+            </div>
+          );
         }
-      })
+      });
     } else {
-      return '';
+      return "";
     }
-  }
+  };
 
   const LeagueListTable = () => {
     return leagueList.map((item, i) => {
-      if(i > 7) {
-        return '';
+      if (i > 7) {
+        return "";
       }
-      return <Button
-          style={{ width: "250px" }}
-          onClick={() => setMatchId(item.id)}
-        >
+      return (
+        <Button style={{ width: "250px" }} onClick={() => setMatchId(item.id)}>
           {item.name}
         </Button>
-    })
-  }
+      );
+    });
+  };
 
   const AddTable = () => {
     return tableData.map((item, i) => {
@@ -197,7 +200,9 @@ const Leagues = (props: any) => {
                   {Object.keys(row).map(function (key, index) {
                     return (
                       <div>
-                        <button><span>{key}</span>:<span>{row[key]}</span>{" "}</button>
+                        <Button onClick={() => setOpenBet(true)}>
+                          <span>{key}</span>:<span>{row[key]}</span>{" "}
+                        </Button>
                       </div>
                     );
                   })}
@@ -226,13 +231,12 @@ const Leagues = (props: any) => {
 
   return (
     <Card title="Top Leagues">
+      {openBet && <BetModal visible={openBet} setVisible={setOpenBet} />}
       <Row style={{ display: "flex", justifyContent: "space-around" }}>
         {LeagueListTable()}
-        </Row>
-        <Card>
-          {ShowMatchList()}
-        </Card>
-        <Card>{tableData && (AddTable())}</Card>
+      </Row>
+      <Card>{ShowMatchList()}</Card>
+      <Card>{tableData && AddTable()}</Card>
       {/* {leagues && (
         <div>
           <Row style={{ display: "flex", justifyContent: "space-around" }}>
