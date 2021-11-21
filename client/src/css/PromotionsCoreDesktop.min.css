@@ -1,0 +1,1661 @@
+.promoLoader .loadingLogo .loadingGraphic .loadingContent .loadingTextContainer,
+.promotionBanner {
+    display: inline-block;
+    vertical-align: top;
+}
+.carousel {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    overflow: hidden;
+    background-color: #c7c7c7;
+    position: relative;
+}
+.carousel.animated {
+    pointer-events: none;
+}
+.carousel.hero {
+    height: 210px;
+}
+.carousel .carouselContent {
+    width: 200%;
+}
+.carousel .carouselContent.left,
+.carousel .carouselContent.right {
+    left: -50%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+}
+.carousel .paginationCollection .scrollableArea.horizontalButtons.horizontal .leftButton.scrollAreaButton,
+.carousel .paginationCollection .scrollableArea.horizontalButtons.horizontal .rightButton.scrollAreaButton {
+    background: #fff;
+    border-color: #c7c7c7;
+}
+.carousel .paginationCollection .scrollableArea.horizontalButtons.horizontal .leftButton.scrollAreaButton .iconHolder > div:before,
+.carousel .paginationCollection .scrollableArea.horizontalButtons.horizontal .rightButton.scrollAreaButton .iconHolder > div:before {
+    color: #333;
+}
+.carousel .paginationCollection .scrollableArea.horizontalButtons.horizontal .leftButton.scrollAreaButton.disabled .iconHolder > div:before,
+.carousel .paginationCollection .scrollableArea.horizontalButtons.horizontal .rightButton.scrollAreaButton.disabled .iconHolder > div:before {
+    color: #eaeaea;
+}
+.carousel .paginationCollection .scrollableArea.horizontalButtons.horizontal .leftButton.scrollAreaButton:hover:not(.disabled),
+.carousel .paginationCollection .scrollableArea.horizontalButtons.horizontal .rightButton.scrollAreaButton:hover:not(.disabled) {
+    background-color: #f7f7f7;
+}
+.promotionBanner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #c7c7c7;
+    position: relative;
+    cursor: pointer;
+}
+.promotionBanner .promotion-content-container,
+img.promotions-banner-background-image {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.promotionBanner.align-left {
+    background-position: left top;
+}
+.promotionBanner.align-center {
+    background-position: center top;
+}
+.promotionBanner.align-right {
+    background-position: right top;
+}
+img.promotions-banner-background-image {
+    object-fit: cover;
+}
+img.promotions-banner-background-image.align-left {
+    object-position: left top;
+}
+img.promotions-banner-background-image.align-center {
+    object-position: center top;
+}
+img.promotions-banner-background-image.align-right {
+    object-position: right top;
+}
+.promoLoader {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.promoLoader .loadingLogo {
+    display: inline-block;
+    background-position: 0 0;
+}
+.promoLoader .loadingLogo .loadingGraphic {
+    display: inline-block;
+    color: #fff;
+    border-radius: 2px;
+}
+.promoLoader .loadingLogo .loadingGraphic .loadingContent .spinnerContainer {
+    display: inline-block;
+}
+.promoLoader .loadingLogo .loadingGraphic .loadingContent .spinnerContainer .spinner {
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation-name: spin;
+    animation-name: spin;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    display: inline-block;
+}
+.promoLoader .loadingLogo .loadingGraphic .loadingContent .loadingTextContainer .loadingText {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+.promoLoader .loadingLogo .loadingGraphic .flexBox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+.TemplateName_BasicTemplate .titleText,
+.TemplateName_OutcomeTemplate .titleText,
+.TemplateName_TwoLinkBasicTemplate .titleText {
+    font-weight: 700;
+    color: #fff;
+}
+.TemplateName_BasicTemplate.theme-light .titleText,
+.TemplateName_OutcomeTemplate.theme-light .titleText,
+.TemplateName_TwoLinkBasicTemplate.theme-light .titleText {
+    color: #333;
+}
+.TemplateName_BasicTemplate .subText,
+.TemplateName_OutcomeTemplate .subText,
+.TemplateName_TwoLinkBasicTemplate .subText {
+    display: block;
+    color: #fff;
+    margin-right: 95px;
+}
+.TemplateName_BasicTemplate.theme-light .subText,
+.TemplateName_OutcomeTemplate.theme-light .subText,
+.TemplateName_TwoLinkBasicTemplate.theme-light .subText {
+    color: #333;
+}
+.TemplateName_BasicTemplate .actionTextContainer.showText,
+.TemplateName_OutcomeTemplate .actionTextContainer.showText,
+.TemplateName_TwoLinkBasicTemplate .actionTextContainer.showText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate .actionTextContainer.showText {
+    display: block;
+}
+.TemplateName_BasicTemplate .actionTextContainer,
+.TemplateName_OutcomeTemplate .actionTextContainer,
+.TemplateName_TwoLinkBasicTemplate .actionTextContainer,
+.TemplateName_TwoLinkMultipleTextBasicTemplate .actionTextContainer {
+    position: relative;
+    float: right;
+    color: #fff;
+    display: none;
+}
+.TemplateName_BasicTemplate .actionText,
+.TemplateName_BasicTemplate .subText,
+.TemplateName_OutcomeTemplate .actionText,
+.TemplateName_OutcomeTemplate .subText,
+.TemplateName_TwoLinkBasicTemplate .actionText,
+.TemplateName_TwoLinkBasicTemplate .subText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate .actionText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate .subText {
+    vertical-align: middle;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.TemplateName_BasicTemplate .actionText,
+.TemplateName_OutcomeTemplate .actionText,
+.TemplateName_TwoLinkBasicTemplate .actionText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate .actionText {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-left: 14px;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .suspended-bar {
+    background-image: -webkit-linear-gradient(90deg, transparent 0, rgba(0, 0, 0, 0.5) 100%);
+    background-image: linear-gradient(0deg, transparent 0, rgba(0, 0, 0, 0.5) 100%);
+    -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.6) inset;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.6) inset;
+    display: none;
+    text-align: center;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .suspended-bar .bet-now-button-large {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    -webkit-transform-origin: 0 0;
+    display: inline-table;
+    color: #fff;
+    background-color: #00a826;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .suspended-bar .bet-now-button-large .join-button-text-large {
+    -webkit-transform: skewX(340deg);
+    transform: skewX(340deg);
+    -webkit-transform-origin: 0 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .disabled {
+    -webkit-opacity: 0.4;
+    opacity: 0.4;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .disabled .oddsDisplay .odds {
+    color: #333;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton.up .odds,
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton.up .oddsChange:before {
+    color: #00a826;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton.down .odds,
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton.down .oddsChange:before {
+    color: #ed1c24;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton.selected .buttonHeader .couponName {
+    color: #fff;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton.disabled .buttonHeader .couponName {
+    color: #333;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton .buttonHeader {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-order: 1;
+    -webkit-box-ordinal-group: 1;
+    order: 1;
+    width: auto;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton .buttonHeader .couponName {
+    margin-left: 0;
+    padding-left: 0;
+    transition: color 0.3s, background-color 0.3s;
+    color: #656565;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton .cornerMarker {
+    -webkit-order: 4;
+    -webkit-box-ordinal-group: 4;
+    order: 4;
+    margin-top: 0;
+    margin-left: -16px;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton .oddsDisplay {
+    -webkit-order: 3;
+    -webkit-box-ordinal-group: 3;
+    order: 3;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: auto;
+    max-width: 5em;
+    padding-right: 9px;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton .handicapContainer {
+    position: relative;
+    margin-top: 1px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton.down .oddsChange.icon-oddsdown:before,
+.TemplateName_MarketTemplate.carouselPromotion .market-container .baseOutcomeItem .outcomeButton.up .oddsChange.icon-oddsup:before {
+    float: right;
+    margin-right: 2px;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .marketBannerEventSummary .market-headers .gameInformation {
+    text-align: right;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .marketBannerEventSummary .market-headers .gameInformation .periodComment,
+.TemplateName_MarketTemplate.carouselPromotion .market-container .marketBannerEventSummary .market-headers .gameInformation dateTime,
+.TemplateName_MarketTemplate.carouselPromotion .market-container .marketBannerEventSummary .market-headers .gameInformation time {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 75px;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .marketBannerEventSummary .market-headers .gameInformation .gamesScore {
+    vertical-align: top;
+}
+.TemplateName_MarketTemplate.carouselPromotion .market-container .marketBannerEventSummary .scores .scoresContainer {
+    line-height: normal;
+}
+.TemplateName_MarketTemplate.carouselPromotion .betNow .outcomeCollection {
+    display: none;
+}
+.TemplateName_MarketTemplate.carouselPromotion .betNow .suspended-bar {
+    display: block;
+}
+.TemplateName_MarketTemplate.carouselPromotion .simplifiedStandardMarketWithHeaders .outcomeCollection {
+    -webkit-box-flex: 1.1;
+    -webkit-flex: 1.1;
+    flex: 1.1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    clear: both;
+    width: 100%;
+}
+.TemplateName_MarketTemplate.carouselPromotion .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+    padding: 0 2px;
+}
+.TemplateName_MarketTemplate.carouselPromotion .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton {
+    height: 42px;
+    text-align: center;
+    padding-top: 13px;
+    font-weight: 400;
+}
+.TemplateName_MarketTemplate.carouselPromotion .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton:before {
+    content: "";
+    left: -3px;
+    right: -3px;
+    top: -6px;
+    bottom: -6px;
+    pointer-events: all;
+    height: 54px;
+}
+.TemplateName_MarketTemplate.carouselPromotion .simplifiedStandardMarketWithHeaders .outcomeCollection.outcomes2x .baseOutcomeItem {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: none;
+    width: 50%;
+}
+.TemplateName_MarketTemplate.carouselPromotion .simplifiedStandardMarketWithHeaders .outcomeCollection.outcomes3x .baseOutcomeItem {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: none;
+    width: 33.33%;
+}
+body.market-container .suspended-bar .bet-now-button-large {
+    background: -webkit-linear-gradient(30deg, transparent 1px, #00a826 0);
+    background: linear-gradient(60deg, transparent 1px, #00a826 0);
+}
+.TemplateName_OutcomeTemplate.carouselPromotion.theme-dark {
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+.TemplateName_OutcomeTemplate.carouselPromotion.theme-light {
+    color: #656565;
+}
+.TemplateName_OutcomeTemplate.carouselPromotion .subTitleText {
+    font-weight: 400;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion.theme-light .titleText {
+    color: #333;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion.theme-dark .titleText {
+    color: #fff;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .titleText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar {
+    margin-bottom: 5px;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar .actionTextContainer {
+    color: #ffc421;
+    width: 100%;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar .actionTextContainer .actionText {
+    font-weight: 400;
+    width: 100%;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar .subText {
+    display: none;
+    vertical-align: top;
+    text-align: left;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 1px 2px #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar.showText .subText:before {
+    content: open-quote;
+    font-size: 22px;
+    line-height: 0.1em;
+    margin-right: 6px;
+    vertical-align: -8px;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar.showText .subText:after {
+    content: close-quote;
+    font-size: 22px;
+    line-height: 0.1em;
+    vertical-align: -8px;
+    margin-left: 2px;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .actionText,
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .subTitleText,
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .titleText {
+    text-shadow: 0 0 2px #000;
+}
+.TemplateName_ImageTwoLinkBasicTemplate.carouselPromotion {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: flex-end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+.TemplateName_ImageTwoLinkBasicTemplate.carouselPromotion .secondaryLinkText {
+    color: #fff;
+    text-decoration: underline;
+}
+.outcomeBoosts .boosts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.outcomeBoosts .boosts .boostsInfo {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3 0 0px;
+    flex: 3 0 0px;
+    font-weight: 400;
+}
+.outcomeBoosts .boosts .boostsInfo .ic_sports {
+    display: inline-block;
+    overflow: hidden;
+    width: 12px;
+    height: 10px;
+}
+.outcomeBoosts .boosts .boostsInfo .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 2.4em;
+    line-height: 1.2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 6px 10px 0;
+    color: #333;
+}
+.outcomeBoosts .boosts .boostsInfo .additionalInfo .categoryIcon {
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+}
+.outcomeBoosts .boosts .boostsInfo .additionalInfo .additionalText {
+    color: #999;
+}
+.outcomeBoosts .boosts .boostsContainer .outcomeItemHeaderWrapper {
+    display: none;
+}
+.outcomeBoosts .boosts .boostsContainer .outcomeButton {
+    height: 57px;
+}
+.outcomeBoosts .loadingWrapper {
+    padding: 5px;
+}
+.outcomeBoosts .loadingWrapper .loading {
+    height: 25px;
+    width: 25px;
+}
+.outcomeBoosts .boosts.auto {
+    border-bottom: 1px solid #c7c7c7;
+}
+.outcomeBoosts .boosts.auto .boostsInfo .description {
+    height: auto;
+}
+.outcomeBoosts .boosts.auto .boostsContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.outcomeBoosts .boosts.auto .boostsContainer .customOutcomeEntry,
+.outcomeBoosts .boosts.auto .boostsContainer .customOutcomeEntry .outcomeItemCollection,
+.outcomeBoosts .boosts.auto .boostsContainer .customOutcomeEntry .outcomeItemCollection .outcomeItemWrapper,
+.outcomeBoosts .boosts.auto .boostsContainer .customOutcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.outcomeBoosts .boosts.auto .boostsContainer .customOutcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton {
+    min-height: 41px;
+    height: auto;
+}
+.marketHighlights .marketHighlightsHeader {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.marketHighlights .marketHighlightsHeader .ic_sports {
+    display: inline-block;
+    overflow: hidden;
+    width: 18px;
+    height: 15px;
+}
+.marketHighlights .marketHighlightsHeader .headerTitleWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    font-weight: 700;
+    color: #333;
+}
+.marketHighlights .marketHighlightsHeader .headerTitleWrapper .header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.marketHighlights .loadingWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 5px;
+}
+.marketHighlights .loadingWrapper .loading {
+    height: 25px;
+    width: 25px;
+}
+@-webkit-keyframes right-fade-slide-in {
+    0% {
+        -webkit-transform: translateX(40px);
+        transform: translateX(40px);
+        -webkit-opacity: 0.9;
+        opacity: 0.9;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+}
+@keyframes right-fade-slide-in {
+    0% {
+        -webkit-transform: translateX(40px);
+        transform: translateX(40px);
+        -webkit-opacity: 0.9;
+        opacity: 0.9;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes left-fade-slide-in {
+    0% {
+        -webkit-transform: translateX(-80px);
+        transform: translateX(-80px);
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+}
+@keyframes left-fade-slide-in {
+    0% {
+        -webkit-transform: translateX(-80px);
+        transform: translateX(-80px);
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+}
+.promotionCollectionAreaComponent {
+    margin-bottom: 15px;
+}
+.promotionCollectionAreaComponent[data-widget="PromotionCarouselAreaWidget[Hero]"] .carousel {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.promotionCollectionAreaComponent .carousel {
+    height: 300px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.promotionBanner.noHover {
+    cursor: default;
+}
+.promotionBanner .usePointer {
+    cursor: pointer;
+}
+.mainLayout.layout > .firstRow > .firstRowContainer > .vertical > .node.mainPromotion {
+    padding-top: 0;
+}
+.promoLoader {
+    height: 300px;
+    border-radius: 5px;
+    background: #000;
+}
+.promoLoader .loadingLogo {
+    width: 545px;
+    height: 155px;
+    margin-top: 78px;
+    background-image: url(../../../images/logos/loader-logo.png?v=4c8c148e);
+    background-size: auto 155px;
+}
+.promoLoader .loadingLogo .loadingGraphic {
+    background-color: #444;
+    margin-left: 9px;
+    font-size: 21px;
+    min-width: 118px;
+    height: 30px;
+    margin-top: 60px;
+}
+.promoLoader .loadingLogo .loadingGraphic .loadingContent {
+    white-space: nowrap;
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
+}
+.promoLoader .loadingLogo .loadingGraphic .loadingContent .spinnerContainer {
+    background-color: #656565;
+    width: 34px;
+    height: 30px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.promoLoader .loadingLogo .loadingGraphic .loadingContent .spinnerContainer .spinner {
+    background-image: url(../../../../Global/images/LoaderImage_Light.png?v=15c592a2);
+    background-size: auto 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+.promoLoader .loadingLogo .loadingGraphic .loadingContent .loadingTextContainer {
+    position: relative;
+    height: 30px;
+}
+.promoLoader .loadingLogo .loadingGraphic .loadingContent .loadingTextContainer:after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    border-top-width: 30px;
+    border-top-color: #444;
+    border-top-style: solid;
+    border-left-width: 10px;
+    border-left-color: rgba(255, 255, 255, 0) !important;
+    border-left-style: solid;
+    margin-top: -26px;
+    margin-left: -10px;
+    position: absolute;
+    left: 0;
+}
+body[data-active-channel="sports"] .boostsPromotionListArea .headerBar:not(.inPlay),
+body[data-active-channel="sports"] .boostsPromotionListArea .headerBar:not(.inPlay) .headerBarContent:after,
+body[data-active-channel="esports"] .boostsPromotionListArea .headerBar:not(.inPlay),
+body[data-active-channel="esports"] .boostsPromotionListArea .headerBar:not(.inPlay) .headerBarContent:after {
+    border-color: #2c2c2c;
+}
+.promoLoader .loadingLogo .loadingGraphic .loadingContent .loadingTextContainer .loadingText {
+    min-width: 84px;
+    height: 15px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.boostsPromotionListArea.homepageBoosts {
+    margin-top: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+body[data-active-channel="sports"] .boostsPromotionListArea .headerBar:not(.inPlay) .headerBarContent .headerTitle,
+body[data-active-channel="esports"] .boostsPromotionListArea .headerBar:not(.inPlay) .headerBarContent .headerTitle {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+body[data-active-channel="sports"] .boostsPromotionListArea.groupHubBoosts,
+body[data-active-channel="esports"] .boostsPromotionListArea.groupHubBoosts {
+    margin-bottom: 6px;
+}
+body[data-active-channel="sports"] .boostsPromotionListArea.groupHubBoosts .headerBar,
+body[data-active-channel="esports"] .boostsPromotionListArea.groupHubBoosts .headerBar {
+    border-color: #eaeaea;
+    background-color: #eaeaea;
+}
+body[data-active-channel="sports"] .boostsPromotionListArea.groupHubBoosts .headerBar .headerBarContent .headerTitle,
+body[data-active-channel="esports"] .boostsPromotionListArea.groupHubBoosts .headerBar .headerBarContent .headerTitle {
+    color: #333;
+    background-color: #eaeaea;
+}
+.promotionListAreaLayout:not(.boostsPromotionListArea) {
+    margin-bottom: 15px;
+}
+.promotionListAreaLayout:not(.boostsPromotionListArea) .headerBar {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.promotionListAreaLayout:not(.boostsPromotionListArea) .promotionListItems .widgetContainerCollectionItem:last-child {
+    margin-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+.promotionListAreaLayout:not(.boostsPromotionListArea) .promotionListItems .widgetContainerCollectionItem:last-child .articlePromotionContentWidgetContainer {
+    margin-bottom: 0;
+}
+.promotionListAreaLayout:not(.boostsPromotionListArea) .promotionListAreaEmptyComponentContainer .emptyTextWrapper {
+    height: 26px;
+}
+.promotionListAreaLayout:not(.boostsPromotionListArea) .promotionListAreaEmptyComponentContainer .emptyTextWrapper .loading {
+    height: 18px;
+    width: 18px;
+    margin: -6px auto;
+}
+.promotionListAreaLayout.boostsPromotionListAreaGroupHub {
+    margin-bottom: 5px;
+}
+.promotionListAreaLayout.boostsPromotionListAreaGroupHub .headerBar {
+    background-color: #eaeaea;
+}
+.promotionListAreaLayout.boostsPromotionListAreaGroupHub .headerBar .headerBarContent .headerTitle {
+    color: #333;
+}
+.promotionListAreaLayout.boostsPromotionListAreaGroupHub .promotionListItems .widgetContainerCollectionItem:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+.promotionSlideshowAreaLayout {
+    height: 745px;
+    overflow-x: hidden;
+}
+.promotionSlideshowAreaLayout .promotionSlideshowWidgetSwitcherContainer,
+.promotionSlideshowAreaLayout .promotionSlideshowWidgetSwitcherContainer > div {
+    height: 100%;
+}
+.promotionSlideshowAreaLayout .loadingSpinnerWrapper.betwayLogo {
+    height: 745px;
+    position: relative;
+    background-color: #111;
+}
+.promotionSlideshowAreaLayout .loadingSpinnerWrapper.betwayLogo:after {
+    background: -webkit-linear-gradient(-90deg, transparent, #c7c7c7);
+    background: linear-gradient(180deg, transparent, #c7c7c7);
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 470px;
+}
+.rightSideBarPromotionListArea .promotionListItems .promotionBanner {
+    height: 110px;
+    border-radius: 4px;
+}
+.rightSideBarPromotionListArea .promotionListItems > .widgetContainerCollectionItem ~ .widgetContainerCollectionItem .promotionBanner {
+    margin-top: 15px;
+}
+.TemplateName_BasicTemplate .titleText,
+.TemplateName_Default .titleText,
+.TemplateName_OutcomeTemplate .titleText,
+.TemplateName_TwoLinkBasicTemplate .titleText {
+    font-family: Interface, Arial, sans-serif;
+}
+.TemplateName_BasicTemplate .actionTextContainer.showText .actionText,
+.TemplateName_Default .actionTextContainer.showText .actionText,
+.TemplateName_OutcomeTemplate .actionTextContainer.showText .actionText,
+.TemplateName_TwoLinkBasicTemplate .actionTextContainer.showText .actionText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate .actionTextContainer.showText .actionText {
+    font-family: Interface, Arial, sans-serif;
+    font-weight: 700;
+}
+.quickLinks .promotionListAreaLayout {
+    border-radius: 5px;
+    overflow: hidden;
+}
+.TemplateName_LinkTemplate .featuredLinkRow {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    min-height: 25px;
+    padding: 5px 16px 6px;
+    width: 100%;
+    text-align: left;
+    border-radius: 0;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    margin-top: 1px;
+    cursor: pointer;
+}
+.TemplateName_ImageTwoLinkBasicTemplate.carouselPromotion .secondaryLinkTappableArea.noHover:hover,
+.TemplateName_LinkTemplate.noHover .featuredLinkRow,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .rightColumn .secondaryLinkTappableArea.noHover:hover {
+    cursor: default;
+}
+.TemplateName_LinkTemplate .featuredLinkRow:hover {
+    background-color: #f7f7f7;
+}
+.TemplateName_LinkTemplate .featuredLinkRow .textWrapper {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-size: 12px;
+}
+.TemplateName_LinkTemplate .featuredLinkRow .navigationArrow .icon-arrow-right:before {
+    content: none;
+}
+.TemplateName_LinkTemplate.noHover .featuredLinkRow:hover {
+    color: #333;
+    background-color: #fff;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .titleText {
+    font-family: Interface, Arial, sans-serif;
+    font-size: 42px;
+    height: 68px;
+    padding-top: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 15px;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar {
+    height: 152px;
+    padding-top: 5px;
+    margin-top: 83px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar.showText .subText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.8;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    max-height: 107px;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar .actionTextContainer {
+    height: 20px;
+    position: absolute;
+    bottom: 85px;
+    left: 15px;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar .actionTextContainer .actionText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 1em;
+    line-height: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .bodyTextBar,
+.TemplateName_TextBasedBasicTemplate.carouselPromotion .titleText {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.TemplateName_TextBasedBasicTemplate.carouselPromotion blockquote {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 107px;
+}
+.TemplateName_ImageTwoLinkBasicTemplate.carouselPromotion .secondaryLinkTappableArea .secondaryLinkText {
+    display: block;
+    margin-bottom: 58px;
+    padding-right: 7px;
+    font-size: 10px;
+}
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .bodyTextBar .subText {
+    text-decoration: underline;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion.theme-dark {
+    color: #fff;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion.theme-dark .lowerLeftText {
+    color: rgba(255, 255, 255, 0.5);
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion.theme-light {
+    color: #333;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion.theme-light .lowerLeftText {
+    color: rgba(0, 0, 0, 0.5);
+}
+.TemplateName_BasicTemplate.carouselPromotion.theme-light .subText,
+.TemplateName_Default.carouselPromotion.theme-light .subText,
+.TemplateName_OutcomeTemplate.carouselPromotion.theme-light .subText,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion.theme-light .subText,
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) .iconHolder [class*=" icon-"]:before,
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) .iconHolder [class^="icon-"]:before,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) .iconHolder [class*=" icon-"]:before,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) .iconHolder [class^="icon-"]:before {
+    color: #fff;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn {
+    margin-left: 20px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .leftColumnText {
+    position: absolute;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .titleText {
+    font-size: 40px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .title1Text {
+    margin-top: 4px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .title2Text {
+    margin-top: 44px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .subTitleText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .titleText {
+    font-family: Interface;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .subTitleText {
+    font-size: 23px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .subTitle1Text {
+    margin-top: 94px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .subTitle2Text {
+    margin-top: 119px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .genericText1,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .genericText2 {
+    font-size: 15px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .genericText1 {
+    margin-top: 161px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .genericText2 {
+    margin-top: 181px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .genericText3 {
+    font-size: 12px;
+    margin-top: 201px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .genericText1,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .subTitleText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .titleText {
+    font-weight: 700;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .leftColumn .lowerLeftText {
+    position: absolute;
+    overflow: hidden;
+    font-size: 10px;
+    bottom: 58px;
+    max-width: 415px;
+    max-height: 23px;
+    line-height: 1.1;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .rightColumn {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 250px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .rightColumn .actionTextContainer {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 175px;
+    width: 28%;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .rightColumn .actionTextContainer .actionText {
+    font-size: 22px;
+    text-shadow: none;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .rightColumn .secondaryLinkTappableArea {
+    display: inline-block;
+    position: absolute;
+    top: 221px;
+    right: 0;
+    padding: 10px 7px 8px 10px;
+}
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .rightColumn .secondaryLinkTappableArea .secondaryLinkText {
+    display: block;
+    font-size: 10px;
+    text-decoration: underline;
+    text-align: right;
+}
+.animate.slideshowPromotion {
+    -webkit-animation-name: right-fade-slide-in;
+    animation-name: right-fade-slide-in;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+.animate.slideshowPromotion .bodyTextBar,
+.animate.slideshowPromotion .titleText {
+    -webkit-animation-name: left-fade-slide-in;
+    animation-name: left-fade-slide-in;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion {
+    cursor: default;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 745px;
+    width: calc(100% + 80px);
+    left: -40px;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active),
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .selectableArea,
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion.selectableArea,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active),
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .selectableArea,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion.selectableArea {
+    cursor: pointer;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion:after,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion:after {
+    background: -webkit-linear-gradient(-90deg, transparent, #c7c7c7);
+    background: linear-gradient(180deg, transparent, #c7c7c7);
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 470px;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .templateContentContainer,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .templateContentContainer {
+    position: relative;
+    left: 40px;
+    flex: 1;
+    max-width: 1800px;
+    margin: 0 30px;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .titleText,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .titleText {
+    width: 40%;
+    margin-top: 66px;
+    font-size: 52px;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .bodyTextBar.showText,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .bodyTextBar.showText {
+    width: 40%;
+    margin-top: 10px;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .bodyTextBar.showText .subText,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .bodyTextBar.showText .subText {
+    font-size: 16px;
+    padding: 0;
+    height: auto;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+    font-family: Interface, Arial, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    background-image: none;
+    text-align: center;
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    float: none;
+    height: 50px;
+    margin: 30px 0 0;
+    padding: 0 50px;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText.disabled,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText.disabled {
+    opacity: 0.3;
+}
+body[data-active-channel="sports"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText,
+body[data-active-channel="sports"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText {
+    background-color: #00a826;
+}
+body[data-active-channel="esports"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText,
+body[data-active-channel="esports"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText {
+    background-color: #833594;
+}
+body[data-active-channel="in-play"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText,
+body[data-active-channel="in-play"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText {
+    background-color: #00a826;
+}
+body[data-active-channel="casino"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText,
+body[data-active-channel="casino"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText {
+    background-color: #0054a4;
+}
+body[data-active-channel="live-casino"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText,
+body[data-active-channel="live-casino"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText {
+    background-color: #66cae0;
+}
+body[data-active-channel="vegas"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText,
+body[data-active-channel="vegas"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText {
+    background-color: #ed1c24;
+}
+body[data-active-channel="sports"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active),
+body[data-active-channel="sports"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) {
+    border: none;
+    background-color: #00c22d;
+}
+body[data-active-channel="esports"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active),
+body[data-active-channel="esports"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) {
+    border: none;
+    background-color: #993ead;
+}
+body[data-active-channel="in-play"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active),
+body[data-active-channel="in-play"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) {
+    border: none;
+    background-color: #00c22d;
+}
+body[data-active-channel="casino"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active),
+body[data-active-channel="casino"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) {
+    border: none;
+    background-color: #0062bd;
+}
+body[data-active-channel="live-casino"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active),
+body[data-active-channel="live-casino"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) {
+    border: none;
+    background-color: #73e1fa;
+}
+body[data-active-channel="vegas"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active),
+body[data-active-channel="vegas"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:hover:not(.disabled):not(.pressed):not(.selected):not(.checked):not(:active) {
+    border: none;
+    background-color: #ff1f26;
+}
+body[data-active-channel="sports"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked),
+body[data-active-channel="sports"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked) {
+    border: none;
+    background-color: #008f21;
+}
+body[data-active-channel="esports"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked),
+body[data-active-channel="esports"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked) {
+    border: none;
+    background-color: #6c2c7a;
+}
+body[data-active-channel="in-play"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked),
+body[data-active-channel="in-play"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked) {
+    border: none;
+    background-color: #008f21;
+}
+body[data-active-channel="casino"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked),
+body[data-active-channel="casino"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked) {
+    border: none;
+    background-color: #00478a;
+}
+body[data-active-channel="live-casino"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked),
+body[data-active-channel="live-casino"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked) {
+    border: none;
+    background-color: #5bb3c7;
+}
+body[data-active-channel="vegas"] .promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked),
+body[data-active-channel="vegas"] .promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:active:not(.disabled):not(.selected):not(.checked) {
+    border: none;
+    background-color: #d41920;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText:after,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText:after {
+    border-left-style: none;
+}
+.promotionBanner.TemplateName_BasicTemplate.slideshowPromotion .actionTextContainer.showText .actionText,
+.promotionBanner.TemplateName_TextBasedBasicTemplate.slideshowPromotion .actionTextContainer.showText .actionText {
+    margin: 9px 0 0;
+    padding: 0;
+    font-size: 24px;
+}
+.TemplateName_BasicTemplate.carouselPromotion .titleText,
+.TemplateName_Default.carouselPromotion .titleText,
+.TemplateName_OutcomeTemplate.carouselPromotion .titleText,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .titleText {
+    width: 95%;
+    height: 128px;
+    max-height: 128px;
+    margin-top: 24px;
+    margin-left: 14px;
+    padding-left: 1px;
+}
+html:not([lang="hi"]) .TemplateName_BasicTemplate.carouselPromotion .titleText,
+html:not([lang="hi"]) .TemplateName_Default.carouselPromotion .titleText,
+html:not([lang="hi"]) .TemplateName_OutcomeTemplate.carouselPromotion .titleText,
+html:not([lang="hi"]) .TemplateName_TwoLinkBasicTemplate.carouselPromotion .titleText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3em;
+    line-height: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 42px;
+}
+html[lang="hi"] .TemplateName_BasicTemplate.carouselPromotion .titleText,
+html[lang="hi"] .TemplateName_Default.carouselPromotion .titleText,
+html[lang="hi"] .TemplateName_OutcomeTemplate.carouselPromotion .titleText,
+html[lang="hi"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .titleText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.2em;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 30px;
+}
+.TemplateName_BasicTemplate.carouselPromotion .bodyTextBar,
+.TemplateName_Default.carouselPromotion .bodyTextBar,
+.TemplateName_OutcomeTemplate.carouselPromotion .bodyTextBar,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .bodyTextBar {
+    margin-top: 23px;
+}
+.TemplateName_BasicTemplate.carouselPromotion .bodyTextBar.showText,
+.TemplateName_Default.carouselPromotion .bodyTextBar.showText,
+.TemplateName_OutcomeTemplate.carouselPromotion .bodyTextBar.showText,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .bodyTextBar.showText {
+    background-color: rgba(44, 44, 44, 0.8);
+}
+.TemplateName_BasicTemplate.carouselPromotion .bodyTextBar .subText,
+.TemplateName_Default.carouselPromotion .bodyTextBar .subText,
+.TemplateName_OutcomeTemplate.carouselPromotion .bodyTextBar .subText,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .bodyTextBar .subText {
+    padding-top: 11px;
+    font-size: 21px;
+    width: 80%;
+    padding-left: 15px;
+}
+body[data-active-channel="sports"] .TemplateName_BasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="sports"] .TemplateName_Default.carouselPromotion .actionText,
+body[data-active-channel="sports"] .TemplateName_OutcomeTemplate.carouselPromotion .actionText,
+body[data-active-channel="sports"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="sports"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="in-play"] .TemplateName_BasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="in-play"] .TemplateName_Default.carouselPromotion .actionText,
+body[data-active-channel="in-play"] .TemplateName_OutcomeTemplate.carouselPromotion .actionText,
+body[data-active-channel="in-play"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="in-play"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionText {
+    background-color: #54478d;
+}
+body[data-active-channel="casino"] .TemplateName_BasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="casino"] .TemplateName_Default.carouselPromotion .actionText,
+body[data-active-channel="casino"] .TemplateName_OutcomeTemplate.carouselPromotion .actionText,
+body[data-active-channel="casino"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="casino"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionText {
+    background-color: #0054a4;
+}
+body[data-active-channel="vegas"] .TemplateName_BasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="vegas"] .TemplateName_Default.carouselPromotion .actionText,
+body[data-active-channel="vegas"] .TemplateName_OutcomeTemplate.carouselPromotion .actionText,
+body[data-active-channel="vegas"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="vegas"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionText {
+    background-color: #ed1c24;
+}
+body[data-active-channel="live-casino"] .TemplateName_BasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="live-casino"] .TemplateName_Default.carouselPromotion .actionText,
+body[data-active-channel="live-casino"] .TemplateName_OutcomeTemplate.carouselPromotion .actionText,
+body[data-active-channel="live-casino"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="live-casino"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionText {
+    background-color: #66cae0;
+}
+body[data-active-channel="esports"] .TemplateName_BasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="esports"] .TemplateName_Default.carouselPromotion .actionText,
+body[data-active-channel="esports"] .TemplateName_OutcomeTemplate.carouselPromotion .actionText,
+body[data-active-channel="esports"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionText,
+body[data-active-channel="esports"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionText {
+    background-color: #833594;
+}
+.TemplateName_BasicTemplate.carouselPromotion .actionText,
+.TemplateName_BasicTemplate.carouselPromotion .actionTextContainer,
+.TemplateName_BasicTemplate.carouselPromotion .bodyTextBar,
+.TemplateName_BasicTemplate.carouselPromotion .subText,
+.TemplateName_Default.carouselPromotion .actionText,
+.TemplateName_Default.carouselPromotion .actionTextContainer,
+.TemplateName_Default.carouselPromotion .bodyTextBar,
+.TemplateName_Default.carouselPromotion .subText,
+.TemplateName_OutcomeTemplate.carouselPromotion .actionText,
+.TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer,
+.TemplateName_OutcomeTemplate.carouselPromotion .bodyTextBar,
+.TemplateName_OutcomeTemplate.carouselPromotion .subText,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionText,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .bodyTextBar,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .subText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .bodyTextBar,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .subText {
+    height: 45px;
+}
+.TemplateName_BasicTemplate.carouselPromotion .actionTextContainer,
+.TemplateName_Default.carouselPromotion .actionTextContainer,
+.TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer {
+    margin-top: -45px;
+    width: 28%;
+}
+body[data-active-channel="sports"] .TemplateName_BasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="sports"] .TemplateName_Default.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="sports"] .TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="sports"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="sports"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="in-play"] .TemplateName_BasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="in-play"] .TemplateName_Default.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="in-play"] .TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="in-play"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="in-play"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer.showText:after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    border-top-width: 45px;
+    border-top-color: #54478d;
+    border-top-style: solid;
+    border-left-width: 15px;
+    border-left-color: rgba(255, 255, 255, 0) !important;
+    border-left-style: solid;
+}
+body[data-active-channel="casino"] .TemplateName_BasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="casino"] .TemplateName_Default.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="casino"] .TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="casino"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="casino"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer.showText:after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    border-top-width: 45px;
+    border-top-color: #0054a4;
+    border-top-style: solid;
+    border-left-width: 15px;
+    border-left-color: rgba(255, 255, 255, 0) !important;
+    border-left-style: solid;
+}
+body[data-active-channel="vegas"] .TemplateName_BasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="vegas"] .TemplateName_Default.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="vegas"] .TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="vegas"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="vegas"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer.showText:after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    border-top-width: 45px;
+    border-top-color: #ed1c24;
+    border-top-style: solid;
+    border-left-width: 15px;
+    border-left-color: rgba(255, 255, 255, 0) !important;
+    border-left-style: solid;
+}
+body[data-active-channel="live-casino"] .TemplateName_BasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="live-casino"] .TemplateName_Default.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="live-casino"] .TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="live-casino"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="live-casino"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer.showText:after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    border-top-width: 45px;
+    border-top-color: #66cae0;
+    border-top-style: solid;
+    border-left-width: 15px;
+    border-left-color: rgba(255, 255, 255, 0) !important;
+    border-left-style: solid;
+}
+body[data-active-channel="esports"] .TemplateName_BasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="esports"] .TemplateName_Default.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="esports"] .TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="esports"] .TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+body[data-active-channel="esports"] .TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer.showText:after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    border-top-width: 45px;
+    border-top-color: #833594;
+    border-top-style: solid;
+    border-left-width: 15px;
+    border-left-color: rgba(255, 255, 255, 0) !important;
+    border-left-style: solid;
+}
+.TemplateName_BasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+.TemplateName_Default.carouselPromotion .actionTextContainer.showText:after,
+.TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer.showText:after,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer.showText:after,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer.showText:after {
+    margin-top: -45px;
+}
+.TemplateName_BasicTemplate.carouselPromotion .actionTextContainer.showText .actionText,
+.TemplateName_Default.carouselPromotion .actionTextContainer.showText .actionText,
+.TemplateName_OutcomeTemplate.carouselPromotion .actionTextContainer.showText .actionText,
+.TemplateName_TwoLinkBasicTemplate.carouselPromotion .actionTextContainer.showText .actionText,
+.TemplateName_TwoLinkMultipleTextBasicTemplate.carouselPromotion .actionTextContainer.showText .actionText {
+    margin-left: 15px;
+    padding-top: 9px;
+    padding-right: 23px;
+    font-size: 22px;
+}
+.highlightsPromotionLayout .promotionCollectionAreaComponent {
+    height: 213px;
+}
+.categoryContentFeaturedTab .topGroupMarketHighlightsContainer .promotionCollectionAreaComponent {
+    height: auto;
+    margin-bottom: 6px;
+}
+.marketHighlights .cashOutIndicator .cashOutIcon,
+.marketHighlights .quickBuildIndicator .quickBuildIcon {
+    margin-top: 2px;
+}
+.outcomeBoosts.row {
+    width: 100%;
+    background-color: #eaeaea;
+}
+.outcomeBoosts.row .loadingWrapper {
+    height: 117px;
+    padding: 5px;
+}
+.outcomeBoosts.row .loadingWrapper .loading {
+    height: 25px;
+    width: 25px;
+}
+.outcomeBoosts.row .outcomeBoostsHeader {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 39px;
+}
+.outcomeBoosts.row .outcomeBoostsHeader .ic_sports {
+    display: inline-block;
+    overflow: hidden;
+    width: 24px;
+    height: 20px;
+}
+.outcomeBoosts.row .outcomeBoostsHeader .headerTitleWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    font-weight: 700;
+    width: 100%;
+    color: #333;
+}
+.outcomeBoosts.row .outcomeBoostsHeader .headerTitleWrapper .boostsIcon {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.outcomeBoosts.row .outcomeBoostsHeader .headerTitleWrapper .header {
+    font-family: Interface, Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 5px;
+}
+.outcomeBoosts.row .outcomeBoostsBody .boosts {
+    display: block;
+    margin-top: 0;
+}
+.outcomeBoosts.row .outcomeBoostsBody .boosts .outcomeRow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    background-color: #eaeaea;
+}
+.outcomeBoosts.row .outcomeBoostsBody .boosts .outcomeRow .boostsInfo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-right: 1px;
+    background-color: #fff;
+}
+.outcomeBoosts.row .outcomeBoostsBody .boosts .outcomeRow .boostsInfo .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.8em;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    height: auto;
+    margin-top: 0;
+}
+.outcomeBoosts.row .outcomeBoostsBody .boosts .outcomeRow .boostsContainer {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 89px;
+}
+.outcomeBoosts.row .outcomeBoostsBody .boosts .outcomeRow .boostsContainer .customOutcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton {
+    width: 84px;
+}
+.outcomeBoosts.row .outcomeBoostsBody .boosts .additionalInfo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 28px;
+    font-size: 12px;
+    background-color: #f8f8f8;
+    color: #999;
+    border-top: 1px solid #c7c7c7;
+}
+.outcomeBoosts.row .outcomeBoostsBody .boosts .additionalInfo .additionalText {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0px;
+    flex: 1 1 0px;
+    margin-left: 5px;
+}
+.boostsPromotionListArea .boostsInfo,
+.groupHubBoosts .boostsInfo {
+    border-right: 1px solid #eaeaea;
+}
+.outcomeBoosts .boosts {
+    background-color: #fff;
+    margin-top: 1px;
+}
+.outcomeBoosts .boosts .boostsInfo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.outcomeBoosts .boosts .boostsInfo .description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 12px;
+    height: 40px;
+}
+.outcomeBoosts .boosts .boostsInfo .additionalInfo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 12px;
+    height: 40px;
+    margin: 0 10px 0 15px;
+    min-width: 102px;
+}
+.outcomeBoosts .boosts .boostsContainer {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 121px;
+    flex: 0 0 121px;
+}
+.outcomeBoosts .boosts .boostsContainer .customOutcomeEntry,
+.outcomeBoosts .boosts .boostsContainer .customOutcomeEntry .outcomeItemCollection,
+.outcomeBoosts .boosts .boostsContainer .customOutcomeEntry .outcomeItemCollection .outcomeItemWrapper,
+.outcomeBoosts .boosts .boostsContainer .customOutcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem {
+    height: 100%;
+}
+.outcomeBoosts .boosts .boostsContainer .customOutcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton {
+    height: 100%;
+    min-height: 40px;
+}
+.outcomeBoosts .loadingWrapper {
+    min-height: 40px;
+}
+.outcomeBoosts .boosts.largeOutcomeButton .boostsInfo .description {
+    margin-left: 15px;
+}
+.outcomeBoosts .boosts.largeOutcomeButton .boostsContainer {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 242px;
+    flex: 0 0 242px;
+}
+.doubleHighlightGroup .outcomeBoosts.row .outcomeBoostsBody .boosts .outcomeRow .boostsContainer .customOutcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton,
+.singleHighlightGroup .outcomeBoosts.row .outcomeBoostsBody .boosts .outcomeRow .boostsContainer .customOutcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton {
+    width: 110px;
+}

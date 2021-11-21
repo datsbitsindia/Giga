@@ -10,7 +10,7 @@ const Loading = () => (
 const Login = React.lazy(() => import("./pages/login"));
 const Home = React.lazy(() => import("./pages/Home"));
 const AdminPage = React.lazy(() => import("./pages/AdminHome"));
-
+const home = React.lazy(() => import("./pages/home1"));
 const App = () => {
   const { user } = useAuth();
   setAxiosDefault();
@@ -22,6 +22,7 @@ const App = () => {
         <Route exact path="/" component={Home} />
         <Route path="/admin/login" component={Login} />
         <Route path="/admin" component={AdminPage} />
+        <Route path="/home" component={home} />
       </BrowserRouter>
     </React.Suspense>
   );
