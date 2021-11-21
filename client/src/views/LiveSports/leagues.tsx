@@ -215,6 +215,16 @@ const Leagues = (props: any) => {
     setOpenBet(true);
   };
 
+  const calculate = (odValue) => {
+    let val;
+    if (odValue !== "0/0") {
+      val = eval(odValue);
+      val = val + 1;
+      return val;
+    }
+    return 0;
+  };
+
   const AddTable = () => {
     return tableData.map((item, i) => {
       return (
@@ -243,7 +253,8 @@ const Leagues = (props: any) => {
                               )
                             }
                           >
-                            <span>{key}</span>:<span>{row[key]}</span>{" "}
+                            <span>{key}</span>:
+                            <span>{calculate(row[key])}</span>{" "}
                           </Button>
                         ) : (
                           ""
