@@ -52,7 +52,7 @@ const Leagues = (props: any) => {
     let table: any;
     for (let i = 0; i < rawData.length; i++) {
       const item = rawData[i];
-      const { type, NA, OD } = item;
+      const { type, NA, OD, ID, SU, IT, FI } = item;
       switch (type) {
         case TABLE_CONSTANTS.MG:
           if (table) {
@@ -60,6 +60,9 @@ const Leagues = (props: any) => {
           }
           table = new Object({
             title: NA,
+            id: ID,
+            su: SU,
+            it: IT,
             columns: [],
             rows: [],
           });
@@ -69,9 +72,9 @@ const Leagues = (props: any) => {
           break;
         case TABLE_CONSTANTS.PA:
           if (OD) {
-            table.rows.push({ [NA || table.columns[table.rows.length]]: OD });
+            table.rows.push({ [NA || table.columns[table.rows.length]]: OD, ID, FI });
           } else if (NA) {
-            table.rows.push({ [NA]: NA });
+            table.rows.push({ [NA]: NA, FI, ID });
           }
           break;
         default:
@@ -182,6 +185,7 @@ const Leagues = (props: any) => {
   }
 
   const AddTable = () => {
+    console.log(tableData);
     return tableData.map((item, i) => {
       return (
         <Collapse activeKey={i}>
@@ -196,8 +200,8 @@ const Leagues = (props: any) => {
                 <span>
                   {Object.keys(row).map(function (key, index) {
                     return (
-                      <div>
-                        <button><span>{key}</span>:<span>{row[key]}</span>{" "}</button>
+                      <div>{key !== 'ID' && key !== 'FI' ? 
+                        <button><span>{key}</span>:<span>{row[key]}</span>{" "}</button> :''}
                       </div>
                     );
                   })}
