@@ -3,6 +3,7 @@ import UserDetails from "../views/userDetails/UserDetails";
 import AddUser from "../views/AddUser/AddUser";
 import { Switch } from "react-router-dom";
 import { Route } from "react-router";
+import { PrivateRoute } from "./PrivateRoute";
 
 const { Header, Content, Footer } = Layout;
 
@@ -26,14 +27,12 @@ const AdminHome = () => {
       </Header>
       <Content style={{ padding: "50px 50px 0px 50px" }}>
         <Switch>
-          <Route
+          <PrivateRoute
+            allowedRoles={["SuperAdmin"]}
             path="/admin/user-list"
             component={UserDetails}
           />
-          <Route
-            path="/admin/add-user"
-            component={AddUser}
-          />
+          <Route path="/admin/add-user" component={AddUser} />
         </Switch>
       </Content>
       <Footer style={{ textAlign: "center" }}>GigaBetz ©2021</Footer>

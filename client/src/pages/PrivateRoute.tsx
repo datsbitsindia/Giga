@@ -13,11 +13,8 @@ export const PrivateRoute = ({
   const isAllowed = isAllowedToRole ? isAllowedToRole(allowedRoles) : false;
 
   if (isAllowed) {
-    if (user?.role.name === "SuperAdmin") {
-      return <Redirect from="/" to="/admin/user-list" />;
-    } else {
-      return <Redirect to="/" />;
-    }
+    return <Route {...props} />;
+  } else {
+    return <Redirect to="/" />;
   }
-  return <Route {...props} />;
 };

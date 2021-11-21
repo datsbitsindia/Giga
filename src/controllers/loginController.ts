@@ -1,9 +1,9 @@
 import { validationResult, body } from "express-validator";
 import { OK, UNAUTHORIZED } from "http-status-codes";
 import { sign_token } from "./middlewares/VerifyToken";
-import { Controller, Post } from "@overnightjs/core";
+import { Controller, Post, Middleware } from "@overnightjs/core";
 import util from "util";
-import { Request, Response, NextFunction } from "express";
+import { Request, Response } from "express";
 
 import { compareHash } from "../utils/passwordHash";
 import { asyncWrap } from "../utils/asyncWrap";
@@ -14,16 +14,17 @@ const { OVERNIGHT_JWT_SECRET, OVERNIGHT_JWT_EXP } = process.env;
 @Controller("login")
 export class LoginController {
   @Post("")
-  // @Middleware([
-  //   body(["userName", "password"], "Min 4 chars and max 20 chars")
-  //     .exists()
-  //     .isLength({ min: 4, max: 20 }),
-  // ])
+  @Middleware([
+    body(
+      ["userName", "password"],
+      "Username and password should be there"
+    ).exists(),
+  ])
   private async login(req: Request, res: Response) {
-    // const errors = validationResult(req);
-    // if (!errors.isEmpty()) {
-    //   return res.status(422).json({ errors: errors.array() });
-    // }
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(422).json({ errors: errors.array() });
+    }
     console.log(OVERNIGHT_JWT_EXP, OVERNIGHT_JWT_SECRET);
     const { password, userName } = req.body;
     console.log(userName);

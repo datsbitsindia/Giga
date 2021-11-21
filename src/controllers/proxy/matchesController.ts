@@ -13,9 +13,8 @@ export class MatchesContoller {
   @Get("")
   private async getMatches(req: ISecureRequest, res: Response) {
     const { match_id } = req.query;
-    const [error, result] = await asyncWrap(
-      axios.get(`${api_service_url}?token=${token}&FI=${match_id}`)
-    );
+    const reqUrl = `${api_service_url}?token=${token}&FI=${match_id}`;
+    const [error, result] = await asyncWrap(axios.get(reqUrl));
 
     if (!result) {
       return res.status(INTERNAL_SERVER_ERROR).json({

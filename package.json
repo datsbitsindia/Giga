@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Sanjeev kumar",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "@overnightjs/core": "^1.6.15",

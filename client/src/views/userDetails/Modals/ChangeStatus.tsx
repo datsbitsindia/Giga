@@ -8,6 +8,10 @@ const layout = {
   wrapperCol: { span: 16 },
 };
 
+const tailLayout = {
+  wrapperCol: { offset: 8, span: 12 },
+};
+
 const ChangeStatusModal = (props: any) => {
   const { visible, setVisible, userId, setUserId } = props;
 
@@ -72,7 +76,7 @@ const ChangeStatusModal = (props: any) => {
           >
             <Input />
           </Form.Item>
-          <Form.Item>
+          <Form.Item {...tailLayout}>
             <Button
               type="primary"
               htmlType="submit"
