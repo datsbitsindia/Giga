@@ -169,6 +169,9 @@ const Leagues = (props: any) => {
 
   const LeagueListTable = () => {
     return leagueList.map((item, i) => {
+      if(i > 7) {
+        return '';
+      }
       return <Button
           style={{ width: "250px" }}
           onClick={() => setMatchId(item.id)}
@@ -194,7 +197,7 @@ const Leagues = (props: any) => {
                   {Object.keys(row).map(function (key, index) {
                     return (
                       <div>
-                        <span>{key}</span>:<span>{row[key]}</span>{" "}
+                        <button><span>{key}</span>:<span>{row[key]}</span>{" "}</button>
                       </div>
                     );
                   })}
