@@ -1,0 +1,2882 @@
+.moreBetsButton .button:hover:not(.disabled):not(.forcedDisabled),
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .buttonContainerArea.iconVisible {
+    cursor: pointer;
+}
+.eventHeaderInfo .eventTitle,
+.marketListCollection .collapsablePanel .collapsableHeader .marketTitleWrapper .titleText,
+.scoreboardWidget {
+    font-family: Interface, Arial, sans-serif;
+}
+.boardContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.boardContainer .scoreboardBackgroundHover {
+    position: relative;
+    width: 100%;
+    background: radial-gradient(at 50% 100%, rgba(20, 16, 16, 0), rgba(0, 0, 0, 0.37));
+    box-shadow: inset 0 -2px 6px rgba(0, 0, 0, 0.3);
+    background-size: 100% 100%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.boardContainer .mainContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+.boardContainer .mainContainer .gameDetailsHeader {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    color: #c7c7c7;
+    overflow: hidden;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamNameWrapper,
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamNamesWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamNameWrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamNamesWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName {
+    padding-right: 6px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName.fontWeight {
+    font-weight: 400;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName.centerText {
+    text-align: center;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName.homeTeamNameMargin {
+    margin-top: 1px;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName.awayTeamNameMargin {
+    margin-bottom: 5px;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .serve {
+    opacity: 0;
+    content: "";
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 1px solid #00a826;
+    background-color: #00a826;
+    border-radius: 100%;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .serve.isServing {
+    opacity: 1;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .homeTeamNameWrapper .serve {
+    margin-top: 2px;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .awayTeamNameWrapper .serve {
+    margin-bottom: 2px;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .scoresContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    font-weight: 700;
+}
+.boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .scoresContainer .separator {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-weight: 400;
+}
+.boardContainer .mainContainer .gameDetailsHeader .titleTextHolder {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .titleIconHolder.isBatting:before {
+    content: "";
+    display: inline-block;
+    background-color: #00a826;
+    border: 1px solid #00a826;
+    border-radius: 100%;
+}
+.boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .periodComment {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .eventName {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+.boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .gameTime {
+    width: 56px;
+    text-align: center;
+}
+.boardContainer .mainContainer .gameDetailsHeader .titleText {
+    overflow: hidden;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.boardContainer .mainContainer .periodEntryContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    color: #c7c7c7;
+}
+.boardContainer .mainContainer .periodEntryContainer .periodEntry .periodHeader {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #c7c7c7;
+}
+.boardContainer .mainContainer .periodEntryContainer .periodEntry .periodHeader .periodHeaderText {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodAwayScore,
+.boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodHomeScore {
+    color: #c7c7c7;
+}
+.boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodAwayScore.winner_score,
+.boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodHomeScore.winner_score {
+    font-weight: 700;
+    color: #ffc421;
+}
+.boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodAwayScore:empty,
+.boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodHomeScore:empty {
+    display: none;
+}
+.boardContainer .boardWrapper {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.boardContainer .boardWrapper .panelsContainer {
+    width: 200%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-transition: margin-left 0.5s ease-out;
+    transition: margin-left 0.5s ease-out;
+}
+.boardContainer .boardWrapper .panelsContainer > div {
+    width: 50%;
+    -webkit-box-flex: 50%;
+    -webkit-flex: 50%;
+    flex: 50%;
+}
+.boardContainer .boardWrapper .panelsContainer.openStatisticBoard {
+    margin-left: -100%;
+}
+.boardContainer .boardWrapper .panelsContainer .teamNameContainer .teamName.awayTeamName,
+.boardContainer .boardWrapper .panelsContainer .teamNameContainer .teamName.homeTeamName {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    flex: initial;
+}
+.boardContainer .scoreboardWrapper .teamName {
+    text-align: center;
+}
+.boardContainer .statisticsboardWidgetContainer .mainContainer .gameDetailsHeader {
+    font-weight: 700;
+}
+.boardContainer .buttonContainerArea {
+    pointer-events: all;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    z-index: 20;
+}
+.boardContainer .dynamicCommentContainer {
+    width: 100%;
+    font-weight: 400;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    color: #c7c7c7;
+}
+.boardContainer .dynamicCommentContainer .dynamicComment {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #c7c7c7;
+}
+.boardContainer .dynamicCommentContainer .buttonContainer {
+    box-sizing: content-box;
+    display: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.boardContainer .dynamicCommentContainer.iconVisible .dynamicComment.leftAlign {
+    color: #c7c7c7;
+    text-align: left;
+}
+.boardContainer .dynamicCommentContainer.iconVisible .buttonContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .gameTime,
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .periodComment {
+    width: 60%;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .gameTime {
+    width: 19%;
+    text-align: center;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .gameTime .timeCounterContainer {
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamNamesWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamName {
+    text-align: left;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamName.homeTeamName {
+    margin-top: -1px;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin: 0 8px 0 0;
+    border-bottom: 2px solid transparent;
+    font-weight: 700;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .scoreText {
+    font-weight: 700;
+    float: right;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .serve {
+    background-color: #ffc421;
+    border: 1px solid #ffc421;
+    opacity: 0;
+    float: left;
+    margin: 1px 9px 0 0;
+    border-radius: 100%;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .serve.isServing {
+    opacity: 1;
+    position: relative;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .scoreFlex {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-left: auto;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .awayGameScore {
+    margin-bottom: 3px;
+}
+.boardContainer.PeriodsScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .gameScore {
+    text-align: right;
+}
+.boardContainer.PeriodsScoreboardComponent .statisticsContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3px 0;
+}
+.boardContainer.PeriodsScoreboardComponent .statisticsContainer .statisticsEntry {
+    display: inline-block;
+    margin: 0 10px;
+}
+.boardContainer.PeriodsScoreboardComponent .statisticsContainer .statisticsEntry .statisticsName {
+    color: #c7c7c7;
+}
+.boardContainer.PeriodsScoreboardComponent .statisticsContainer .statisticsEntry .statisticsValue {
+    margin-left: 2px;
+    color: #ffc421;
+    font-weight: 700;
+}
+.boardContainer.GenericScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .gameTime,
+.boardContainer.GenericScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .periodComment {
+    width: 40%;
+}
+.boardContainer.GenericScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .firstHalfScore {
+    width: 20%;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: visible;
+}
+.boardContainer.GenericScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .gameTime {
+    text-align: right;
+    padding-right: 6px;
+}
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .venueIndicator,
+.boardContainer.UpcomingScoreboardComponent .rotatorTextComponent {
+    text-align: center;
+}
+.boardContainer.GenericScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    border-right: 0;
+}
+.boardContainer.GenericScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamNameContainer {
+    width: 40%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.boardContainer.GenericScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .scoresContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffc421;
+}
+.boardContainer.GenericScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .scoresContainer .scoreValue {
+    font-weight: 600;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader {
+    font-weight: 700;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+    width: 50%;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .teamName.awayTeamName,
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .teamName.homeTeamName {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: none;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .teamNameWrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .teamNameWrapper.batting {
+    padding-right: 18px;
+    margin: 0 auto;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .teamName {
+    display: inline;
+    padding: 0 6px;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .titleIconHolder {
+    display: inline;
+    margin-top: 0;
+    position: relative;
+    padding-right: 18px;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .awayTeamContainer,
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .homeTeamContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+    width: 50%;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 0 5px;
+    font-weight: 400;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer .score {
+    margin-right: 4px;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer .wickets {
+    margin-right: 3px;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer.batting {
+    color: #f8ca39;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer.batting .score,
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer.batting .wickets {
+    font-weight: 700;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .titleText,
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer .overs {
+    font-weight: 400;
+}
+.boardContainer.CricketScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamName.homeTeamNameMargin {
+    margin-top: 0;
+}
+.boardContainer.UpcomingScoreboardComponent .rotatorEventTime {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.boardContainer.UpcomingScoreboardComponent .eventName,
+.boardContainer.UpcomingScoreboardComponent .eventTime {
+    overflow: hidden;
+    font-weight: 400;
+    width: 100%;
+}
+.boardContainer.UpcomingScoreboardComponent .eventName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.6em;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.boardContainer.UpcomingScoreboardComponent .eventTime {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+}
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .teamPitcher {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .gameTime,
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .periodComment:empty,
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherHandNone {
+    display: none;
+}
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherName,
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherNameSuffix {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    color: #c7c7c7;
+}
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherName {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherHandIcon {
+    margin: 1px 3px 0;
+    background-size: cover;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .homeGameScore,
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamNamesWrapper .homeTeamNameWrapper {
+    margin-top: 2px;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .awayGameScore,
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamNamesWrapper .awayTeamNameWrapper {
+    margin-bottom: 2px;
+}
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherHandLeft {
+    background-image: url(../../../../Global/images/donBest/LeftHandedLabelGrey.svg?v=f7d9a8a7);
+}
+.boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherHandRight {
+    background-image: url(../../../../Global/images/donBest/RightHandedLabelGrey.svg?v=1b6e3624);
+}
+.boardContainer.BaseballUpcomingScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder {
+    height: auto;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .periodComment {
+    padding-right: 6px;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .inningStatus .ballsScore,
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .inningStatus .outsScore,
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .titleTextHolder .inningStatus .strikesScore {
+    padding-left: 1px;
+    font-weight: 700;
+    color: #ffc421;
+    padding-right: 8px;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .basesCoveredImage {
+    height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .basesCoveredImage .basesBackground .basesCoveredMask {
+    width: 100%;
+    height: 100%;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamNamesWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    min-width: 0;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamNamesWrapper .teamNameWrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamName {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    text-align: left;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    border-bottom: 1px solid transparent;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .awayGameScore,
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .homeGameScore {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .serve {
+    margin: 0;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .gameDetailsHeader .scoresContainer .gameScore {
+    display: none;
+}
+.boardContainer.BaseballScoreboardComponent .mainContainer .periodEntryContainer .periodEntry:last-child .periodAwayScore,
+.boardContainer.BaseballScoreboardComponent .mainContainer .periodEntryContainer .periodEntry:last-child .periodHomeScore {
+    font-weight: 700;
+    color: #ffc421;
+}
+.boardContainer.BaseballScoreboardComponent .scoreboardWrapper .mainContainer .periodEntryContainer .periodEntry:first-child .periodScores {
+    border-left: none;
+}
+.boardContainer.statisticsboard .mainContainer .gameDetailsHeader .teamNamesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+@-webkit-keyframes odds-change-blink-animation {
+    0%,
+    100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+    50% {
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+}
+@keyframes odds-change-blink-animation {
+    0%,
+    100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+    50% {
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes numeric-change-animation {
+    0%,
+    100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+    50% {
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+}
+@keyframes numeric-change-animation {
+    0%,
+    100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+    50% {
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes animate-score {
+    0%,
+    100%,
+    50% {
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+    30%,
+    70% {
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+}
+@keyframes animate-score {
+    0%,
+    100%,
+    50% {
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+    30%,
+    70% {
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes animate-lozenge {
+    20%,
+    80% {
+        border-color: #2c2c2c;
+        background-color: #2c2c2c;
+    }
+}
+@keyframes animate-lozenge {
+    20%,
+    80% {
+        border-color: #2c2c2c;
+        background-color: #2c2c2c;
+    }
+}
+@-webkit-keyframes animate-mybet-lozenge {
+    20%,
+    80% {
+        border-color: #2c2c2c;
+        background-color: #2c2c2c;
+    }
+}
+@keyframes animate-mybet-lozenge {
+    20%,
+    80% {
+        border-color: #2c2c2c;
+        background-color: #2c2c2c;
+    }
+}
+@-webkit-keyframes animate-highlight-lozenge {
+    20%,
+    80% {
+        background-color: transparent;
+    }
+}
+@keyframes animate-highlight-lozenge {
+    20%,
+    80% {
+        background-color: transparent;
+    }
+}
+@-webkit-keyframes animate-handicap-background {
+    25%,
+    75% {
+        background-color: #ffc421;
+        color: #333;
+    }
+}
+@keyframes animate-handicap-background {
+    25%,
+    75% {
+        background-color: #ffc421;
+        color: #333;
+    }
+}
+.handicapContainer.handicapAnimate {
+    -webkit-animation-name: animate-handicap-background;
+    animation-name: animate-handicap-background;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+.baseOutcomeItem.withHandicap .outcomeButton.selected .handicapContainer.persistHandicapChange {
+    background-color: #ffc421;
+    color: #333;
+}
+.baseOutcomeItem .outcomeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+.baseOutcomeItem .outcomeButton .oddsDisplay {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    height: 100%;
+}
+.baseOutcomeItem .outcomeButton .oddsDisplay .odds {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.baseOutcomeItem .outcomeButton .cornerMarker {
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+    text-align: flex-end;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.baseOutcomeItem .outcomeButton .oddsChange {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    text-align: flex-start;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    background-repeat: no-repeat;
+    background-size: 7.5px auto;
+    height: 10px;
+}
+.baseOutcomeItem .outcomeButton .oddsChange.animate {
+    opacity: 1;
+    -webkit-animation-name: odds-change-blink-animation;
+    animation-name: odds-change-blink-animation;
+    -webkit-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.baseOutcomeItem .outcomeButton.up .odds,
+.baseOutcomeItem .outcomeButton.up .oddsChange:before {
+    color: #00a826;
+}
+.baseOutcomeItem .outcomeButton.down .odds,
+.baseOutcomeItem .outcomeButton.down .oddsChange:before {
+    color: #ed1c24;
+}
+.baseOutcomeItem .outcomeButton.selected.up .odds,
+.baseOutcomeItem .outcomeButton.selected.up .oddsChange:before {
+    color: #00c22d;
+}
+.baseOutcomeItem .outcomeButton.selected.down .odds,
+.baseOutcomeItem .outcomeButton.selected.down .oddsChange:before {
+    color: #ff1f26;
+}
+.baseOutcomeItem.withHandicap .outcomeButton .oddsDisplay {
+    height: auto;
+}
+.baseOutcomeItem.withHandicap .outcomeButton .handicapContainer {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    border-radius: 3px;
+    padding: 0 2px 2px;
+    height: 14px;
+    margin-top: auto;
+    color: #656565;
+}
+.baseOutcomeItem.withHandicap .outcomeButton.pressed .handicapContainer,
+.baseOutcomeItem.withHandicap .outcomeButton.selected .handicapContainer,
+.baseOutcomeItem.withHandicap .outcomeButton[checked] .handicapContainer {
+    color: #fff;
+}
+.baseOutcomeItem.withHandicap .outcomeButton.disabled .handicapContainer {
+    display: none;
+}
+body[data-active-channel="sports"] .cashOutIndicator .cashOutIcon,
+body[data-active-channel="in-play"] .cashOutIndicator .cashOutIcon {
+    color: #c4303a;
+}
+body[data-active-channel="esports"] .cashOutIndicator .cashOutIcon {
+    color: #833594;
+}
+body[data-active-channel="casino"] .cashOutIndicator .cashOutIcon {
+    color: #0054a4;
+}
+body[data-active-channel="vegas"] .cashOutIndicator .cashOutIcon {
+    color: #ed1c24;
+}
+body[data-active-channel="live-casino"] .cashOutIndicator .cashOutIcon {
+    color: #66cae0;
+}
+.cashOutIndicator .cashOutLozenge {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    line-height: normal;
+}
+body[data-active-channel="sports"] .cashOutIndicator .cashOutLozenge,
+body[data-active-channel="in-play"] .cashOutIndicator .cashOutLozenge {
+    background-color: #c4303a;
+}
+body[data-active-channel="esports"] .cashOutIndicator .cashOutLozenge {
+    background-color: #833594;
+}
+.cashOutIndicator .cashOutLozenge .cashOutIcon {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: inline-block;
+}
+body[data-active-channel="sports"] .cashOutIndicator .cashOutLozenge .cashOutIcon,
+body[data-active-channel="esports"] .cashOutIndicator .cashOutLozenge .cashOutIcon,
+body[data-active-channel="in-play"] .cashOutIndicator .cashOutLozenge .cashOutIcon,
+body[data-active-channel="casino"] .cashOutIndicator .cashOutLozenge .cashOutIcon,
+body[data-active-channel="live-casino"] .cashOutIndicator .cashOutLozenge .cashOutIcon,
+body[data-active-channel="vegas"] .cashOutIndicator .cashOutLozenge .cashOutIcon {
+    color: #fff;
+}
+.cashOutIndicator .cashOutLozenge .cashOutTextContainer {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.cashOutIndicator .cashOutLozenge .cashOutTextContainer .cashOutText {
+    display: inline-block;
+}
+.cashOutIndicator.betHistoryCashOutIndicator {
+    position: relative;
+    margin-top: -3px;
+    display: inline-block;
+}
+.cashOutIndicator.betHistoryCashOutIndicator .cashOutIcon {
+    margin-top: 0;
+    margin-left: 0;
+}
+.cashOutIndicator.suspended .cashOutIcon {
+    color: #999;
+}
+.cashOutIndicator.suspended .cashOutLozenge {
+    color: #eaeaea;
+    background-color: #c7c7c7;
+}
+.cashOutIndicator.suspended .cashOutLozenge .cashOutIcon {
+    color: #eaeaea;
+}
+.baseOutcomeItem.withLine .oddsDisplay {
+    height: auto;
+}
+.baseOutcomeItem.withLine .outcomeButton .lineContainer {
+    font-weight: 400;
+    line-height: 13px;
+    height: 14px;
+    margin-top: auto;
+    overflow: hidden;
+    color: #656565;
+}
+.baseOutcomeItem.withLine .outcomeButton .lineContainer .linePushDownEnd,
+.baseOutcomeItem.withLine .outcomeButton .lineContainer .linePushUpEnd {
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+    height: 14px;
+}
+.baseOutcomeItem.withLine .outcomeButton .lineContainer .linePushUpBegin {
+    transform: translateY(0);
+}
+.baseOutcomeItem.withLine .outcomeButton .lineContainer .linePushDownBegin,
+.baseOutcomeItem.withLine .outcomeButton .lineContainer .linePushUpEnd {
+    transform: translateY(-14px);
+}
+.baseOutcomeItem.withLine .outcomeButton .lineContainer .linePushDownEnd {
+    transform: translateY(0);
+}
+.baseOutcomeItem.withLine .outcomeButton.pressed .handicapContainer,
+.baseOutcomeItem.withLine .outcomeButton.pressed .lineContainer,
+.baseOutcomeItem.withLine .outcomeButton.selected .handicapContainer,
+.baseOutcomeItem.withLine .outcomeButton.selected .lineContainer,
+.baseOutcomeItem.withLine .outcomeButton[checked] .handicapContainer,
+.baseOutcomeItem.withLine .outcomeButton[checked] .lineContainer {
+    color: #fff;
+}
+.baseOutcomeItem.withLine .outcomeButton.disabled .lineContainer {
+    color: rgba(0, 0, 0, 0.1);
+}
+.standardMarket {
+    position: relative;
+}
+.standardMarket.suspended {
+    pointer-events: none;
+    opacity: 1;
+}
+.standardMarket .marketHeading {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #c7c7c7;
+}
+.standardMarket .marketHeading .bullet {
+    width: 3.5px;
+    height: 3.5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 13px;
+    border: solid #333;
+    background-color: #333;
+    border-radius: 4px;
+}
+.standardMarket .marketHeading .headerTxt {
+    color: #333;
+}
+.betBuilderGoalScorerMarket .outcomeHeadersCollection,
+.standardMarket .outcomeHeadersCollection {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+}
+.betBuilderGoalScorerMarket .outcomeHeadersCollection .outcomeHeader,
+.standardMarket .outcomeHeadersCollection .outcomeHeader {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: bottom;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin: auto 0;
+    color: #656565;
+}
+.combinedMarket .outcomeEntryCollection .single .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.customMarket .outcomeEntryCollection .single .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.standardMarket .outcomeEntryCollection .single .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper {
+    border-bottom: none;
+}
+.combinedMarket .outcomeEntry .outcomeItemCollection,
+.customMarket .outcomeEntry .outcomeItemCollection,
+.standardMarket .outcomeEntry .outcomeItemCollection {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.combinedMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper,
+.customMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper,
+.standardMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+.combinedMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.customMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.standardMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #f8f8f8;
+}
+.combinedMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.customMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.standardMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    text-align: center;
+    padding: 3px;
+    word-wrap: break-word;
+    color: #656565;
+}
+.combinedMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem,
+.customMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem,
+.standardMarket .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 100%;
+}
+.combinedMarket .outcomeEntry .outcomeEntry:not(.displayNone) .outcomeItemCollection,
+.customMarket .outcomeEntry .outcomeEntry:not(.displayNone) .outcomeItemCollection,
+.standardMarket .outcomeEntry .outcomeEntry:not(.displayNone) .outcomeItemCollection {
+    border-top: none;
+}
+.combinedMarket .outcomeEntry.single .outcomeItemWrapper,
+.customMarket .outcomeEntry.single .outcomeItemWrapper,
+.standardMarket .outcomeEntry.single .outcomeItemWrapper {
+    min-height: 38px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #fff;
+}
+.combinedMarket .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.customMarket .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.standardMarket .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: left;
+    justify-content: left;
+    padding: 2px 10px;
+    vertical-align: middle;
+    width: 65%;
+    margin: 0;
+    border-bottom: none;
+}
+.combinedMarket .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.customMarket .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.standardMarket .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader {
+    text-align: left;
+    color: #656565;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.combinedMarket .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem,
+.customMarket .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem,
+.standardMarket .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem {
+    width: 35%;
+}
+.combinedMarket .baseOutcomeItem,
+.customMarket .baseOutcomeItem,
+.standardMarket .baseOutcomeItem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+.combinedMarket .baseOutcomeItem .outcomeButton,
+.customMarket .baseOutcomeItem .outcomeButton,
+.standardMarket .baseOutcomeItem .outcomeButton {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.combinedMarket .baseOutcomeItem .outcomeButton.selected.disabled,
+.customMarket .baseOutcomeItem .outcomeButton.selected.disabled,
+.standardMarket .baseOutcomeItem .outcomeButton.selected.disabled {
+    color: rgba(0, 0, 0, 0.1);
+}
+.standardMarket .outcomeEntry .outcomeItemCollection {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+}
+.outcomeEntry:not(.displayNone) ~ .outcomeEntry:not(.displayNone) .outcomeItemCollection {
+    border-top: 1px solid #c7c7c7;
+}
+.combinedMarket .combinedOutcome .customOutcomeEntry.outcomeEntry.single,
+.customMarket .customOutcomeCollection .customOutcomeEntry.outcomeEntry.single {
+    border-bottom: 1px solid #c7c7c7;
+}
+.combinedMarket .combinedOutcome .customOutcomeEntry .outcomeItemCollection,
+.customMarket .customOutcomeCollection .customOutcomeEntry .outcomeItemCollection {
+    margin-top: 0;
+}
+.combinedMarket .combinedOutcome .customOutcomeEntry .outcomeItemCollection.single div.outcomeLabel,
+.customMarket .customOutcomeCollection .customOutcomeEntry .outcomeItemCollection.single div.outcomeLabel {
+    font-size: 12px;
+    padding-left: 7px;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin-top: 2px;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 80%;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader {
+    font-weight: 700;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem {
+    width: 20%;
+    min-width: 84px;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(-n + 6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon {
+    display: block;
+    height: 23px;
+    width: 23px;
+    margin: 0 12px 0 0;
+    color: #fff;
+    border: 1px solid #000;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(-n + 6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText {
+    display: block;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(n + 7) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon {
+    display: none;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(1) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon {
+    background-color: red;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(1) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText::after {
+    content: "1";
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(2) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon {
+    background-color: #1e90ff;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(2) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText::after {
+    content: "2";
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(3) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon {
+    color: #000;
+    background-color: #fff;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(3) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText::after {
+    content: "3";
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(4) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon {
+    background-color: #000;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(4) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText::after {
+    content: "4";
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(5) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon {
+    color: #000;
+    background-color: #ff9b12;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(5) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText::after {
+    content: "5";
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon {
+    background: -webkit-linear-gradient(to bottom, #fff, #fff 50%, #000 50%, #000);
+    background: -webkit-gradient(linear, to bottom, #fff, #fff 50%, #000 50%, #000);
+    background: linear-gradient(to bottom, #fff, #fff 50%, #000 50%, #000);
+    background-size: 100% 8px;
+    color: red;
+    text-shadow: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff, 1.5px 1.5px 0 #fff;
+}
+.greyhoundsEventSkin .standardMarket .outcomeEntry.single:nth-child(6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText::after {
+    content: "6";
+}
+.contentSelectorComponent.eventSelector .contentSelectorItem .contentSelectorItemButton .liveIconHolder {
+    text-align: right;
+    color: #999;
+}
+.contentSelectorComponent.eventSelector .contentSelectorItem .contentSelectorItemButton .liveIconHolder.streamReady {
+    color: #00a826;
+}
+.contentSelectorComponent.eventSelector .contentSelectorItem .contentSelectorItemButton .eventSelectorLabelsWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+}
+.contentSelectorComponent.eventSelector .contentSelectorItem[selected="true"] .contentSelectorItemButton .liveIconHolder {
+    color: #fff;
+}
+.contentSelectorComponent.eventSelector .contentSelectorItem[selected="true"] .contentSelectorItemButton .liveIconHolder.streamReady {
+    color: #00a826;
+}
+.moreBetsButton .button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.marketListCollection .collapsableHeader {
+    background-color: #eaeaea;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.goalscorerMarket .teamPlayerSelectorWrapper,
+.goalscorerMarket .teamPlayerSelectorWrapper .teamPlayerSelectorContainerWrapper .teamPlayerSelectorContainer,
+.goalscorerMarket .teamPlayerSelectorWrapper .teamPlayerSelectorContainerWrapper .teamPlayerSelectorContainer .dropdownContainer.opened .dropdownSelectedOption:hover,
+.marketListCollection .collapsableContent,
+.marketListCollection .collapsableContent .combinedMarket {
+    background-color: #fff;
+}
+.marketListCollection .collapsableHeader .titleText {
+    color: #333;
+}
+.marketListCollection .collapsableHeader .titleText .handicapContainer {
+    display: inline-block;
+    margin: 0 0 0 3px;
+    border-radius: 3px;
+    padding: 0 1px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName,
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .titleText,
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .periodComment {
+    padding-left: 15px;
+}
+.marketListCollection .collapsableHeader .titleText .handicapContainer:empty {
+    display: none;
+}
+.marketListCollection .collapsableHeader .iconHolder {
+    padding-bottom: 2px;
+}
+.marketListCollection .collapsableHeader .iconHolder [class*=" icon-"]:before,
+.marketListCollection .collapsableHeader .iconHolder [class^="icon-"]:before {
+    font-size: 9px;
+    color: #333;
+}
+.marketListCollection .collapsableHeader .iconHolder .arrowIcon.suspended:before,
+.marketListCollection .collapsableHeader.suspended .iconHolder .arrowIcon:before,
+.marketListCollection .collapsableHeader.suspended .titleText {
+    color: #c7c7c7;
+}
+.marketListCollection .collapsableHeader .Message {
+    color: #333;
+    font-weight: 700;
+}
+.marketListCollection .collapsableHeader .marketTitleWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 16px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.marketListCollection .collapsableHeader .marketTitleWrapper .titleText {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-overflow: clip;
+    white-space: normal;
+    overflow: visible;
+}
+.marketListCollection .collapsableHeader .marketTitleWrapper .cashOutMarketIndicatorContainer,
+.marketListCollection .collapsableHeader .marketTitleWrapper .quickBuildIndicatorContainer {
+    margin-left: 5px;
+}
+.statisticsboardIcon.overtime {
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(../../../../Global/images/ic_iceHockeyIcons.png?v=8e082cb0);
+    background-size: 20px;
+    height: 22px;
+    width: 20px;
+    background-position: 0 0;
+}
+.statisticsboardIcon.conversions,
+.statisticsboardIcon.dropKicks,
+.statisticsboardIcon.rugbyPenalties,
+.statisticsboardIcon.rugbyRedCards,
+.statisticsboardIcon.rugbyYellowCards,
+.statisticsboardIcon.tries {
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(../../../../Global/images/ic_rugbystatsLarge.png?v=6054e6a7);
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    margin-left: 2px;
+}
+.statisticsboardIcon.conversions {
+    background-position: 0 -150px;
+}
+.statisticsboardIcon.rugbyPenalties {
+    background-position: 0 0;
+}
+.statisticsboardIcon.rugbyRedCards {
+    background-position: 0 -90px;
+}
+.statisticsboardIcon.tries {
+    background-position: 0 -60px;
+}
+.statisticsboardIcon.rugbyYellowCards {
+    background-position: 0 -30px;
+}
+.statisticsboardIcon.dropKicks {
+    background-position: 0 -120px;
+}
+.statisticsboardIcon.batting,
+.statisticsboardIcon.runOuts {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(../../../../Global/images/ic_cricketstats.png?v=3fc485c0);
+    width: 31px;
+    height: 31px;
+    background-size: 37px;
+}
+.statisticsboardIcon.runOuts {
+    background-position: 0 0;
+}
+.statisticsboardIcon.batting {
+    background-position: 0 -31px;
+}
+.statisticsboardIcon.corners,
+.statisticsboardIcon.footballPenalties,
+.statisticsboardIcon.footballRedCards,
+.statisticsboardIcon.footballYellowCards {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(../../../../Global/images/ic_footballStats.png?v=bc5eb89f);
+    background-size: 26px auto;
+    height: 22px;
+    width: 22px;
+}
+.ic_baseballBasesBackground,
+.ic_baseballBasesMask {
+    background-image: url(../../../../Global/images/ic_baseballstats.png?v=63e36eb4);
+    background-size: cover;
+}
+.statisticsboardIcon.corners {
+    background-position: 0 -66px;
+}
+.statisticsboardIcon.footballPenalties {
+    background-position: 0 -44px;
+}
+.statisticsboardIcon.footballRedCards {
+    background-position: 0 -22px;
+}
+.ic_baseballBasesBackground,
+.statisticsboardIcon.footballYellowCards {
+    background-position: 0 0;
+}
+.ic_baseballBasesMask.base-000 {
+    display: none;
+}
+.ic_baseballBasesMask.base-100 {
+    background-position: 0 -320px;
+}
+.ic_baseballBasesMask.base-010 {
+    background-position: 0 -128px;
+}
+.ic_baseballBasesMask.base-110 {
+    background-position: 0 -448px;
+}
+.ic_baseballBasesMask.base-111 {
+    background-position: 0 -256px;
+}
+.ic_baseballBasesMask.base-001 {
+    background-position: 0 -64px;
+}
+.ic_baseballBasesMask.base-101 {
+    background-position: 0 -384px;
+}
+.ic_baseballBasesMask.base-011 {
+    background-position: 0 -192px;
+}
+.statisticsboardIcon.conversions,
+.statisticsboardIcon.corners,
+.statisticsboardIcon.dropKicks,
+.statisticsboardIcon.footballPenalties,
+.statisticsboardIcon.footballRedCards,
+.statisticsboardIcon.footballYellowCards,
+.statisticsboardIcon.rugbyPenalties,
+.statisticsboardIcon.rugbyRedCards,
+.statisticsboardIcon.rugbyYellowCards,
+.statisticsboardIcon.tries {
+    margin-top: 5px;
+}
+.statisticsboardIcon.batting,
+.statisticsboardIcon.icon-overtime {
+    margin-left: 2px;
+    margin-top: 8px;
+}
+.statisticsboardIcon.icon-overtime {
+    margin-top: 13px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .scoresContainer .homeGameScore,
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName.homeTeamName,
+.statisticsboardIcon.runOuts {
+    margin-top: 2px;
+}
+.scoreboardWidget .scoreboardBackgroundHover {
+    min-height: 188px;
+    height: 188px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer {
+    font-size: 13px;
+    max-width: 620px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder {
+    height: 40px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer {
+    height: 84px;
+    font-size: 22px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    max-width: 620px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .serve {
+    height: 6px;
+    width: 6px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry {
+    width: 66px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry > div {
+    width: 70px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodHeader {
+    height: 40px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodHeader .periodHeaderText {
+    font-size: 13px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores {
+    min-height: 84px;
+    font-size: 22px;
+    padding: 8px 0 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodAwayScore,
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodHomeScore {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 37px;
+    flex: 0 0 37px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .buttonContainerArea {
+    width: 47px;
+    height: 42px;
+    margin-bottom: 7px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer.statisticsboard .mainContainer .gameDetailsHeader .teamNamesContainer {
+    font-size: 22px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer.statisticsboard .mainContainer .gameDetailsHeader .teamNamesContainer .teamName {
+    padding-left: 15px;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .boardWrapper {
+    display: table;
+    table-layout: fixed;
+}
+.scoreboardWidget .scoreboardBackgroundHover .boardContainer .boardWrapper .panelsContainer > div {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: none;
+}
+.scoreboardWidget .dynamicCommentContainer {
+    height: 40px;
+    line-height: 38px;
+    font-size: 13px;
+}
+.scoreboardWidget .dynamicCommentContainer .dynamicComment {
+    padding: 0 20px;
+}
+.scoreboardWidget .dynamicCommentContainer.iconVisible .dynamicComment {
+    width: 92%;
+}
+.scoreboardWidget .dynamicCommentContainer.iconVisible .buttonContainer {
+    width: 51px;
+    height: 40px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 51px;
+    flex: 0 0 51px;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+.scoreboardWidget .dynamicCommentContainer.iconVisible .buttonContainer:before {
+    font-size: 20px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .gameTime .timeCounterContainer {
+    top: 19px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .scoresContainer {
+    min-height: 42px;
+    min-width: 30px;
+    font-size: 22px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .scoresContainer .scoreText {
+    font-weight: 700;
+    float: right;
+}
+.scoreboardWidget.PeriodsScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName.awayTeamName {
+    padding-top: 10px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent .boardContainer .mainContainer .periodEntryContainer .periodEntry,
+.scoreboardWidget.PeriodsScoreboardComponent .boardContainer .mainContainer .periodEntryContainer .periodEntry > div {
+    width: 40px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodAwayScore,
+.scoreboardWidget.PeriodsScoreboardComponent .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodHomeScore {
+    min-width: 25px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder {
+    height: 30px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .gameTime .timeCounterContainer {
+    top: 16px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer {
+    height: 70px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodHeader,
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .dynamicCommentContainer,
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .statisticsContainer {
+    height: 30px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName.awayTeamName {
+    padding-top: 6px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .gameDetailsHeader .scoresContainer .homeGameScore {
+    margin-top: 3px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .gameDetailsHeader .scoresContainer .awayGameScore {
+    margin-bottom: -1px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores {
+    min-height: 70px;
+    padding-top: 6px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodAwayScore,
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodHomeScore {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 30px;
+    flex: 0 0 30px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodAwayScore {
+    padding-top: 2px;
+}
+.scoreboardWidget.PeriodsScoreboardComponent.additionalStatistics .dynamicCommentContainer {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.scoreboardWidget.GenericScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamNameContainer {
+    width: 36%;
+}
+.scoreboardWidget.GenericScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .teamNameContainer .teamName {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.scoreboardWidget.GenericScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .scoresContainer {
+    font-size: 32px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 2 27%;
+    flex: 1 2 27%;
+    min-width: 27%;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+.scoreboardWidget.GenericScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .scoresContainer .scoreValue {
+    font-weight: 600;
+    padding-top: 3px;
+    width: 100%;
+}
+.scoreboardWidget.GenericScoreboardComponent .mainContainer .gameDetailsHeader .teamNamesContainer .scoresContainer .scoreValue.homeScore {
+    text-align: right;
+}
+.scoreboardWidget.GenericScoreboardComponent .scoreboardWrapper .mainContainer {
+    display: block;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader {
+    font-weight: 700;
+    width: 50%;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer {
+    max-width: 48%;
+    padding: 0 10px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 48%;
+    flex: 1 1 48%;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .teamName {
+    font-size: 22px;
+    padding: 0 7px 0 0;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .titleIconHolder {
+    padding-right: 0;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .titleIconHolder.isBatting:before {
+    height: 6px;
+    width: 6px;
+    margin-bottom: 5px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .teamNameContainer .teamNameWrapper.isBatting .teamName {
+    padding-left: 7px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .separator {
+    font-size: 22px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .periodComment {
+    font-size: 22px;
+    margin-top: 29px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer .score {
+    margin-right: 4px;
+    font-size: 22px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer .wickets {
+    font-size: 22px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer.batting .score,
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer.batting .wickets {
+    font-weight: 700;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .inningContainer .overs {
+    font-size: 13px;
+    line-height: 19px;
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+    text-align: flex-end;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry {
+    width: 70px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodHeaderText {
+    font-size: 22px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores {
+    -webkit-box-pack: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    padding-top: 1px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodAwayScore,
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodHomeScore {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0;
+    flex: 0;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodHomeScore {
+    padding-top: 0;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodScores .periodAwayScore {
+    padding-bottom: 3px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer.statisticsboard .mainContainer .gameDetailsHeader .titleTextHolder .titleText {
+    padding-left: 20px;
+    font-size: 22px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer.statisticsboard .mainContainer .gameDetailsHeader .teamNamesContainer {
+    font-size: 22px;
+}
+.scoreboardWidget.CricketScoreboardComponent .scoreboardBackgroundHover .boardContainer.statisticsboard .mainContainer .gameDetailsHeader .teamNamesContainer .teamName {
+    padding-left: 20px;
+}
+.scoreboardWidget.UpcomingScoreboardComponent .eventName,
+.scoreboardWidget.UpcomingScoreboardComponent .eventTime {
+    color: #fff;
+}
+.scoreboardWidget.UpcomingScoreboardComponent .eventName {
+    text-align: center;
+    font-size: 22px;
+}
+.scoreboardWidget.UpcomingScoreboardComponent .eventTime {
+    font-size: 13px;
+    text-align: center;
+}
+.scoreboardWidget.UpcomingScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder {
+    height: auto;
+    min-height: 44px;
+    padding: 0;
+}
+.scoreboardWidget.UpcomingScoreboardComponent .boardContainer .dynamicCommentContainer {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 44px;
+}
+.scoreboardWidget.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 48%;
+    max-width: 48%;
+}
+.standardMarket .marketHeading .bullet,
+.standardMarketWithMoreBets .standardMarketContainer.empty {
+    display: none;
+}
+.scoreboardWidget.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .teamName {
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+}
+.scoreboardWidget.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .teamName,
+.scoreboardWidget.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .teamPitcher {
+    font-size: 13px;
+    text-align: center;
+}
+.scoreboardWidget.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherName {
+    padding-left: 3px;
+}
+.scoreboardWidget.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherHandIcon {
+    width: 14px;
+    height: 14px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 14px;
+    flex: 0 0 14px;
+    background-size: 14px 14px;
+}
+.scoreboardWidget.BaseballUpcomingScoreboardComponent .baseballEventTitle .venueIndicator {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20px;
+    flex: 0 0 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 700;
+}
+.cashOutIndicator .cashOutLozenge .cashOutTextContainer .cashOutText,
+.contentSelectorComponent.eventSelector.wrappingSquareButtons .contentSelectorItem .contentSelectorItemButton .eventSelectorLabelsWrapper .venueLabel {
+    font-weight: 400;
+}
+.scoreboardWidget.BaseballUpcomingScoreboardComponent .boardContainer .mainContainer {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+.scoreboardWidget.BaseballUpcomingScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder {
+    min-height: 22px;
+    max-width: 620px;
+}
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .titleText {
+    font-size: 13px;
+}
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder .inningStatus {
+    padding-left: 72px;
+}
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .basesCoveredImage {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 96px;
+    flex: 0 0 96px;
+    width: 96px;
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .basesCoveredImage .basesBackground {
+    margin: 8px 14px;
+    width: 71px;
+    height: 63px;
+}
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .teamNamesContainer .teamName {
+    padding-left: 12px;
+}
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .scoresContainer {
+    min-height: 42px;
+    min-width: 12px;
+}
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .periodEntryContainer .periodEntry,
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .periodEntryContainer .periodEntry > div {
+    width: 38px;
+}
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodAwayScore,
+.scoreboardWidget.BaseballScoreboardComponent .boardContainer .mainContainer .periodEntryContainer .periodEntry .periodHomeScore {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 38px;
+    flex: 1 1 38px;
+    min-width: 38px;
+}
+.cashOutIndicator .cashOutIcon {
+    font-size: 20px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+.cashOutIndicator .cashOutLozenge {
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+    border-radius: 4px;
+}
+.cashOutIndicator .cashOutLozenge .cashOutIcon {
+    font-size: 14px;
+    margin-right: 7px;
+    margin-left: 0;
+    padding-top: 1px;
+}
+.cashOutIndicator .cashOutLozenge .cashOutTextContainer {
+    font-size: 13px;
+    padding-top: 2px;
+}
+.cashOutIndicator.betHistoryCashOutIndicator {
+    margin-left: 5px;
+    top: 3px;
+}
+.cashOutIndicator.betHistoryCashOutIndicator .cashOutIcon {
+    font-size: 16px;
+}
+.cashOutIndicator.betHistoryCashOutIndicator.suspended .cashOutIcon {
+    color: #c7c7c7;
+}
+body[data-active-channel="sports"] .quickBuildIndicator .quickBuildIcon,
+body[data-active-channel="in-play"] .quickBuildIndicator .quickBuildIcon {
+    color: #c4303a;
+}
+body[data-active-channel="esports"] .quickBuildIndicator .quickBuildIcon {
+    color: #833594;
+}
+body[data-active-channel="casino"] .quickBuildIndicator .quickBuildIcon {
+    color: #0054a4;
+}
+body[data-active-channel="vegas"] .quickBuildIndicator .quickBuildIcon {
+    color: #ed1c24;
+}
+body[data-active-channel="live-casino"] .quickBuildIndicator .quickBuildIcon {
+    color: #66cae0;
+}
+.quickBuildIndicator.suspended .quickBuildIcon {
+    color: #999;
+}
+.quickBuildIndicator .quickBuildIcon {
+    font-size: 18px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+.baseOutcomeItem.withLine .outcomeButton .lineContainer {
+    font-size: 12px;
+    margin-bottom: -2px;
+}
+.baseOutcomeItem.withLine .outcomeButton.inBetSlip.disabled .lineContainer {
+    color: #fff;
+}
+.standardMarket .marketHeading {
+    border-top: 1px solid transparent;
+    height: 40px;
+}
+.standardMarketWithMoreBets,
+.standardMarketWithMoreBets .moreBetsButton,
+.standardMarketWithMoreBets .standardMarketContainer {
+    height: 100%;
+}
+.standardMarket .marketHeading .headerTxt {
+    font-size: 12px;
+    margin-top: 11px;
+    padding-left: 14px;
+}
+.standardMarket.groupOutrightStandardMarket .outcomeEntryCollection .outcomeEntry.single {
+    padding-right: 0;
+}
+.standardMarket.groupOutrightStandardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper {
+    margin: 0;
+}
+.standardMarket.groupOutrightStandardMarket .marketHeading {
+    border-top: none;
+    border-bottom-color: transparent;
+}
+.goalscorerMarket .teamPlayerSelectorWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 54px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.goalscorerMarket .teamPlayerSelectorWrapper .teamPlayerSelectorHeaderWrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    padding: 2px 10px 2px 11px;
+}
+.goalscorerMarket .teamPlayerSelectorWrapper .teamPlayerSelectorHeaderWrapper .teamPlayerSelectorHeader {
+    font-size: 13px;
+    color: #656565;
+}
+.goalscorerMarket .teamPlayerSelectorWrapper .teamPlayerSelectorContainerWrapper {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+}
+.goalscorerMarket .teamPlayerSelectorWrapper .teamPlayerSelectorContainerWrapper .teamPlayerSelectorContainer .dropdownContainer {
+    background-color: #fff;
+    margin: 0 5px 0 13px;
+    max-height: 38px;
+    height: 38px;
+}
+.goalscorerMarket .teamPlayerSelectorWrapper .teamPlayerSelectorContainerWrapper .teamPlayerSelectorContainer .dropdownContainer .dropdownSelectedOption .dropdownSelectedOptionTextContainer {
+    margin-top: 2px;
+}
+.goalscorerMarket .teamPlayerSelectorWrapper .teamPlayerSelectorContainerWrapper .teamPlayerSelectorContainer .dropdownContainer .dropdownSelectedOption:hover {
+    background-color: #fff;
+}
+.goalscorerMarket .outcomeEntryCollection {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+.goalscorerMarket .outcomeEntryCollection .dynamicOutcomeEntry .outcomeEntry .outcomeItemCollection .outcomeItemWrapper {
+    min-height: 54px;
+}
+.goalscorerMarket .outcomeEntryCollection .dynamicOutcomeEntry .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 18%;
+    flex: 1 1 18%;
+    padding: 1px 10px;
+}
+.goalscorerMarket .outcomeEntryCollection .dynamicOutcomeEntry .outcomeEntry .outcomeItemCollection .baseOutcomeItem {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+.betBuilderGoalScorerMarket .outcomeHeadersCollection .outcomeHeader,
+.standardMarket .outcomeHeadersCollection .outcomeHeader {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 8px;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry .outcomeItemCollection,
+.customMarket .outcomeEntryCollection .outcomeEntry .outcomeItemCollection,
+.standardMarket .outcomeEntryCollection .outcomeEntry .outcomeItemCollection {
+    border-top: none;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.customMarket .outcomeEntryCollection .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.standardMarket .outcomeEntryCollection .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader {
+    line-height: 15px;
+    font-size: 12px;
+    padding: 8px;
+    color: #656565;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry .outcomeItemCollection .outcomeItemWrapper:first-child .baseOutcomeItem .outcomeButton,
+.customMarket .outcomeEntryCollection .outcomeEntry .outcomeItemCollection .outcomeItemWrapper:first-child .baseOutcomeItem .outcomeButton,
+.standardMarket .outcomeEntryCollection .outcomeEntry .outcomeItemCollection .outcomeItemWrapper:first-child .baseOutcomeItem .outcomeButton {
+    border-left: none;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry .outcomeItemWrapper[collectionitem="-1"] .outcomeItemHeaderWrapper,
+.customMarket .outcomeEntryCollection .outcomeEntry .outcomeItemWrapper[collectionitem="-1"] .outcomeItemHeaderWrapper,
+.standardMarket .outcomeEntryCollection .outcomeEntry .outcomeItemWrapper[collectionitem="-1"] .outcomeItemHeaderWrapper {
+    border-bottom: none;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry .outcomeItemWrapper[collectionitem="-1"] .outcomeItemContainer,
+.customMarket .outcomeEntryCollection .outcomeEntry .outcomeItemWrapper[collectionitem="-1"] .outcomeItemContainer,
+.standardMarket .outcomeEntryCollection .outcomeEntry .outcomeItemWrapper[collectionitem="-1"] .outcomeItemContainer {
+    height: 40px;
+    border-left: 1px solid #eaeaea;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper {
+    padding: 2px 10px 2px 5px;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader {
+    min-height: 15px;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem,
+.customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem,
+.standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem {
+    -webkit-align-self: stretch;
+    align-self: stretch;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem .outcomeButton,
+.customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem .outcomeButton,
+.standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper .baseOutcomeItem .outcomeButton {
+    height: 100%;
+    min-height: 40px;
+}
+.combinedOutcome .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper:first-child .baseOutcomeItem .outcomeButton,
+.customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper:first-child .baseOutcomeItem .outcomeButton,
+.standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemWrapper:first-child .baseOutcomeItem .outcomeButton {
+    border-left: 1px solid #eaeaea;
+}
+.combinedOutcome .baseOutcomeItem .outcomeButton,
+.customMarket .baseOutcomeItem .outcomeButton,
+.standardMarket .baseOutcomeItem .outcomeButton {
+    border-left: 1px solid #eaeaea;
+    height: 40px;
+}
+.combinedMarket .combinedOutcome .outcomeButton,
+.combinedMarket .customOutcomeCollection .outcomeButton,
+.customMarket .combinedOutcome .outcomeButton,
+.customMarket .customOutcomeCollection .outcomeButton {
+    height: 44px;
+}
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip),
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip),
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip),
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip),
+.tournament .customMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip),
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip) {
+    background-color: #fff;
+}
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip) .handicapContainer,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip) .handicapContainer,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip) .handicapContainer,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip) .handicapContainer,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip) .handicapContainer,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.selected:not(.inBetSlip) .handicapContainer {
+    color: #656565;
+}
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip,
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip .odds,
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.pressed,
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.pressed .odds,
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.selected,
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.selected .odds,
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton[checked],
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton[checked] .odds,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.inBetSlip,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.inBetSlip .odds,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.pressed,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.pressed .odds,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.selected,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.selected .odds,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton[checked],
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton[checked] .odds,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip .odds,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.pressed,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.pressed .odds,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.selected,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.selected .odds,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton[checked],
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton[checked] .odds,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip .odds,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.pressed,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.pressed .odds,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.selected,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.selected .odds,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton[checked],
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton[checked] .odds,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.inBetSlip,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.inBetSlip .odds,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.pressed,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.pressed .odds,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.selected,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.selected .odds,
+.tournament .customMarket .baseOutcomeItem .outcomeButton[checked],
+.tournament .customMarket .baseOutcomeItem .outcomeButton[checked] .odds,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip .odds,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.pressed,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.pressed .odds,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.selected,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.selected .odds,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton[checked],
+.tournament .standardMarket .baseOutcomeItem .outcomeButton[checked] .odds {
+    color: #fff;
+}
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .odds,
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .oddsChange:before,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .odds,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .oddsChange:before,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .odds,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .oddsChange:before,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .odds,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .oddsChange:before,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .odds,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .oddsChange:before,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .odds,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip.up .oddsChange:before {
+    color: #00a826;
+}
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .odds,
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .oddsChange:before,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .odds,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .oddsChange:before,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .odds,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .oddsChange:before,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .odds,
+.tournament .combinedMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .oddsChange:before,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .odds,
+.tournament .customMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .oddsChange:before,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .odds,
+.tournament .standardMarket .baseOutcomeItem .outcomeButton.inBetSlip.down .oddsChange:before {
+    color: #ed1c24;
+}
+.eventMarketsLayout:not(.liveEvent) .combinedMarket .baseOutcomeItem.withHandicap .outcomeButton.inBetSlip .handicapContainer,
+.eventMarketsLayout:not(.liveEvent) .customMarket .baseOutcomeItem.withHandicap .outcomeButton.inBetSlip .handicapContainer,
+.eventMarketsLayout:not(.liveEvent) .standardMarket .baseOutcomeItem.withHandicap .outcomeButton.inBetSlip .handicapContainer,
+.tournament .combinedMarket .baseOutcomeItem.withHandicap .outcomeButton.inBetSlip .handicapContainer,
+.tournament .customMarket .baseOutcomeItem.withHandicap .outcomeButton.inBetSlip .handicapContainer,
+.tournament .standardMarket .baseOutcomeItem.withHandicap .outcomeButton.inBetSlip .handicapContainer {
+    color: #999;
+}
+.eventMarketsLayout:not(.liveEvent) .combinedMarket.suspended .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton .oddsChange,
+.eventMarketsLayout:not(.liveEvent) .customMarket.suspended .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton .oddsChange,
+.eventMarketsLayout:not(.liveEvent) .standardMarket.suspended .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton .oddsChange,
+.tournament .combinedMarket.suspended .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton .oddsChange,
+.tournament .customMarket.suspended .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton .oddsChange,
+.tournament .standardMarket.suspended .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton .oddsChange {
+    visibility: hidden;
+}
+.greyhoundsEventSkin .combinedMarket,
+.greyhoundsEventSkin .customMarket,
+.greyhoundsEventSkin .standardMarket {
+    border-top: 2px solid #439539;
+    padding-top: 1px;
+}
+.greyhoundsEventSkin .combinedMarket .marketHeading,
+.greyhoundsEventSkin .customMarket .marketHeading,
+.greyhoundsEventSkin .standardMarket .marketHeading {
+    border-bottom-color: #000;
+}
+.greyhoundsEventSkin .combinedMarket .outcomeEntryCollection .outcomeEntry.single,
+.greyhoundsEventSkin .customMarket .outcomeEntryCollection .outcomeEntry.single,
+.greyhoundsEventSkin .standardMarket .outcomeEntryCollection .outcomeEntry.single {
+    padding-right: 0;
+}
+.greyhoundsEventSkin .combinedMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper,
+.greyhoundsEventSkin .customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper,
+.greyhoundsEventSkin .standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper {
+    margin: 0 0 1px;
+    height: 50px;
+}
+.greyhoundsEventSkin .combinedMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.greyhoundsEventSkin .customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper,
+.greyhoundsEventSkin .standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper {
+    height: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+.greyhoundsEventSkin .combinedMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.greyhoundsEventSkin .customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader,
+.greyhoundsEventSkin .standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader {
+    font-size: 14px;
+}
+.greyhoundsEventSkin .combinedMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem,
+.greyhoundsEventSkin .customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem,
+.greyhoundsEventSkin .standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 105px;
+    flex: 0 0 105px;
+    min-width: 105px;
+}
+.greyhoundsEventSkin .combinedMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton,
+.greyhoundsEventSkin .customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton,
+.greyhoundsEventSkin .standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem .outcomeButton {
+    border-left: 1px solid #000;
+}
+.greyhoundsEventSkin .combinedMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection:nth-child(-n + 6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon,
+.greyhoundsEventSkin .customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection:nth-child(-n + 6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon,
+.greyhoundsEventSkin .standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection:nth-child(-n + 6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon {
+    height: 26px;
+    width: 26px;
+    border: unset;
+    margin: 4px 24px 0 0;
+}
+.greyhoundsEventSkin .combinedMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection:nth-child(-n + 6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText,
+.greyhoundsEventSkin .customMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection:nth-child(-n + 6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText,
+.greyhoundsEventSkin .standardMarket .outcomeEntryCollection .outcomeEntry.single .outcomeItemCollection:nth-child(-n + 6) .outcomeItemWrapper .outcomeItemHeaderWrapper .icon .iconText {
+    line-height: 26px;
+    font-size: 24px;
+    margin-left: 6px;
+}
+.combinedMarket .marketCollection .marketItem {
+    display: inline-block;
+    width: 50%;
+}
+.combinedMarket .marketCollection .marketItem:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.combinedMarket .dropdownContainer.dropdownStandard,
+.combinedMarket .dropdownContainer.dropdownStandard .dropdownSelectedOption,
+.combinedMarket .dropdownContainer.dropdownStandard.opened > .dropdownSelectedOption,
+.customMarket .dropdownContainer.dropdownStandard,
+.customMarket .dropdownContainer.dropdownStandard .dropdownSelectedOption,
+.customMarket .dropdownContainer.dropdownStandard.opened > .dropdownSelectedOption,
+.goalscorerMarket .dropdownContainer.dropdownStandard,
+.goalscorerMarket .dropdownContainer.dropdownStandard .dropdownSelectedOption,
+.goalscorerMarket .dropdownContainer.dropdownStandard.opened > .dropdownSelectedOption {
+    max-height: 38px;
+    height: 38px;
+}
+.combinedMarket .marketCollection .marketItem .marketItemHeader {
+    display: inline-block;
+}
+.combinedMarket .marketCollection .marketItem .marketItemWidgetContainer {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    float: right;
+}
+.combinedMarket .marketCollection .marketItem .marketItemWidgetContainer .dropdownContainer {
+    background-color: #fff;
+    margin: 0;
+    max-height: 38px;
+    height: 38px;
+}
+.combinedMarket .marketCollection .marketItem .marketItemWidgetContainer .dropdownContainer.opened {
+    margin: 0;
+}
+.combinedMarket .marketCollection .marketItem .marketItemWidgetContainer .dropdownContainer.opened .dropdownSelectedOption:hover {
+    background-color: #fff;
+}
+.combinedMarket .marketCollection .marketItem .marketItemWidgetContainer .dropdownContainer .dropdownSelectedOption:hover {
+    background-color: #fff;
+}
+.combinedMarket .marketCollection .marketItem:first-child .dropdownContainer {
+    margin: 0;
+    padding-right: 5px;
+}
+.combinedMarket .marketCollection .marketItem:first-child .dropdownContainer.opened {
+    margin: 0;
+}
+.combinedMarket .marketCollection .marketItem:last-child .dropdownContainer {
+    padding-left: 5px;
+}
+.combinedMarket .combinedOutcome .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .outcomeItemHeaderWrapper .outcomeItemHeader {
+    font-size: 12px;
+    color: #656565;
+    margin-top: 0;
+}
+.combinedMarket .combinedOutcome .outcomeEntry .outcomeItemCollection .outcomeItemWrapper .baseOutcomeItem {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 23%;
+    flex: 1 1 23%;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownSelectedOption > .iconHolder,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownSelectedOption > .iconHolder,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownSelectedOption > .iconHolder {
+    margin-right: 10px;
+    margin-top: 1px;
+}
+.combinedMarket .dropdownContainer.dropdownStandard.opened > .dropdownSelectedOption > .iconHolder,
+.customMarket .dropdownContainer.dropdownStandard.opened > .dropdownSelectedOption > .iconHolder,
+.goalscorerMarket .dropdownContainer.dropdownStandard.opened > .dropdownSelectedOption > .iconHolder {
+    margin-right: 11px;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem.dropdownItemHeader,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem.dropdownItemHeader,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem.dropdownItemHeader {
+    min-height: 32px;
+    margin: 0;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem[data-isselected="true"]:after,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem[data-isselected="true"]:after,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem[data-isselected="true"]:after {
+    display: none;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem[data-isselected="true"] .oddsDisplay:before,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem[data-isselected="true"] .oddsDisplay:before,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem[data-isselected="true"] .oddsDisplay:before {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    content: " ";
+    width: 6px;
+    height: 6px;
+    line-height: 6px;
+    margin: 3px 13px 0 0;
+    border-radius: 50%;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 12px;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay .oddsChange.animate,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay .oddsChange.animate,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay .oddsChange.animate {
+    opacity: 1;
+    -webkit-animation-name: odds-change-blink-animation;
+    animation-name: odds-change-blink-animation;
+    -webkit-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.up .odds,
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.up .oddsChange:before,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.up .odds,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.up .oddsChange:before,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.up .odds,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.up .oddsChange:before {
+    color: #00a826;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.down .odds,
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.down .oddsChange:before,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.down .odds,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.down .oddsChange:before,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.down .odds,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.down .oddsChange:before {
+    color: #ed1c24;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.up .odds,
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.up .oddsChange:before,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.up .odds,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.up .oddsChange:before,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.up .odds,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.up .oddsChange:before {
+    color: #00c22d;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.down .odds,
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.down .oddsChange:before,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.down .odds,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.down .oddsChange:before,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.down .odds,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay.selected.down .oddsChange:before {
+    color: #ff1f26;
+}
+.combinedMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay .oddsChange,
+.customMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay .oddsChange,
+.goalscorerMarket .dropdownContainer.dropdownStandard > .dropdownOptionsContainer .dropdownOptions > .dropdownItem .oddsDisplay .oddsChange {
+    margin-left: 3px;
+    width: 14px;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons {
+    background-color: #fff;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons .contentSelectorItem .contentSelectorItemButton {
+    display: block;
+    padding-bottom: 4px;
+    background-color: #eaeaea;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons .contentSelectorItem .contentSelectorItemButton .liveIconHolder {
+    height: 20px;
+    margin-top: -5px;
+    margin-right: -3px;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons .contentSelectorItem .contentSelectorItemButton .liveIconHolder.icon-streamingnegative:before {
+    padding-right: 0;
+    line-height: 1.3;
+    font-size: 16px;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons .contentSelectorItem .contentSelectorItemButton .eventSelectorLabelsWrapper {
+    margin-top: -16px;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons .contentSelectorItem .contentSelectorItemButton .eventSelectorLabelsWrapper .timeLabel {
+    font-size: 15px;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons .contentSelectorItem .contentSelectorItemButton.withVenueLabel .eventSelectorLabelsWrapper .timeLabel {
+    font-weight: 700;
+    color: #333;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons .contentSelectorItem[selected="true"] .contentSelectorItemButton .eventSelectorLabelsWrapper .timeLabel {
+    color: #fff;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons.tall .contentSelectorItem .contentSelectorItemButton {
+    height: 50px;
+}
+.contentSelectorComponent.eventSelector.wrappingSquareButtons.thickBorders:not(.showingEmptyText) {
+    background-color: #fff;
+}
+.contentSelectorComponent.eventSelector.quickNavigation .contentSelectorItem .contentSelectorItemButton {
+    background-color: #eaeaea;
+    color: #333;
+    border-right: 3px solid #fff;
+    margin: 0;
+}
+.contentSelectorComponent.eventSelector.quickNavigation .contentSelectorItem .contentSelectorItemButton:hover {
+    background-color: #f2f2f2;
+}
+.contentSelectorComponent.eventSelector.quickNavigation .contentSelectorItem:last-child .contentSelectorItemButton {
+    border: 0;
+}
+.contentSelectorComponent.eventSelector.quickNavigation .contentSelectorItem[selected="true"] .contentSelectorItemButton {
+    background-color: #2c2c2c;
+    color: #333;
+    font-weight: 400;
+}
+.contentSelectorComponent.eventSelector.quickNavigation .contentSelectorItem[selected="true"] .contentSelectorItemButton:hover {
+    background-color: #2c2c2c;
+}
+.contentSelectorComponent.eventSelector.quickNavigation .contentSelectorItem[selected="true"] .contentSelectorItemButton .liveIconHolder:not(.streamReady),
+.contentSelectorComponent.eventSelector.quickNavigation .contentSelectorItem[selected="true"] .contentSelectorItemButton .streamReady + .eventSelectorLabelsWrapper .timeLabel {
+    color: #fff;
+}
+.eventHeaderInfo {
+    background-color: #eaeaea;
+    padding: 15px 10px;
+}
+.eventHeaderInfo .eventTitle {
+    color: #333;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 15px;
+}
+.eventHeaderInfo .eventSubtitle {
+    color: #656565;
+    word-wrap: break-word;
+    padding-top: 6px;
+    font-size: 12px;
+}
+.eventHeaderInfo.raceEventHeaderInfo {
+    border-bottom: none;
+    color: #333;
+    font-size: 12px;
+}
+.eventHeaderInfo.raceEventHeaderInfo .raceOddsInfoComponent .raceOddsHeader {
+    font-weight: 700;
+}
+.eventHeaderInfo.raceEventHeaderInfo .raceOddsInfoComponent {
+    padding-top: 7px;
+}
+.moreBetsButton .button {
+    min-height: 28px;
+    color: #333;
+    background: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    height: 100%;
+    font-weight: 400;
+    margin: 0 0 1px;
+}
+.moreBetsButton .button.disabled,
+.moreBetsButton .button.forcedDisabled {
+    color: rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+.moreBetsButton .button.pressed,
+.moreBetsButton .button.selected,
+.moreBetsButton .button[checked] {
+    background-color: #656565;
+    color: #fff;
+}
+.moreBetsButton .button.pressed .odds,
+.moreBetsButton .button.selected .odds,
+.moreBetsButton .button[checked] .odds {
+    color: #fff;
+}
+.moreBetsButton .button.pressed:not(.disabled) {
+    color: #fff;
+    background: #656565;
+}
+.moreBetsButton .button.disabled {
+    border-top: 1px solid rgba(72, 71, 71, 0.004);
+}
+.moreBetsButton .button:hover:not(.disabled):not(.selected):not(.checked):not(.inBetSlip) {
+    border-top-color: #484848;
+}
+.moreBetsButton .button.pressed {
+    color: #333;
+    background-color: #fff;
+    border-top-color: #484848;
+}
+.moreBetsButton .button:hover:not(.disabled):not(.pressed) {
+    background-color: #f7f7f7;
+}
+.marketListCollection .collapsablePanel .collapsableHeader {
+    height: auto;
+    min-height: 51px;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .iconHolder {
+    display: inline-block;
+    width: auto;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .marketTitleWrapper {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-weight: 800;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .marketTitleWrapper .cashOutMarketIndicatorContainer,
+.marketListCollection .collapsablePanel .collapsableHeader .marketTitleWrapper .quickBuildIndicatorContainer {
+    margin-left: 10px;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .Message {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding-right: 15px;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .Message .marketSuspended {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    width: 83px;
+    height: 24px;
+    border-radius: 4px;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .marketTitleLoadingWrapper {
+    padding-right: 15px;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .marketTitleLoadingWrapper .loading {
+    height: 25px;
+    width: 25px;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .marketTitleLoadingWrapper.displayNone {
+    padding-right: 0;
+}
+.marketListCollection .collapsablePanel .collapsableHeader[collapsed="true"] .marketTitleWrapper {
+    padding-left: 9px;
+}
+.marketListCollection .collapsablePanel .collapsableHeader[collapsed="false"] {
+    margin-bottom: 0;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .titleText.suspended .titleText {
+    color: #c7c7c7;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .titleText.suspended .iconHolder {
+    width: 30px;
+    margin-top: 2px;
+    vertical-align: middle;
+}
+.marketListCollection .collapsablePanel .collapsableHeader .titleText.suspended .iconHolder .icon-arrow-down:before,
+.marketListCollection .collapsablePanel .collapsableHeader .titleText.suspended .iconHolder .icon-arrow-right:before {
+    color: #505050;
+}
+.marketListCollection .collapsablePanel:first-child .collapsableHeader {
+    border-top: none;
+}
+.marketListCollection .collapsablePanel .collapsableContent {
+    margin-bottom: 3px;
+}
+.marketListCollection .collapsablePanel:last-child .collapsableContent {
+    margin-bottom: 0;
+}
+.marketListCollection .collapsablePanel:last-child .collapsableContent,
+.marketListCollection .collapsablePanel:last-child .collapsableHeader[collapsed="true"] {
+    border-bottom: none;
+}
+.marketListCollection .collapsablePanel:last-child .collapsableHeader[collapsed="true"] {
+    padding-bottom: 0;
+}
+.marketListCollection .combinedMarket .marketCollection {
+    padding: 8px 13px;
+    border-bottom: 1px solid #f8f8f8;
+}
+.marketListCollection.categoryHub .collapsablePanel .collapsableHeader[collapsed="false"] {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.marketListCollection.categoryHub .collapsablePanel .collapsableHeader[collapsed="true"] {
+    min-height: 50px;
+}
+.marketListCollection.categoryHub .collapsablePanel .collapsableHeader .iconHolder {
+    padding-bottom: 1px;
+    padding-left: 16px;
+}
+.marketListCollection.categoryHub .collapsablePanel .collapsableHeader .iconHolder .icon-arrow-right:before {
+    font-size: 12px;
+}
+.marketListCollection.categoryHub .collapsablePanel .collapsableHeader .marketTitleWrapper {
+    padding-left: 10px;
+}

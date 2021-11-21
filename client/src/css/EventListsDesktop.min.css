@@ -1,0 +1,2759 @@
+.categoryListLayout .categoryList {
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 1px;
+}
+.categoryContentFeaturedTab .emptyTextWrapper,
+.categoryContentFeaturedTab .emptyTextWrapper .empty,
+.categoryEventTableListCollection .emptyTextWrapper,
+.categoryEventTableListCollection .emptyTextWrapper .empty,
+.coupon .emptyTextWrapper,
+.coupon .emptyTextWrapper .empty,
+.groupScreenContent .emptyTextWrapper,
+.groupScreenContent .emptyTextWrapper .empty,
+.mainContent .emptyTextWrapper,
+.mainContent .emptyTextWrapper .empty,
+.subcategoryScreenContent .emptyTextWrapper,
+.subcategoryScreenContent .emptyTextWrapper .empty,
+.tournament .eventTableItemCollection .emptyTextWrapper,
+.tournament .eventTableItemCollection .emptyTextWrapper .empty {
+    background-color: #fff;
+}
+.categoryContentFeaturedTab .emptyTextWrapper .empty .emptyText,
+.categoryEventTableListCollection .emptyTextWrapper .empty .emptyText,
+.coupon .emptyTextWrapper .empty .emptyText,
+.groupScreenContent .emptyTextWrapper .empty .emptyText,
+.mainContent .emptyTextWrapper .empty .emptyText,
+.subcategoryScreenContent .emptyTextWrapper .empty .emptyText,
+.tournament .eventTableItemCollection .emptyTextWrapper .empty .emptyText {
+    color: #333;
+    text-align: center;
+}
+.categoryContentFeaturedTab .eventListItem.pressed article.eventListItem,
+.categoryContentFeaturedTab .oneLineEventItem.pressed article.eventListItem,
+.categoryEventTableListCollection .eventListItem.pressed article.eventListItem,
+.categoryEventTableListCollection .oneLineEventItem.pressed article.eventListItem,
+.coupon .eventListItem.pressed article.eventListItem,
+.coupon .oneLineEventItem.pressed article.eventListItem,
+.groupScreenContent .eventListItem.pressed article.eventListItem,
+.groupScreenContent .oneLineEventItem.pressed article.eventListItem,
+.mainContent .eventListItem.pressed article.eventListItem,
+.mainContent .oneLineEventItem.pressed article.eventListItem,
+.subcategoryScreenContent .eventListItem.pressed article.eventListItem,
+.subcategoryScreenContent .oneLineEventItem.pressed article.eventListItem,
+.tournament .eventTableItemCollection .eventListItem.pressed article.eventListItem,
+.tournament .eventTableItemCollection .oneLineEventItem.pressed article.eventListItem {
+    background-color: #999;
+}
+.categoryContentFeaturedTab .eventListItem article.eventListItem,
+.categoryContentFeaturedTab .oneLineEventItem article.eventListItem,
+.categoryEventTableListCollection .eventListItem article.eventListItem,
+.categoryEventTableListCollection .oneLineEventItem article.eventListItem,
+.coupon .eventListItem article.eventListItem,
+.coupon .oneLineEventItem article.eventListItem,
+.groupScreenContent .eventListItem article.eventListItem,
+.groupScreenContent .oneLineEventItem article.eventListItem,
+.mainContent .eventListItem article.eventListItem,
+.mainContent .oneLineEventItem article.eventListItem,
+.subcategoryScreenContent .eventListItem article.eventListItem,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem,
+.tournament .eventTableItemCollection .eventListItem article.eventListItem,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem {
+    background-color: #fff;
+}
+.categoryContentFeaturedTab .eventListItem article.eventListItem .eventHolder,
+.categoryContentFeaturedTab .oneLineEventItem article.eventListItem .eventHolder,
+.categoryEventTableListCollection .eventListItem article.eventListItem .eventHolder,
+.categoryEventTableListCollection .oneLineEventItem article.eventListItem .eventHolder,
+.coupon .eventListItem article.eventListItem .eventHolder,
+.coupon .oneLineEventItem article.eventListItem .eventHolder,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder,
+.mainContent .eventListItem article.eventListItem .eventHolder,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder,
+.tournament .eventTableItemCollection .eventListItem article.eventListItem .eventHolder,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventHolder {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.baseCategoryListItem .contentSelectorItem[selected="true"] .icon_container .categoryBadge[badge_type="countdown"],
+.categoryContentFeaturedTab .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.categoryContentFeaturedTab .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.categoryEventTableListCollection .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.categoryEventTableListCollection .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.tournament .eventTableItemCollection .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty {
+    display: none;
+}
+.categoryContentFeaturedTab .eventListItem article.eventListItem .eventHolder header,
+.categoryContentFeaturedTab .oneLineEventItem article.eventListItem .eventHolder header,
+.categoryEventTableListCollection .eventListItem article.eventListItem .eventHolder header,
+.categoryEventTableListCollection .oneLineEventItem article.eventListItem .eventHolder header,
+.coupon .eventListItem article.eventListItem .eventHolder header,
+.coupon .oneLineEventItem article.eventListItem .eventHolder header,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder header,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder header,
+.mainContent .eventListItem article.eventListItem .eventHolder header,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder header,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder header,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder header,
+.tournament .eventTableItemCollection .eventListItem article.eventListItem .eventHolder header,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventHolder header {
+    color: #333;
+}
+.categoryContentFeaturedTab .eventListItem article.eventListItem .eventHolder .eventDetails,
+.categoryContentFeaturedTab .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.categoryEventTableListCollection .eventListItem article.eventListItem .eventHolder .eventDetails,
+.categoryEventTableListCollection .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.tournament .eventTableItemCollection .eventListItem article.eventListItem .eventHolder .eventDetails,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventHolder .eventDetails {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+.categoryContentFeaturedTab .eventListItem article.eventListItem .eventHolder .eventMarket,
+.categoryContentFeaturedTab .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.categoryEventTableListCollection .eventListItem article.eventListItem .eventHolder .eventMarket,
+.categoryEventTableListCollection .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.tournament .eventTableItemCollection .eventListItem article.eventListItem .eventHolder .eventMarket,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventHolder .eventMarket {
+    clear: both;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+.categoryContentFeaturedTab .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.categoryContentFeaturedTab .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.categoryContentFeaturedTab .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.categoryContentFeaturedTab .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.categoryEventTableListCollection .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.categoryEventTableListCollection .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.categoryEventTableListCollection .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.categoryEventTableListCollection .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.tournament .eventTableItemCollection .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.tournament .eventTableItemCollection .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .moreBetsButton,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketLayout .noMarketsButton {
+    height: 100%;
+}
+.baseCategoryListItem .contentSelectorItem .icon_container .categoryBadge[badge_type="countdown"] {
+    position: absolute;
+    background-color: #ffc421;
+    color: #2c2c2c;
+    border-radius: 1px;
+}
+.contentSelectorAndMarketFilteringWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.contentSelectorAndMarketFilteringWrapper,
+.groupSelectionBar,
+.subcategoryDockLayout,
+.subcategoryTopBar {
+    background-color: #c7c7c7;
+}
+.contentSelectorAndMarketFilteringWrapper .groupSelectionFirstRow,
+.groupSelectionBar .groupSelectionFirstRow,
+.subcategoryDockLayout .groupSelectionFirstRow,
+.subcategoryTopBar .groupSelectionFirstRow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer,
+.groupSelectionBar .contentSelectorContainer,
+.subcategoryDockLayout .contentSelectorContainer,
+.subcategoryTopBar .contentSelectorContainer {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    width: 50%;
+}
+.contentSelectorAndMarketFilteringWrapper .leftSideContainer,
+.groupSelectionBar .leftSideContainer,
+.subcategoryDockLayout .leftSideContainer,
+.subcategoryTopBar .leftSideContainer {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.contentSelectorAndMarketFilteringWrapper .leftSideContainer .subCategorySelectorContainer,
+.groupSelectionBar .leftSideContainer .subCategorySelectorContainer,
+.subcategoryDockLayout .leftSideContainer .subCategorySelectorContainer,
+.subcategoryTopBar .leftSideContainer .subCategorySelectorContainer {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.contentSelectorAndMarketFilteringWrapper .leftSideContainer .marketFilteringWidgetLabel,
+.groupSelectionBar .leftSideContainer .marketFilteringWidgetLabel,
+.subcategoryDockLayout .leftSideContainer .marketFilteringWidgetLabel,
+.subcategoryTopBar .leftSideContainer .marketFilteringWidgetLabel {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.contentSelectorAndMarketFilteringWrapper .marketFilteringContainer,
+.groupSelectionBar .marketFilteringContainer,
+.subcategoryDockLayout .marketFilteringContainer,
+.subcategoryTopBar .marketFilteringContainer {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+}
+.contentSelectorComponent.eventType.empty,
+.inplayContentTabBar.empty {
+    display: none;
+}
+.contentSelectorComponent.eventType .peekableItemCollection,
+.inplayContentTabBar .peekableItemCollection {
+    background: #fff;
+}
+.contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem,
+.inplayContentTabBar .peekableItemCollection .contentSelectorItem {
+    color: #333;
+}
+.contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"],
+.inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"] {
+    color: #fff;
+}
+.contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"] .contentSelectorItemLabel,
+.inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"] .contentSelectorItemLabel {
+    background-color: #656565;
+    border: none;
+    background-image: none;
+}
+.simplifiedStandardMarket .suspended,
+.simplifiedStandardMarketWithHeaders .suspended {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: #fff;
+    color: #999;
+    height: 100%;
+    text-align: center;
+}
+.simplifiedStandardMarket .outcomeCollection,
+.simplifiedStandardMarketWithHeaders .outcomeCollection {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.simplifiedStandardMarket .outcomeCollection .moreMarkets,
+.simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+    width: 100%;
+}
+.simplifiedStandardMarket .outcomeCollection .baseOutcomeItem .outcomeButton,
+.simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem .outcomeButton,
+.simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton {
+    text-align: center;
+}
+.simplifiedStandardMarket .outcomeCollection.outcomes2x .baseOutcomeItem,
+.simplifiedStandardMarketWithHeaders .outcomeCollection.outcomes2x .baseOutcomeItem {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+    width: 50%;
+}
+.simplifiedStandardMarket .outcomeCollection.outcomes3x .baseOutcomeItem,
+.simplifiedStandardMarketWithHeaders .outcomeCollection.outcomes3x .baseOutcomeItem {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 33.33%;
+    flex: 1 1 33.33%;
+    width: 33.33%;
+}
+.marketFilteringHeaderWrapper .headerContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.marketFilteringHeaderWrapper .headerContainer [collectionitem] {
+    text-align: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #656565;
+}
+.subcategoryList .collapsablePanel .collapsableHeader {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #eaeaea;
+}
+.subcategoryList .collapsablePanel .collapsableHeader[collapsed="false"] .titleText {
+    font-weight: 700;
+}
+.subcategoryList .collapsablePanel .collapsableContent {
+    background-color: #fff;
+}
+.groupList .listItem .listItemContent,
+.subcategoryList .listItem .listItemContent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+}
+.groupList .listItem .listItemContent .description,
+.subcategoryList .listItem .listItemContent .description {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+}
+.groupList .listItem .listItemContent .icon,
+.subcategoryList .listItem .listItemContent .icon {
+    height: 9px;
+}
+.groupList.grid,
+.subcategoryList.grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    width: 100%;
+    margin: 13px;
+}
+.groupList.grid .listItem,
+.subcategoryList.grid .listItem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    width: 33.33%;
+    padding-right: 3px;
+}
+.groupList.grid .listItem:nth-child(n + 4),
+.subcategoryList.grid .listItem:nth-child(n + 4) {
+    margin-top: 3px;
+}
+.groupList.grid .listItem:nth-child(3n),
+.subcategoryList.grid .listItem:nth-child(3n) {
+    padding-right: 0;
+}
+.groupList.grid .listItem .listItemContent,
+.subcategoryList.grid .listItem .listItemContent {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    border: none;
+    min-height: 30px;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 2px;
+    background-color: #eaeaea;
+}
+.groupList.grid .listItem .listItemContent .description,
+.subcategoryList.grid .listItem .listItemContent .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 2.6em;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.groupList.grid .listItem .listItemContent:hover,
+.subcategoryList.grid .listItem .listItemContent:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+.quickNavigation .listItem .listItemContent {
+    border-bottom: 1px solid #eaeaea;
+}
+.quickNavigation .listItem .listItemContent .description {
+    color: #333;
+}
+.quickNavigation .listItem .listItemContent .icon {
+    color: #c7c7c7;
+}
+.quickNavigation .listItem.selected .listItemContent {
+    background-color: #e5f6e9;
+}
+body[data-active-channel="esports"] .quickNavigation .listItem.selected .listItemContent {
+    background-color: #f6e5fa;
+}
+.quickNavigation.groupList.grid,
+.quickNavigation.subcategoryList.grid {
+    background-color: #eaeaea;
+    padding: 0;
+    margin: 0;
+}
+.eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper .scoreboardInfo,
+.quickNavigation.groupList.grid .listItem:nth-child(n + 4),
+.quickNavigation.subcategoryList.grid .listItem:nth-child(n + 4) {
+    margin-top: 1px;
+}
+.quickNavigation.groupList.grid .listItem,
+.quickNavigation.subcategoryList.grid .listItem {
+    padding-right: 1px;
+}
+.quickNavigation.groupList.grid .listItem:only-child,
+.quickNavigation.subcategoryList.grid .listItem:only-child {
+    width: 100%;
+}
+.quickNavigation.groupList.grid .listItem:first-child:nth-last-child(2),
+.quickNavigation.groupList.grid .listItem:nth-child(2):last-child,
+.quickNavigation.subcategoryList.grid .listItem:first-child:nth-last-child(2),
+.quickNavigation.subcategoryList.grid .listItem:nth-child(2):last-child {
+    width: 50%;
+}
+.quickNavigation.groupList.grid .listItem .listItemContent,
+.quickNavigation.subcategoryList.grid .listItem .listItemContent {
+    min-height: 30px;
+    border-bottom: none;
+    background-color: #fff;
+}
+.quickNavigation.groupList.grid .listItem .listItemContent:hover,
+.quickNavigation.subcategoryList.grid .listItem .listItemContent:hover {
+    background-color: #f7f7f7;
+}
+.quickNavigation.groupList.grid .listItem.selected .listItemContent .description,
+.quickNavigation.subcategoryList.grid .listItem.selected .listItemContent .description {
+    color: #333;
+}
+.simpleText,
+body[data-active-channel="sports"] .simpleText.icon-arrow-right {
+    color: #c4303a;
+}
+body[data-active-channel="sports"] .quickNavigation.groupList.grid .listItem.selected .listItemContent,
+body[data-active-channel="sports"] .quickNavigation.groupList.grid .listItem.selected .listItemContent:hover,
+body[data-active-channel="sports"] .quickNavigation.subcategoryList.grid .listItem.selected .listItemContent,
+body[data-active-channel="sports"] .quickNavigation.subcategoryList.grid .listItem.selected .listItemContent:hover {
+    background-color: #e5f6e9;
+}
+body[data-active-channel="esports"] .quickNavigation.groupList.grid .listItem.selected .listItemContent,
+body[data-active-channel="esports"] .quickNavigation.groupList.grid .listItem.selected .listItemContent:hover,
+body[data-active-channel="esports"] .quickNavigation.subcategoryList.grid .listItem.selected .listItemContent,
+body[data-active-channel="esports"] .quickNavigation.subcategoryList.grid .listItem.selected .listItemContent:hover {
+    background-color: #f6e5fa;
+}
+.simpleText,
+.simpleText.icon-arrow-right,
+.simpleText.icon-arrow-right:hover:not(.disabled):not(.selected):not(.checked):not(.inBetSlip):not(.pressed) {
+    background: 0 0;
+}
+.quickNavigation.groupList.grid .listItem:hover,
+.quickNavigation.subcategoryList.grid .listItem:hover {
+    cursor: pointer;
+}
+.simpleText {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -wekit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    border: none;
+}
+body[data-active-channel="esports"] .simpleText.icon-arrow-right {
+    color: #833594;
+}
+.simpleText.icon-arrow-right .innerText {
+    margin-right: 5px;
+    text-decoration: underline;
+}
+body[data-active-channel="sports"] .simpleText.icon-arrow-right:hover:not(.disabled):not(.selected):not(.checked):not(.inBetSlip):not(.pressed) {
+    color: #00b729;
+}
+body[data-active-channel="esports"] .simpleText.icon-arrow-right:hover:not(.disabled):not(.selected):not(.checked):not(.inBetSlip):not(.pressed) {
+    color: #8d399f;
+}
+.eventSummaryContainer .outrightEventSummary {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    min-height: 40px;
+}
+.eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+.eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper .scoreboardNamesRow .scoreboardInfoNames {
+    min-height: 0;
+}
+.eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper .scoreboardNamesRow .scoreboardInfoNames .eventName {
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+.eventSummaryContainer .outrightEventSummary > .icon-arrow-right {
+    color: #656565;
+    font-size: 9px;
+    margin: auto;
+    padding-bottom: 4px;
+    padding-right: 8px;
+}
+.eventTableItemCollection.outrights .eventListItem article.eventListItem .eventHolder .eventDetails .eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.eventTableItemCollection.outrights .eventListItem article.eventListItem .eventHolder .eventDetails .eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper .scoreboardNamesRow .scoreboardInfoNames .eventName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.6em;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.groupList .listItem .listItemContent {
+    background-color: transparent;
+}
+.groupList .listItem .listItemContent .description {
+    color: #333;
+}
+.groupList .listItem .listItemContent:active,
+.groupList .listItem .listItemContent:hover {
+    background-color: rgba(8, 8, 8, 0);
+}
+.groupList .loading {
+    width: 18px;
+    height: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    left: 50%;
+    margin-left: -5px;
+}
+.scrollableAreaMask {
+    background-color: transparent;
+    position: relative;
+    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    z-index: 20;
+}
+.selectionBar {
+    -webkit-box-shadow: inset 0 -1px 0 #c7c7c7;
+    box-shadow: inset 0 -1px 0 #c7c7c7;
+}
+.subcategoryMainContent {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+.coupon .eventTableGroupItemCollection .collapsableHeader,
+.coupon .eventTableItemCollection .collapsableHeader,
+.groupScreenContent .eventTableGroupItemCollection .collapsableHeader,
+.groupScreenContent .eventTableItemCollection .collapsableHeader,
+.mainContent .eventTableGroupItemCollection .collapsableHeader,
+.mainContent .eventTableItemCollection .collapsableHeader,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsableHeader,
+.subcategoryScreenContent .eventTableItemCollection .collapsableHeader,
+.tournament .eventTableGroupItemCollection .collapsableHeader,
+.tournament .eventTableItemCollection .collapsableHeader {
+    margin-bottom: 1px;
+    padding: 12px 0;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.groupScreenContent
+    .eventListItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.groupScreenContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.subcategoryScreenContent
+    .eventListItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.subcategoryScreenContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton {
+    padding-top: 13px;
+    font-weight: 400;
+}
+.coupon .eventTableGroupItemCollection .collapsableHeader .iconHolder,
+.coupon .eventTableItemCollection .collapsableHeader .iconHolder,
+.groupScreenContent .eventTableGroupItemCollection .collapsableHeader .iconHolder,
+.groupScreenContent .eventTableItemCollection .collapsableHeader .iconHolder,
+.mainContent .eventTableGroupItemCollection .collapsableHeader .iconHolder,
+.mainContent .eventTableItemCollection .collapsableHeader .iconHolder,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsableHeader .iconHolder,
+.subcategoryScreenContent .eventTableItemCollection .collapsableHeader .iconHolder,
+.tournament .eventTableGroupItemCollection .collapsableHeader .iconHolder,
+.tournament .eventTableItemCollection .collapsableHeader .iconHolder {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 38px;
+    padding-left: 14px;
+    margin-top: 0;
+}
+.coupon .eventTableGroupItemCollection .collapsableHeader .iconHolder .arrowIcon::before,
+.coupon .eventTableItemCollection .collapsableHeader .iconHolder .arrowIcon::before,
+.groupScreenContent .eventTableGroupItemCollection .collapsableHeader .iconHolder .arrowIcon::before,
+.groupScreenContent .eventTableItemCollection .collapsableHeader .iconHolder .arrowIcon::before,
+.mainContent .eventTableGroupItemCollection .collapsableHeader .iconHolder .arrowIcon::before,
+.mainContent .eventTableItemCollection .collapsableHeader .iconHolder .arrowIcon::before,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsableHeader .iconHolder .arrowIcon::before,
+.subcategoryScreenContent .eventTableItemCollection .collapsableHeader .iconHolder .arrowIcon::before,
+.tournament .eventTableGroupItemCollection .collapsableHeader .iconHolder .arrowIcon::before,
+.tournament .eventTableItemCollection .collapsableHeader .iconHolder .arrowIcon::before {
+    font-size: 12px;
+    margin-left: 2px;
+}
+.coupon .eventTableGroupItemCollection .collapsableHeader .iconHolder [class*="icon-"],
+.coupon .eventTableItemCollection .collapsableHeader .iconHolder [class*="icon-"],
+.groupScreenContent .eventTableGroupItemCollection .collapsableHeader .iconHolder [class*="icon-"],
+.groupScreenContent .eventTableItemCollection .collapsableHeader .iconHolder [class*="icon-"],
+.mainContent .eventTableGroupItemCollection .collapsableHeader .iconHolder [class*="icon-"],
+.mainContent .eventTableItemCollection .collapsableHeader .iconHolder [class*="icon-"],
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsableHeader .iconHolder [class*="icon-"],
+.subcategoryScreenContent .eventTableItemCollection .collapsableHeader .iconHolder [class*="icon-"],
+.tournament .eventTableGroupItemCollection .collapsableHeader .iconHolder [class*="icon-"],
+.tournament .eventTableItemCollection .collapsableHeader .iconHolder [class*="icon-"] {
+    text-align: left;
+}
+.coupon .eventTableGroupItemCollection .collapsableHeader .Message,
+.coupon .eventTableGroupItemCollection .collapsableHeader .ic_sports,
+.coupon .eventTableItemCollection .collapsableHeader .Message,
+.coupon .eventTableItemCollection .collapsableHeader .ic_sports,
+.groupScreenContent .eventTableGroupItemCollection .collapsableHeader .Message,
+.groupScreenContent .eventTableGroupItemCollection .collapsableHeader .ic_sports,
+.groupScreenContent .eventTableItemCollection .collapsableHeader .Message,
+.groupScreenContent .eventTableItemCollection .collapsableHeader .ic_sports,
+.mainContent .eventTableGroupItemCollection .collapsableHeader .Message,
+.mainContent .eventTableGroupItemCollection .collapsableHeader .ic_sports,
+.mainContent .eventTableItemCollection .collapsableHeader .Message,
+.mainContent .eventTableItemCollection .collapsableHeader .ic_sports,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsableHeader .Message,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsableHeader .ic_sports,
+.subcategoryScreenContent .eventTableItemCollection .collapsableHeader .Message,
+.subcategoryScreenContent .eventTableItemCollection .collapsableHeader .ic_sports,
+.tournament .eventTableGroupItemCollection .collapsableHeader .Message,
+.tournament .eventTableGroupItemCollection .collapsableHeader .ic_sports,
+.tournament .eventTableItemCollection .collapsableHeader .Message,
+.tournament .eventTableItemCollection .collapsableHeader .ic_sports {
+    display: none;
+}
+.coupon .eventTableGroupItemCollection .collapsablePanel .collapsableContent[collapsed="false"],
+.coupon .eventTableItemCollection .collapsablePanel .collapsableContent[collapsed="false"],
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel .collapsableContent[collapsed="false"],
+.groupScreenContent .eventTableItemCollection .collapsablePanel .collapsableContent[collapsed="false"],
+.mainContent .eventTableGroupItemCollection .collapsablePanel .collapsableContent[collapsed="false"],
+.mainContent .eventTableItemCollection .collapsablePanel .collapsableContent[collapsed="false"],
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel .collapsableContent[collapsed="false"],
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel .collapsableContent[collapsed="false"],
+.tournament .eventTableGroupItemCollection .collapsablePanel .collapsableContent[collapsed="false"],
+.tournament .eventTableItemCollection .collapsablePanel .collapsableContent[collapsed="false"] {
+    margin-bottom: 3px;
+}
+.coupon .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader,
+.coupon .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader,
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader,
+.groupScreenContent .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader,
+.mainContent .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader,
+.mainContent .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader,
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader,
+.tournament .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader,
+.tournament .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableHeader {
+    margin-bottom: 1px;
+}
+.coupon .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"],
+.coupon .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"],
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"],
+.groupScreenContent .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"],
+.mainContent .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"],
+.mainContent .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"],
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"],
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"],
+.tournament .eventTableGroupItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"],
+.tournament .eventTableItemCollection .collapsablePanel .collapsableContent .collapsablePanel .collapsableContent[collapsed="false"] {
+    margin-bottom: 4px;
+}
+.coupon .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.coupon .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"],
+.coupon .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.coupon .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"],
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"],
+.groupScreenContent .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.groupScreenContent .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"],
+.mainContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.mainContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"],
+.mainContent .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.mainContent .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"],
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"],
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"],
+.tournament .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.tournament .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"],
+.tournament .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableContent,
+.tournament .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel:last-child .collapsableHeader[collapsed="true"] {
+    margin-bottom: 0;
+}
+.coupon .eventTableGroupItemCollection .collapsablePanel:last-child .collapsableContent,
+.coupon .eventTableItemCollection .collapsablePanel:last-child .collapsableContent,
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsableContent,
+.groupScreenContent .eventTableItemCollection .collapsablePanel:last-child .collapsableContent,
+.mainContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsableContent,
+.mainContent .eventTableItemCollection .collapsablePanel:last-child .collapsableContent,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsableContent,
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel:last-child .collapsableContent,
+.tournament .eventTableGroupItemCollection .collapsablePanel:last-child .collapsableContent,
+.tournament .eventTableItemCollection .collapsablePanel:last-child .collapsableContent {
+    margin-bottom: 1px;
+}
+.coupon .eventTableGroupItemCollection .collapsablePanel:last-child article.eventListItem:last-child,
+.coupon .eventTableItemCollection .collapsablePanel:last-child article.eventListItem:last-child,
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child article.eventListItem:last-child,
+.groupScreenContent .eventTableItemCollection .collapsablePanel:last-child article.eventListItem:last-child,
+.mainContent .eventTableGroupItemCollection .collapsablePanel:last-child article.eventListItem:last-child,
+.mainContent .eventTableItemCollection .collapsablePanel:last-child article.eventListItem:last-child,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child article.eventListItem:last-child,
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel:last-child article.eventListItem:last-child,
+.tournament .eventTableGroupItemCollection .collapsablePanel:last-child article.eventListItem:last-child,
+.tournament .eventTableItemCollection .collapsablePanel:last-child article.eventListItem:last-child {
+    margin-bottom: 0;
+}
+.coupon .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem,
+.coupon .eventTableItemCollection .collapsablePanel:last-child div.eventListItem,
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem,
+.groupScreenContent .eventTableItemCollection .collapsablePanel:last-child div.eventListItem,
+.mainContent .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem,
+.mainContent .eventTableItemCollection .collapsablePanel:last-child div.eventListItem,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem,
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel:last-child div.eventListItem,
+.tournament .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem,
+.tournament .eventTableItemCollection .collapsablePanel:last-child div.eventListItem {
+    margin-bottom: 1px;
+}
+.coupon .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem:last-child,
+.coupon .eventTableItemCollection .collapsablePanel:last-child div.eventListItem:last-child,
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem:last-child,
+.groupScreenContent .eventTableItemCollection .collapsablePanel:last-child div.eventListItem:last-child,
+.mainContent .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem:last-child,
+.mainContent .eventTableItemCollection .collapsablePanel:last-child div.eventListItem:last-child,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem:last-child,
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel:last-child div.eventListItem:last-child,
+.tournament .eventTableGroupItemCollection .collapsablePanel:last-child div.eventListItem:last-child,
+.tournament .eventTableItemCollection .collapsablePanel:last-child div.eventListItem:last-child {
+    margin-bottom: 0;
+}
+.coupon .collapsablePanel:last-child .oneLineEventItem,
+.coupon .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child),
+.coupon .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child),
+.groupScreenContent .collapsablePanel:last-child .oneLineEventItem,
+.groupScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child),
+.groupScreenContent .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child),
+.mainContent .collapsablePanel:last-child .oneLineEventItem,
+.mainContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child),
+.mainContent .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child),
+.subcategoryScreenContent .collapsablePanel:last-child .oneLineEventItem,
+.subcategoryScreenContent .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child),
+.subcategoryScreenContent .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child),
+.tournament .collapsablePanel:last-child .oneLineEventItem,
+.tournament .eventTableGroupItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child),
+.tournament .eventTableItemCollection .collapsablePanel:last-child .collapsablePanel div.eventListItem:not(last-child) {
+    margin-bottom: 1px;
+}
+.coupon .eventListItem article.eventListItem,
+.groupScreenContent .eventListItem article.eventListItem,
+.mainContent .eventListItem article.eventListItem,
+.subcategoryScreenContent .eventListItem article.eventListItem,
+.tournament .eventListItem article.eventListItem {
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 1px;
+    background-color: transparent;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    background-color: #fff;
+    border-right: 1px solid #eaeaea;
+    width: 50%;
+    overflow: hidden;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .headerEventDetails,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .headerEventDetails,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .headerEventDetails,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .headerEventDetails,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .headerEventDetails {
+    height: 100%;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails:hover,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails:hover,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails:hover,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails:hover,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .infoText,
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .infoText,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameAwayTextWrapper,
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameHomeTextWrapper,
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameAwayTextWrapper,
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameHomeTextWrapper,
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameAwayTextWrapper,
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameHomeTextWrapper,
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameAwayTextWrapper,
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameHomeTextWrapper,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameAwayTextWrapper,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameHomeTextWrapper,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameAwayTextWrapper,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameHomeTextWrapper,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameAwayTextWrapper,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameHomeTextWrapper,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameAwayTextWrapper,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameHomeTextWrapper,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameAwayTextWrapper,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameHomeTextWrapper,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameAwayTextWrapper,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameHomeTextWrapper,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameAwayTextWrapper,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameHomeTextWrapper,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameAwayTextWrapper,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameHomeTextWrapper,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameAwayTextWrapper,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameHomeTextWrapper,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameAwayTextWrapper,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameHomeTextWrapper,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameAwayTextWrapper,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameHomeTextWrapper,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameAwayTextWrapper,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameHomeTextWrapper,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameAwayTextWrapper,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameAway .teamNameHomeTextWrapper,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameAwayTextWrapper,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .infoText .teamNameHome .teamNameHomeTextWrapper,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameAwayTextWrapper,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameAway .teamNameHomeTextWrapper,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameAwayTextWrapper,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames .teamNameHome .teamNameHomeTextWrapper {
+    width: 100%;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    height: auto;
+    min-height: 40px;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty),
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty),
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty),
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty),
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty),
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem {
+    height: 100%;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover,
+.tournament .eventListItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover {
+    background-color: #f7f7f7;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket {
+    width: 50%;
+    max-width: 242px;
+    background-color: #eaeaea;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton:before,
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton:before,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton:before,
+.groupScreenContent
+    .eventListItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton:before,
+.mainContent
+    .eventListItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before,
+.subcategoryScreenContent
+    .eventListItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarket
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before,
+.subcategoryScreenContent
+    .eventListItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton:before,
+.tournament
+    .eventListItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before {
+    content: "";
+    left: -3px;
+    right: -3px;
+    top: -6px;
+    bottom: -6px;
+    pointer-events: all;
+    height: 50px;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .noMarketsButton,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .noMarketsButton,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .noMarketsButton,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .noMarketsButton,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .noMarketsButton {
+    margin-left: 0;
+}
+.coupon .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.groupScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.mainContent .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.subcategoryScreenContent .eventListItem article.eventListItem .eventHolder .eventMarket:empty,
+.tournament .eventListItem article.eventListItem .eventHolder .eventMarket:empty {
+    display: none;
+}
+body[data-active-channel="sports"] .coupon .eventListItem.selected article.eventListItem .eventHolder .eventDetails,
+body[data-active-channel="sports"] .groupScreenContent .eventListItem.selected article.eventListItem .eventHolder .eventDetails,
+body[data-active-channel="sports"] .mainContent .eventListItem.selected article.eventListItem .eventHolder .eventDetails,
+body[data-active-channel="sports"] .subcategoryScreenContent .eventListItem.selected article.eventListItem .eventHolder .eventDetails,
+body[data-active-channel="sports"] .tournament .eventListItem.selected article.eventListItem .eventHolder .eventDetails {
+    background-color: #e5f6e9;
+}
+body[data-active-channel="esports"] .coupon .eventListItem.selected article.eventListItem .eventHolder .eventDetails,
+body[data-active-channel="esports"] .groupScreenContent .eventListItem.selected article.eventListItem .eventHolder .eventDetails,
+body[data-active-channel="esports"] .mainContent .eventListItem.selected article.eventListItem .eventHolder .eventDetails,
+body[data-active-channel="esports"] .subcategoryScreenContent .eventListItem.selected article.eventListItem .eventHolder .eventDetails,
+body[data-active-channel="esports"] .tournament .eventListItem.selected article.eventListItem .eventHolder .eventDetails {
+    background-color: #f6e5fa;
+}
+.coupon .collapsablePanel:last-child .oneLineEventItem:last-child,
+.groupScreenContent .collapsablePanel:last-child .oneLineEventItem:last-child,
+.mainContent .collapsablePanel:last-child .oneLineEventItem:last-child,
+.subcategoryScreenContent .collapsablePanel:last-child .oneLineEventItem:last-child,
+.tournament .collapsablePanel:last-child .oneLineEventItem:last-child {
+    margin-bottom: 0;
+}
+.coupon .collapsablePanel:last-child .collapsablePanel .oneLineEventItem:not(last-child),
+.groupScreenContent .collapsablePanel:last-child .collapsablePanel .oneLineEventItem:not(last-child),
+.mainContent .collapsablePanel:last-child .collapsablePanel .oneLineEventItem:not(last-child),
+.subcategoryScreenContent .collapsablePanel:last-child .collapsablePanel .oneLineEventItem:not(last-child),
+.tournament .collapsablePanel:last-child .collapsablePanel .oneLineEventItem:not(last-child) {
+    margin-bottom: 1px;
+}
+.coupon .oneLineEventItem article.eventListItem,
+.groupScreenContent .oneLineEventItem article.eventListItem,
+.mainContent .oneLineEventItem article.eventListItem,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem,
+.tournament .oneLineEventItem article.eventListItem {
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 1px;
+    background-color: transparent;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder,
+.tournament .oneLineEventItem article.eventListItem .eventHolder {
+    background-color: #eaeaea;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventDetails {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    width: 100%;
+    background-color: #fff;
+    margin-right: 1px;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventDetails:hover,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails:hover,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails:hover,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails:hover,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventDetails:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventDetails .infoText,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .infoText,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .infoText,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .infoText,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventDetails .infoText,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventDetails .scoreboardInfoNames {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    height: auto;
+    min-height: 40px;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventDetails .oneLineScoreboard:hover {
+    background-color: #f7f7f7;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket {
+    width: 50%;
+    max-width: 242px;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout {
+    height: 100%;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .moreBetsButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty),
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty),
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty),
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty),
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) {
+    height: 100%;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button {
+    min-height: 28px;
+    color: #333;
+    background: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    height: 100%;
+    font-weight: 400;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.forcedDisabled,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.forcedDisabled,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.forcedDisabled,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.forcedDisabled,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.forcedDisabled {
+    color: rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.forcedDisabled),
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.forcedDisabled),
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.forcedDisabled),
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.forcedDisabled),
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.forcedDisabled) {
+    cursor: pointer;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked],
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked],
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked],
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked],
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked] {
+    background-color: #656565;
+    color: #fff;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed .odds,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected .odds,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked] .odds,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed .odds,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected .odds,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked] .odds,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed .odds,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected .odds,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked] .odds,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed .odds,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected .odds,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked] .odds,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed .odds,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.selected .odds,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button[checked] .odds {
+    color: #fff;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed:not(.disabled),
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed:not(.disabled),
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed:not(.disabled),
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed:not(.disabled),
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed:not(.disabled) {
+    color: #fff;
+    background: #656565;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.disabled {
+    border-top: 1px solid rgba(72, 71, 71, 0.004);
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.selected):not(.checked):not(.inBetSlip),
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.selected):not(.checked):not(.inBetSlip),
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.selected):not(.checked):not(.inBetSlip),
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.selected):not(.checked):not(.inBetSlip),
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button:hover:not(.disabled):not(.selected):not(.checked):not(.inBetSlip) {
+    border-top-color: #484848;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .button.pressed {
+    color: #333;
+    background-color: #fff;
+    border-top-color: #484848;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem .outcomeButton,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem .outcomeButton,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem .outcomeButton,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.groupScreenContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .baseOutcomeItem
+    .outcomeButton,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem .outcomeButton,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.mainContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .baseOutcomeItem
+    .outcomeButton,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.subcategoryScreenContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarket
+    .outcomeCollection
+    .baseOutcomeItem
+    .outcomeButton,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.subcategoryScreenContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .baseOutcomeItem
+    .outcomeButton,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem .outcomeButton,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .baseOutcomeItem .outcomeButton,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets {
+    height: 100%;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton:before,
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarketWithHeaders .outcomeCollection .moreMarkets .outcomeButton:before,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton:before,
+.groupScreenContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton:before,
+.mainContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before,
+.subcategoryScreenContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarket
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before,
+.subcategoryScreenContent
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket .switchableMarketContainer .switchableMarketLayout .container:not(.empty) .simplifiedStandardMarket .outcomeCollection .moreMarkets .outcomeButton:before,
+.tournament
+    .oneLineEventItem
+    article.eventListItem
+    .eventHolder
+    .eventMarket
+    .switchableMarketContainer
+    .switchableMarketLayout
+    .container:not(.empty)
+    .simplifiedStandardMarketWithHeaders
+    .outcomeCollection
+    .moreMarkets
+    .outcomeButton:before {
+    content: "";
+    left: -3px;
+    right: -3px;
+    top: -6px;
+    bottom: -6px;
+    pointer-events: all;
+    height: 50px;
+}
+.coupon .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.mainContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty,
+.tournament .oneLineEventItem article.eventListItem .eventHolder .eventMarket:empty {
+    display: none;
+}
+.coupon .pagingButtonContainer,
+.groupScreenContent .pagingButtonContainer,
+.mainContent .pagingButtonContainer,
+.subcategoryScreenContent .pagingButtonContainer,
+.tournament .pagingButtonContainer {
+    background-color: #fff;
+    height: 50px;
+    padding: 14px 0 0;
+}
+.coupon .pagingButtonContainer .loading,
+.groupScreenContent .pagingButtonContainer .loading,
+.mainContent .pagingButtonContainer .loading,
+.subcategoryScreenContent .pagingButtonContainer .loading,
+.tournament .pagingButtonContainer .loading {
+    height: 24px;
+    width: 24px;
+    margin: 0 auto;
+}
+.coupon .seeInplayRow,
+.groupScreenContent .seeInplayRow,
+.mainContent .seeInplayRow,
+.subcategoryScreenContent .seeInplayRow,
+.tournament .seeInplayRow {
+    background-color: #eaeaea;
+    margin-top: 1px;
+    text-align: right;
+}
+.coupon .seeInplayRow .seeInplayButton,
+.groupScreenContent .seeInplayRow .seeInplayButton,
+.mainContent .seeInplayRow .seeInplayButton,
+.subcategoryScreenContent .seeInplayRow .seeInplayButton,
+.tournament .seeInplayRow .seeInplayButton {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    height: 40px;
+    font-size: 12px;
+    color: #333;
+}
+.coupon .seeInplayRow .seeInplayButton:hover,
+.groupScreenContent .seeInplayRow .seeInplayButton:hover,
+.mainContent .seeInplayRow .seeInplayButton:hover,
+.subcategoryScreenContent .seeInplayRow .seeInplayButton:hover,
+.tournament .seeInplayRow .seeInplayButton:hover {
+    cursor: pointer;
+    color: #080808;
+}
+.coupon .seeInplayRow .seeInplayButton .buttonText,
+.groupScreenContent .seeInplayRow .seeInplayButton .buttonText,
+.mainContent .seeInplayRow .seeInplayButton .buttonText,
+.subcategoryScreenContent .seeInplayRow .seeInplayButton .buttonText,
+.tournament .seeInplayRow .seeInplayButton .buttonText {
+    line-height: 12px;
+    text-align: right;
+    text-decoration: underline;
+}
+.coupon .seeInplayRow .seeInplayButton .buttonArrow,
+.groupScreenContent .seeInplayRow .seeInplayButton .buttonArrow,
+.mainContent .seeInplayRow .seeInplayButton .buttonArrow,
+.subcategoryScreenContent .seeInplayRow .seeInplayButton .buttonArrow,
+.tournament .seeInplayRow .seeInplayButton .buttonArrow {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 5px 5px 0;
+}
+.coupon .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.disabled .odds,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.disabled .odds,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.disabled .odds,
+.topGroupEventList .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.disabled .odds,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.disabled .odds {
+    color: inherit;
+}
+.coupon .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .odds,
+.coupon .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .oddsChange:before,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .odds,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .oddsChange:before,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .odds,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .oddsChange:before,
+.topGroupEventList .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .odds,
+.topGroupEventList .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .oddsChange:before,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .odds,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.up .oddsChange:before {
+    color: #00a826;
+}
+.coupon .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .odds,
+.coupon .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .oddsChange:before,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .odds,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .oddsChange:before,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .odds,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .oddsChange:before,
+.topGroupEventList .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .odds,
+.topGroupEventList .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .oddsChange:before,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .odds,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem .outcomeButton.down .oddsChange:before {
+    color: #ed1c24;
+}
+.coupon .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem.withHandicap .outcomeButton.selected .handicapContainer,
+.groupScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem.withHandicap .outcomeButton.selected .handicapContainer,
+.subcategoryScreenContent .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem.withHandicap .outcomeButton.selected .handicapContainer,
+.topGroupEventList .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem.withHandicap .outcomeButton.selected .handicapContainer,
+.tournament .eventTableItemCollection .oneLineEventItem article.eventListItem .eventMarket .baseOutcomeItem.withHandicap .outcomeButton.selected .handicapContainer {
+    color: #999;
+}
+.categoryContentFeaturedTab > div > div:not(.displayNone):first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.categoryContentFeaturedTab .highlightsPagedWidgetCollection {
+    border-radius: 0;
+    margin-top: 0;
+}
+.categoryContentFeaturedTab .topGroupEventList .groupScreenContent .collapsablePanel:last-child .collapsableContent,
+.categoryContentFeaturedTab .topGroupEventList .groupScreenContent .collapsablePanel:last-child .collapsableHeader[collapsed="true"] {
+    margin-bottom: 0;
+}
+.allSportsButton .allSportsButton {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.allSportsButton .allSportsButtonContainer {
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    display: table;
+    height: 60px;
+    background-color: #2c2c2c;
+}
+.allSportsButton .allSportsButtonContainer:hover {
+    cursor: pointer;
+    background-color: #343434;
+}
+.allSportsButton .allSportsButtonContainer .buttonIconContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.allSportsButton .allSportsButtonContainer .buttonIconContainer:after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    border-bottom-width: 60px;
+    border-bottom-color: #00a826;
+    border-bottom-style: solid;
+    border-right-width: 20px;
+    border-right-color: rgba(255, 255, 255, 0) !important;
+    border-right-style: solid;
+}
+body[data-active-channel="sports"] .allSportsButton .allSportsButtonContainer .buttonIconContainer:after,
+body[data-active-channel="in-play"] .allSportsButton .allSportsButtonContainer .buttonIconContainer:after {
+    border-color: #c4303a;
+}
+body[data-active-channel="casino"] .allSportsButton .allSportsButtonContainer .buttonIconContainer:after {
+    border-color: #0054a4;
+}
+body[data-active-channel="vegas"] .allSportsButton .allSportsButtonContainer .buttonIconContainer:after {
+    border-color: #ed1c24;
+}
+body[data-active-channel="live-casino"] .allSportsButton .allSportsButtonContainer .buttonIconContainer:after {
+    border-color: #66cae0;
+}
+body[data-active-channel="esports"] .allSportsButton .allSportsButtonContainer .buttonIconContainer:after {
+    border-color: #833594;
+}
+.categoryListLayout.menuGrid .categoryList .categoryListItem:last-child,
+.categoryListLayout.menuGrid .categoryList .categoryListItem:nth-last-child(2),
+.categoryListLayout.stacked .categoryList > div[collectionitem]:last-child {
+    border-bottom: none;
+}
+.allSportsButton .allSportsButtonContainer .buttonIconContainer .buttonIconArea {
+    width: 48px;
+}
+.allSportsButton .allSportsButtonContainer .buttonIconContainer .buttonIconArea .ic_sports {
+    display: inline-block;
+    overflow: hidden;
+    width: 34px;
+    height: 28px;
+    float: left;
+    margin-left: 11px;
+    margin-top: 16px;
+}
+body[data-active-channel="sports"] .allSportsButton .allSportsButtonContainer .buttonIconContainer .buttonIconArea,
+body[data-active-channel="in-play"] .allSportsButton .allSportsButtonContainer .buttonIconContainer .buttonIconArea {
+    background-color: #c4303a;
+}
+body[data-active-channel="casino"] .allSportsButton .allSportsButtonContainer .buttonIconContainer .buttonIconArea {
+    background-color: #0054a4;
+}
+body[data-active-channel="vegas"] .allSportsButton .allSportsButtonContainer .buttonIconContainer .buttonIconArea {
+    background-color: #ed1c24;
+}
+body[data-active-channel="live-casino"] .allSportsButton .allSportsButtonContainer .buttonIconContainer .buttonIconArea {
+    background-color: #66cae0;
+}
+body[data-active-channel="esports"] .allSportsButton .allSportsButtonContainer .buttonIconContainer .buttonIconArea {
+    background-color: #833594;
+}
+.allSportsButton .allSportsButtonContainer .allSportsButtonContent {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.allSportsButton .allSportsButtonContainer .allSportsButtonContent .buttonTitle {
+    font-family: Interface, Arial, sans-serif;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 800;
+    margin-right: 26px;
+}
+.allSportsButton .allSportsButtonBorder .borderLeft {
+    height: 1px;
+    width: 48px;
+}
+.allSportsButton:hover .allSportsButtonBorder {
+    -webkit-transition: background-color;
+    transition: background-color;
+}
+.categoryListLayout.menuGrid .categoryList .categoryListItem {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 50%;
+    flex: 0 1 50%;
+    border: none;
+}
+.categoryListLayout.menuGrid .categoryList .categoryListItem:nth-child(even) {
+    border-right: none;
+}
+.categoryListLayout.menuGrid .categoryList .categoryListItem:first-child {
+    border-left: none;
+}
+.categoryListHeaderBar {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+}
+.categoryListLayout.stacked {
+    padding-bottom: 6px;
+}
+.categoryListLayout.stacked .categoryList {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.categoryListLayout.stacked .categoryListItemWrapper {
+    width: 100%;
+}
+.categoryListLayout.stacked .categoryList .ic_sports {
+    display: inline-block;
+}
+.categoryListLayout.stacked .categoryList .textWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.categoryListLayout.stacked .categoryList .textWrapper .button_text {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    text-align: flex-start;
+    overflow: hidden;
+}
+.categoryListLayout.stacked:not(.menuPanel) .categoryListItem {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    color: #333;
+    background-color: #fff;
+    margin-top: 1px;
+    height: 26px;
+    min-height: 26px;
+    padding-left: 15px;
+    padding-top: 1px;
+    width: 100%;
+    text-align: left;
+    border-radius: 0;
+    border: none;
+}
+.categoryListLayout.stacked:not(.menuPanel) .categoryListItem:first-child {
+    height: 27px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.categoryListLayout.stacked:not(.menuPanel) .categoryListItem:first-child .button_text {
+    line-height: 28px;
+}
+.categoryListLayout.stacked:not(.menuPanel) .categoryListItem:hover {
+    background-color: #f7f7f7;
+}
+body[data-active-channel="sports"] .categoryListLayout.stacked:not(.menuPanel) .categoryListItem.selectedCategory {
+    background-color: #e5f6e9;
+}
+body[data-active-channel="esports"] .categoryListLayout.stacked:not(.menuPanel) .categoryListItem.selectedCategory {
+    background-color: #f6e5fa;
+}
+.categoryListLayout.stacked:not(.menuPanel) .categoryListItem .button_text {
+    font-size: 12px;
+    line-height: 24px;
+    display: inline-block;
+    max-width: 240px;
+}
+.categoryListLayout.stacked:not(.menuPanel) .categoryListItem .categoryBadge {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 25px;
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.categoryListLayout.menuPanel .categoryHeader {
+    color: #505050;
+    background-color: #fff;
+    padding: 0 6px;
+    -webkit-box-shadow: inset 0 1px 0 #c7c7c7;
+    box-shadow: inset 0 1px 0 #c7c7c7;
+    font-size: 12px;
+    height: 20px;
+    line-height: 19px;
+    margin: 0 5px;
+    border-radius: 2px;
+}
+.categoryListLayout.menuPanel .categoryList {
+    clear: both;
+    padding: 5px;
+}
+.categoryListLayout.menuPanel .reveal {
+    margin-top: -45px;
+}
+.categoryListLayout.menuPanel.grid .fade {
+    height: 40px;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryListItemWrapper {
+    margin-top: -6px;
+    background-color: #fff;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryHeader {
+    border-radius: initial;
+    background-color: #eaeaea;
+    color: #333;
+    box-shadow: none;
+    margin: 0;
+    padding-left: 18px;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryList {
+    margin: 0;
+    padding: 0;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryList .categoryListItem {
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    min-width: 50%;
+    border-radius: initial;
+    min-height: 72px;
+    margin-bottom: 0;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryList .categoryListItem.pressed {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #656565;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryList .categoryListItem.pressed .categoryListItemWrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.categoryListLayout.menuPanel.menuGrid .categoryList .categoryListItem:nth-last-child(2):nth-child(even) {
+    border-bottom: 1px solid #eaeaea;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryList .icon_container {
+    width: 48px;
+    height: 40px;
+    margin-top: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryList .icon_container .ic_sports {
+    display: inline-block;
+    overflow: hidden;
+    width: 48px;
+    height: 40px;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryList .icon_container .categoryBadge {
+    top: 13px;
+    left: -1px;
+    position: relative;
+}
+.categoryListLayout.menuPanel.menuGrid .categoryList .textWrapper .button_text {
+    padding: 0 5px;
+}
+.categoryListLayout.menuPanel.stacked .expanded {
+    padding-top: 15px;
+}
+.categoryListLayout.menuPanel.stacked .categoryListItemWrapper {
+    height: 50px;
+    background-color: #fff;
+}
+.categoryListLayout.menuPanel.stacked .categoryHeader {
+    border-radius: initial;
+    background-color: #eaeaea;
+    color: #333;
+    box-shadow: none;
+    margin: 0;
+    padding-left: 18px;
+}
+.categoryListLayout.menuPanel.stacked .categoryList {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.categoryListLayout.menuPanel.stacked .categoryList .categoryListItem {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    border: none;
+    border-top-left-radius: initial;
+    border-top-right-radius: initial;
+    border-bottom-left-radius: initial;
+    border-bottom-right-radius: initial;
+    border-bottom: 1px solid #eaeaea;
+    min-width: 100%;
+    max-height: 45px;
+    height: 45px;
+    min-height: inherit;
+    text-align: left;
+    margin-bottom: 0;
+}
+.categoryListLayout.menuPanel.stacked .categoryList .categoryListItem:hover,
+.categoryListLayout.menuPanel.stacked .categoryList .categoryListItem:hover .categoryListItemWrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #656565;
+}
+.categoryListLayout.menuPanel.stacked .categoryList .ic_sports {
+    margin-top: 8px;
+    margin-left: 14px;
+}
+.categoryListLayout.menuPanel.stacked .categoryList .icon_container {
+    width: 100%;
+    height: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+.categoryListLayout.menuPanel.stacked .categoryList .icon_container .ic_sports {
+    display: inline-block;
+    overflow: hidden;
+    width: 30px;
+    height: 25px;
+}
+.categoryListLayout.menuPanel.stacked .categoryList .icon_container .categoryBadge {
+    float: right;
+    margin-top: 15px;
+    margin-right: 13px;
+}
+.categoryListLayout.menuPanel.stacked .categoryList .textWrapper {
+    height: 45px;
+    margin-top: -30px;
+    margin-left: 55px;
+}
+.categoryListLayout.menuPanel.stacked .categoryList .textWrapper .button_text {
+    font-size: 12px;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 2px;
+    width: 75%;
+}
+.scrollableCategoryList .icon_container {
+    width: 24px;
+    height: 20px;
+    margin-right: 10px;
+}
+.scrollableCategoryList .icon_container .ic_sports {
+    overflow: hidden;
+    width: 24px;
+    height: 20px;
+    display: block;
+}
+.scrollableCategoryList .icon_container .categoryBadge {
+    width: 19px;
+    height: 10px;
+    margin-top: -24px;
+    margin-left: -10px;
+    background-size: 19px 10px;
+}
+.scrollableCategoryList .contentSelectorItemButton {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+    min-width: 160px;
+    padding: 0 15px;
+}
+.baseCategoryListItem .contentSelectorItem .icon_container .categoryBadge[badge_type="countdown"] {
+    font-family: Arial, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    width: 31px;
+    height: 11px;
+    line-height: 1;
+    padding-top: 1px;
+    margin-top: -26px;
+    margin-left: -18px;
+}
+.baseCategoryListItem .contentSelectorItem .icon_container .categoryBadge[badge_type="countdown"] .timeCounterContainer {
+    display: inline;
+}
+.marketGroupTabsListLayoutContainer {
+    position: relative;
+}
+.marketGroupTabsListLayoutContainer .marketGroupTabsListLayout {
+    overflow: hidden;
+}
+.marketGroupTabsListLayoutContainer .marketGroupTabsListLayout .marketGroupList {
+    overflow-x: auto;
+}
+.showMoreButton {
+    background-color: #fff;
+    color: #333;
+    height: 25px;
+    padding-left: 15px;
+    line-height: 25px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.showMoreButton .icon-arrow-right {
+    display: inline-block;
+    padding-left: 5px;
+}
+.contentSelectorAndMarketFilteringWrapper .leftSideContainer .marketFilteringWidgetLabel,
+.eventTableGroupItemCollection .eventTableGroupContainer .collapsableHeader .iconHolder,
+.groupSelectionBar .leftSideContainer .marketFilteringWidgetLabel,
+.raceMarkets .leftSideContainer .marketFilteringWidgetLabel,
+.subcategoryTopBar .leftSideContainer .marketFilteringWidgetLabel {
+    display: none;
+}
+.showMoreButton .icon-arrow-right:before {
+    font-size: 11px;
+    position: absolute;
+    margin-top: -10px;
+}
+.eventTableGroupItemCollection .eventTableGroup .eventTableGroupHeader {
+    height: 44px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #c7c7c7;
+    background-color: #f5f5f5;
+    border-bottom-color: #c7c7c7;
+    color: #333;
+    font-size: 11px;
+    line-height: 44px;
+    padding-left: 6px;
+}
+.eventTableGroupItemCollection .eventTableGroupContainer .collapsableHeader {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+    height: 22px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #c7c7c7;
+    background-color: #ddd;
+}
+.eventTableGroupItemCollection .eventTableGroupContainer .collapsableHeader .titleText {
+    font-size: 10px;
+    line-height: 21px;
+    color: #7d7d7d;
+    padding-left: 10px;
+}
+.quickNavigationEventTableItem {
+    margin-top: 1px;
+}
+.quickNavigationEventTableItem .eventTableHeader {
+    background-color: #eaeaea;
+    color: #333;
+    min-height: 41px;
+    padding: 13px 0 0 13px;
+    font-family: Interface, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+.quickNavigationEventTableItem:first-child {
+    margin-top: 0;
+}
+.quickNavigationEventItem {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+.quickNavigationEventItem:hover {
+    background-color: #f7f7f7;
+}
+.quickNavigationEventItem:first-child {
+    margin-top: 1px;
+}
+.quickNavigationEventItem:last-child {
+    border-bottom: none;
+}
+body[data-active-channel="sports"] .quickNavigationEventItem.selected {
+    background-color: #e5f6e9;
+}
+body[data-active-channel="esports"] .quickNavigationEventItem.selected {
+    background-color: #f6e5fa;
+}
+.contentSelectorAndMarketFilteringWrapper,
+.groupSelectionBar,
+.raceMarkets,
+.subcategoryTopBar {
+    background-color: #fff;
+    margin-bottom: 1px;
+}
+.contentSelectorAndMarketFilteringWrapper .subcategoryTopBarLayout .node,
+.groupSelectionBar .subcategoryTopBarLayout .node,
+.raceMarkets .subcategoryTopBarLayout .node,
+.subcategoryTopBar .subcategoryTopBarLayout .node {
+    height: 50px;
+}
+.contentSelectorAndMarketFilteringWrapper .subcategoryTopBarLayout .node.displayNone + .node,
+.groupSelectionBar .subcategoryTopBarLayout .node.displayNone + .node,
+.raceMarkets .subcategoryTopBarLayout .node.displayNone + .node,
+.subcategoryTopBar .subcategoryTopBarLayout .node.displayNone + .node {
+    margin-left: auto;
+    margin-right: 0;
+}
+.contentSelectorAndMarketFilteringWrapper .leftSideContainer,
+.groupSelectionBar .leftSideContainer,
+.raceMarkets .leftSideContainer,
+.subcategoryTopBar .leftSideContainer {
+    min-width: 50%;
+}
+.contentSelectorAndMarketFilteringWrapper .groupSelectionFirstRow,
+.groupSelectionBar .groupSelectionFirstRow,
+.raceMarkets .groupSelectionFirstRow,
+.subcategoryTopBar .groupSelectionFirstRow {
+    height: 100%;
+}
+.contentSelectorAndMarketFilteringWrapper .groupSelectionSecondRow .scrollableDropdownContentContainer,
+.groupSelectionBar .groupSelectionSecondRow .scrollableDropdownContentContainer,
+.raceMarkets .groupSelectionSecondRow .scrollableDropdownContentContainer,
+.subcategoryTopBar .groupSelectionSecondRow .scrollableDropdownContentContainer {
+    position: relative;
+    max-height: 455px;
+    z-index: 30;
+}
+.contentSelectorAndMarketFilteringWrapper .groupSelectionSecondRow .dropdownMenuContainer.opened .scrollableDropdownContentContainer,
+.groupSelectionBar .groupSelectionSecondRow .dropdownMenuContainer.opened .scrollableDropdownContentContainer,
+.raceMarkets .groupSelectionSecondRow .dropdownMenuContainer.opened .scrollableDropdownContentContainer,
+.subcategoryTopBar .groupSelectionSecondRow .dropdownMenuContainer.opened .scrollableDropdownContentContainer {
+    background-color: #fff;
+}
+.contentSelectorAndMarketFilteringWrapper .marketFilteringContainer,
+.contentSelectorAndMarketFilteringWrapper .subcategoryMarketFilter,
+.groupSelectionBar .marketFilteringContainer,
+.groupSelectionBar .subcategoryMarketFilter,
+.raceMarkets .marketFilteringContainer,
+.raceMarkets .subcategoryMarketFilter,
+.subcategoryTopBar .marketFilteringContainer,
+.subcategoryTopBar .subcategoryMarketFilter {
+    max-width: 243px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector,
+.groupSelectionBar .contentSelectorContainer,
+.groupSelectionBar .subcategoryEventTypeSelector,
+.raceMarkets .contentSelectorContainer,
+.raceMarkets .subcategoryEventTypeSelector,
+.subcategoryTopBar .contentSelectorContainer,
+.subcategoryTopBar .subcategoryEventTypeSelector {
+    overflow: hidden;
+    display: inline-block;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .scrollableArea .scrollableContent,
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .scrollableArea .scrollableContent,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .scrollableArea .scrollableContent,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .scrollableArea .scrollableContent,
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .scrollableArea .scrollableContent,
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .scrollableArea .scrollableContent,
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .scrollableArea .scrollableContent,
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .scrollableArea .scrollableContent,
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .scrollableArea .scrollableContent,
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .scrollableArea .scrollableContent,
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .scrollableArea .scrollableContent,
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .scrollableArea .scrollableContent,
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .scrollableArea .scrollableContent,
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .scrollableArea .scrollableContent,
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .scrollableArea .scrollableContent,
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .scrollableArea .scrollableContent {
+    width: 100%;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection,
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .peekableItemCollection,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection,
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection,
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection,
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection,
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection,
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection,
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .peekableItemCollection,
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection,
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection,
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection,
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection,
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection,
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px 5px 0;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemButton,
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemButton {
+    min-width: 107px;
+    height: 34px;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem,
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem,
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem,
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem,
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem,
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem,
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem,
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem,
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem,
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem,
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem,
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem,
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem,
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 12px;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel,
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem .contentSelectorItemLabel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:first-child,
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem:first-child,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:first-child,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem:first-child,
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:first-child,
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem:first-child,
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:first-child,
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem:first-child,
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:first-child,
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem:first-child,
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:first-child,
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem:first-child,
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:first-child,
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem:first-child,
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:first-child,
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem:first-child {
+    margin-left: 13px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:last-child,
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem:last-child,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:last-child,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem:last-child,
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:last-child,
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem:last-child,
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:last-child,
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem:last-child,
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:last-child,
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem:last-child,
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:last-child,
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem:last-child,
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:last-child,
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem:last-child,
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem:last-child,
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"],
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"],
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"],
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"],
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"],
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"],
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"],
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"],
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"],
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"],
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"],
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"],
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"],
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"],
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="true"],
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="true"] {
+    background-color: #656565;
+    height: 36px;
+    padding-top: 1px;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"],
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"],
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"],
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"],
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"],
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"],
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"],
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"],
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"],
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"],
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"],
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"],
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"],
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"],
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"],
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"] {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    border: 1px solid #c7c7c7;
+}
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.contentSelectorAndMarketFilteringWrapper .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.contentSelectorAndMarketFilteringWrapper .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.groupSelectionBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.groupSelectionBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.groupSelectionBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.groupSelectionBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.raceMarkets .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.raceMarkets .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.raceMarkets .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.raceMarkets .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.subcategoryTopBar .contentSelectorContainer .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.subcategoryTopBar .contentSelectorContainer .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.subcategoryTopBar .subcategoryEventTypeSelector .contentSelectorComponent.eventType .peekableItemCollection .contentSelectorItem[selected="false"]:hover,
+.subcategoryTopBar .subcategoryEventTypeSelector .inplayContentTabBar .peekableItemCollection .contentSelectorItem[selected="false"]:hover {
+    cursor: pointer;
+    color: #3b3b3b;
+    background-color: #f7f7f7;
+}
+.simplifiedStandardMarket.highlights {
+    height: 100%;
+    background-color: #c7c7c7;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection .baseOutcomeItem {
+    width: 84px;
+    margin: 0 0 1px;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection .baseOutcomeItem:last-child {
+    margin-bottom: 0;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection .baseOutcomeItem.withHandicap {
+    position: relative;
+    width: 90px;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection .baseOutcomeItem.withHandicap .outcomeButton:not(.disabled) .oddsDisplay {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    margin-right: 14px;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection .baseOutcomeItem.withHandicap .outcomeButton .oddsDisplay {
+    margin-top: auto;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection .baseOutcomeItem.withHandicap .outcomeButton .handicapContainer {
+    position: absolute;
+    left: 8px;
+    top: 9px;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection.outcomes2x,
+.simplifiedStandardMarket.highlights .outcomeCollection.outcomes3x {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    flex: initial;
+    width: 100%;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection.outcomes2x .baseOutcomeItem .outcomeButton {
+    height: 44px;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection.outcomes2x .baseOutcomeItem.withHandicap .handicapContainer {
+    top: 16px;
+}
+.simplifiedStandardMarket.highlights .outcomeCollection.outcomes3x .baseOutcomeItem .outcomeButton {
+    height: 29px;
+}
+.doubleHighlightGroup .simplifiedStandardMarket.highlights .outcomeCollection .baseOutcomeItem,
+.singleHighlightGroup .simplifiedStandardMarket.highlights .outcomeCollection .baseOutcomeItem {
+    width: 110px;
+}
+.marketFilteringHeaderContainer {
+    width: 50%;
+    max-width: 242px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.marketFilteringHeaderWrapper .headerLoaderWrapper {
+    padding-right: 15px;
+    float: right;
+}
+.marketFilteringHeaderWrapper .headerLoaderWrapper .loading {
+    width: 25px;
+    height: 25px;
+}
+.marketFilteringHeaderWrapper .headerContainer [collectionitem] {
+    font-size: 12px;
+}
+.subcategoryList .collapsablePanel {
+    font-size: 13px;
+}
+.subcategoryList .collapsablePanel .collapsableHeader {
+    border-top: none;
+    height: 51px;
+    margin-bottom: 1px;
+}
+.subcategoryList .collapsablePanel .collapsableHeader .iconHolder {
+    padding-left: 13px;
+    text-align: left;
+    margin-top: 3px;
+    width: 35px;
+}
+.subcategoryList .collapsablePanel .collapsableHeader .showAllButton {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    color: #333;
+    font-size: 12px;
+    margin-right: 13px;
+}
+.subcategoryList .collapsablePanel .collapsableHeader .showAllButton:hover {
+    cursor: pointer;
+    color: #3b3b3b;
+}
+.subcategoryList .collapsablePanel .collapsableHeader .showAllButton .buttonText {
+    line-height: 12px;
+    text-align: right;
+    text-decoration: underline;
+}
+.subcategoryList .collapsablePanel .collapsableHeader .showAllButton .buttonArrow {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 5px 5px 0;
+    font-size: 9px;
+}
+.subcategoryList .collapsablePanel .collapsableHeader[collapsed="false"] {
+    margin-bottom: 0;
+    height: 50px;
+}
+.subcategoryList .collapsablePanel .collapsableHeader[collapsed="false"] .iconHolder {
+    margin-top: 4px;
+}
+.subcategoryList .collapsablePanel .collapsableHeader[collapsed="false"] .titleText {
+    margin-top: 1px;
+}
+.subcategoryList .collapsablePanel .collapsableHeader:active,
+.subcategoryList .collapsablePanel .collapsableHeader:hover {
+    background-color: #f2f2f2;
+}
+.subcategoryList .collapsablePanel .collapsableContent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+}
+.subcategoryList .collapsablePanel .collapsableContent[collapsed="true"] {
+    display: none;
+}
+.subcategoryList .collapsablePanel:last-child .collapsableContent,
+.subcategoryList .collapsablePanel:last-child .collapsableHeader {
+    margin-bottom: 0;
+}
+.subcategoryList.grid.withIcon {
+    background-color: #fff;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+.subcategoryList.grid.withIcon .listItem {
+    min-height: 50px;
+    padding-right: 3px;
+    margin-top: 3px;
+    width: 25%;
+}
+.subcategoryList.grid.withIcon .listItem:nth-child(4n + 0) {
+    padding-right: 13px;
+}
+.subcategoryList.grid.withIcon .listItem:nth-child(4n + 1) {
+    padding-left: 13px;
+}
+.subcategoryList.grid.withIcon .listItem .listItemContent {
+    padding: 7px 10px;
+    font-weight: 700;
+}
+.subcategoryList.grid.withIcon .listItem .listItemContent .icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #333;
+}
+.collapsablePanel .collapsableContent.grid {
+    font-size: 0;
+    padding: 1px 0;
+}
+.collapsablePanel .collapsableContent.grid .listItem {
+    width: 33.33%;
+}
+.dropdownContentWrapperComponent {
+    height: 0;
+    position: relative;
+    z-index: 11;
+}
+.dropdownContentWrapperComponent .dropdownWrapper {
+    width: 100%;
+    margin-top: 13px;
+    position: absolute;
+    max-height: 100%;
+}
+.meetingDropdownContentLayout {
+    position: relative;
+}
+.meetingDropdownContentLayout .scrollableDropdownContentComponent {
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    max-height: 450px;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+.meetingDropdownContentLayout .scrollableDropdownContentComponent .dropdownContentComponentInnerWidget {
+    background-color: #fff;
+}
+.eventDropdownContentLayout .dropdownWrapper {
+    margin-top: 0;
+}
+.eventDropdownContentLayout .scrollableDropdownContentComponent {
+    max-height: 455px;
+}
+.eventDropdownContentLayout .emptyTextWrapper,
+.eventDropdownContentLayout .scrollableDropdownContentComponent {
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #eaeaea;
+}
+.eventTableItemCollection.outrights .eventListItem article.eventListItem .eventHolder .eventDetails {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.eventTableItemCollection.outrights .eventListItem article.eventListItem .eventHolder .eventDetails .eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper .scoreboardNamesRow {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    margin-top: 0;
+}
+.eventTableItemCollection.outrights .eventListItem article.eventListItem .eventHolder .eventDetails .eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper .scoreboardNamesRow .scoreboardInfoNames {
+    padding: 9px 24px;
+}
+.eventTableItemCollection.outrights .eventListItem article.eventListItem .eventHolder .eventDetails .eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper .scoreboardNamesRow .scoreboardInfoNames .eventName {
+    padding-bottom: 0;
+}
+.eventTableItemCollection.outrights .eventListItem article.eventListItem .eventHolder .eventMarket {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 242px;
+    flex: 0 0 242px;
+}
+.eventTableItemCollection.outrights .eventListItem article.eventListItem .eventHolder .eventMarket .simplifiedStandardMarket .outcomeCollection .baseOutcomeItem {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.eventTableItemCollection.outrights.boosts .eventListItem article.eventListItem .eventHolder .eventDetails:hover {
+    cursor: default;
+    background-color: #fff;
+}
+.eventTableItemCollection.outrights.boosts .eventListItem article.eventListItem .eventHolder .eventDetails .eventSummaryContainer .outrightEventSummary .outrightEventSummaryWrapper .scoreboardNamesRow .scoreboardInfoNames {
+    padding: 4px 24px;
+    min-height: 40px;
+}
+.eventSummaryContainer .quickNavigationEventSummary {
+    min-height: 40px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.eventSummaryContainer .quickNavigationEventSummary.selected .scoreboardInfoNamesWrapper .scoreboardInfoNames .eventNameWrapper .eventName,
+.eventSummaryContainer .quickNavigationEventSummary.selected .scoreboardInfoNamesWrapper .scoreboardInfoNames .teamName {
+    color: #333;
+}
+.eventSummaryContainer .quickNavigationEventSummary .scoreboardInfoNamesWrapper .scoreboardInfoNames .teamName .serveIndicator {
+    line-height: 10px;
+}
+.eventSummaryContainer .quickNavigationEventSummary .infoText .scoreCollection .score:first-child {
+    color: #656565;
+}
+.eventSummaryContainer .quickNavigationEventSummary .infoText .scoreCollection .score:nth-child(2) {
+    color: #999;
+}
+.eventSummaryContainer .quickNavigationEventSummary .statisticsIcon {
+    color: #656565;
+}
+.eventSummaryContainer .quickNavigationEventSummary .eventStatus .eventStatusIcon.upcomingEventStatus,
+.eventSummaryContainer .quickNavigationEventSummary .eventStatus .liveStreamingIcon.upcomingStreaming {
+    color: #999;
+}
+.eventSummaryContainer .quickNavigationEventSummary .cashOutIndicator.suspended .cashOutIcon {
+    color: #b7b7b7;
+}
