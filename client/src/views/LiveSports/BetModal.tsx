@@ -12,13 +12,12 @@ const tailLayout = {
 };
 
 const BetModal = (props: any) => {
-  const { visible, setVisible, userId, setUserId } = props;
+  const { visible, setVisible } = props;
 
   const submit = async (values: any) => {
-    console.log(userId);
     let data = {
       credit: values.newcredit,
-      userid: userId,
+      // userid: userId,
       password: values.password,
     };
     const [err, result] = await asyncWrap(axios.post("credit", data));
@@ -28,7 +27,7 @@ const BetModal = (props: any) => {
         style: { marginTop: "5vh" },
       });
     }
-    setUserId(null);
+    //setUserId(null);
     setVisible(false);
     return message.success({
       content: "Inserted successfully",
@@ -36,7 +35,7 @@ const BetModal = (props: any) => {
   };
 
   const onCancel = () => {
-    setUserId(null);
+    // setUserId(null);
     setVisible(false);
   };
 

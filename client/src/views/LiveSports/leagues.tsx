@@ -1,13 +1,14 @@
 // @ts-nocheck
 import axios from "axios";
-import { Button, message, Row, Col, Card, Table, Collapse } from "antd";
+import { Button, message, Row, Card, Collapse } from "antd";
+import { useAuth } from "../../context/auth-context";
 
 import { asyncWrap } from "../../utils/utils";
 import { useEffect, useState } from "react";
 import LeagueMatches from "./LeagueMatches";
-import { MSearch } from "@overnightjs/core";
 import MatchScore from "./matchScore";
 import BetModal from "./BetModal";
+import { Redirect } from "react-router-dom";
 
 const { Panel } = Collapse;
 
@@ -21,6 +22,8 @@ const Leagues = (props: any) => {
   const [tableData, setTableData] = useState<any>([]);
   const [currentMatchId, setCurrentMatchId] = useState<any>("");
   const [openBet, setOpenBet] = useState<boolean>(false);
+
+  const { user } = useAuth();
 
   const columns = [
     {
@@ -125,11 +128,7 @@ const Leagues = (props: any) => {
 
   const getMatchesScore = async (Id) => {
     const [err, result] = await asyncWrap(
-<<<<<<< Updated upstream
       axios.get(`/api/matches?match_id=` + Id)
-=======
-      axios.get(`/api/matches?match_id=109874268`)
->>>>>>> Stashed changes
     );
     if (err) {
       return message.error({
@@ -187,6 +186,14 @@ const Leagues = (props: any) => {
       );
     });
   };
+  // need to add logic of rediect
+  // const CheckUserLoggedIn = () => {
+  //   if (!user) {
+  //     props.history.push('/login')
+  //   } else {
+  //     setOpenBet(true);
+  //   }
+  // };
 
   const AddTable = () => {
     return tableData.map((item, i) => {
