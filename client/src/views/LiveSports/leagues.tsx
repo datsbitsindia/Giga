@@ -5,6 +5,8 @@ import { Button, message, Row, Col, Card, Table, Collapse } from "antd";
 import { asyncWrap } from "../../utils/utils";
 import { useEffect, useState } from "react";
 import LeagueMatches from "./LeagueMatches";
+import { MSearch } from "@overnightjs/core";
+import MatchScore from "./matchScore";
 
 const { Panel } = Collapse;
 
@@ -12,9 +14,11 @@ const Leagues = (props: any) => {
   const { sportsid } = props;
   const [matchId, setMatchId] = useState<any>();
   const [leagues, setLeagues] = useState<any>();
+  const [leagueList, setLeagueList] = useState<any>([]);
   const [gamedata, setgamedata] = useState<any>();
   const [matches, setMatches] = useState<any>();
   const [tableData, setTableData] = useState<any>([]);
+  const [currentMatchId, setCurrentMatchId] = useState<any>('');
 
   const columns = [
     {
@@ -77,13 +81,49 @@ const Leagues = (props: any) => {
     if (table?.title !== aTables[aTables.length - 1]?.title) {
       aTables.push(table);
     }
-    console.log(aTables);
     return aTables;
   };
 
+  const leagueParser = (rawData: any) => {
+    let LeagueData = [];
+    let leagueList = [];
+    console.log(rawData)
+    for(let i = 0; i < rawData.length; i++) {
+      if(i === 0 ) {
+        setMatchId(rawData[i].league.id);
+      }
+      if(rawData[i].league && rawData[i].league.id) {
+        if(LeagueData.indexOf(rawData[i].league.id) === -1) {
+          LeagueData.push(rawData[i].league.id);
+          leagueList.push(rawData[i].league)
+        } 
+      }
+    }
+    console.log(leagueList);
+    return leagueList;
+  };
+
   const getMatchesData = async () => {
+    console.log(currentMatchId)
+    if(currentMatchId) {
+      const [err, result] = await asyncWrap(
+        axios.get(`/api/matches?match_id=${currentMatchId}`)
+      );
+      if (err) {
+        return message.error({
+          content: "something went wrong",
+          style: { margintop: "5vh" },
+        });
+      }
+      console.log(result.data.data.results);
+      setTableData(tableParser(result.data.data.results[0]));
+      setgamedata(result.data.data.results[0]);
+    }
+  };
+
+  const getMatchesScore = async (Id) => {
     const [err, result] = await asyncWrap(
-      axios.get(`/api/matches?match_id=110858797`)
+      axios.get(`/api/matches?match_id=` + Id)
     );
     if (err) {
       return message.error({
@@ -91,8 +131,7 @@ const Leagues = (props: any) => {
         style: { margintop: "5vh" },
       });
     }
-    setTableData(tableParser(result.data.data.results[0]));
-    setgamedata(result.data.data.results[0]);
+    return tableParser(result.data.data.results[0]);
   };
 
   const getData = async () => {
@@ -105,11 +144,41 @@ const Leagues = (props: any) => {
         style: { margintop: "5vh" },
       });
     }
+    setLeagueList(leagueParser(result.data.data.results));
     setLeagues(result.data.data.results);
   };
 
+  const ShowMatchList = () => {
+    if(matchId && leagues) {
+      console.log(leagues)
+      return leagues.map((item, i) => {
+        if(item.league.id === matchId) {
+          return <div onClick={() => setCurrentMatchId(item.id)}>
+            {/* <span>{new Date(parseInt(item.time)).toString()}</span> */}
+            <span>{item.home.name} - </span>
+            <span>{item.away.name} {item.id}</span>
+            {/* {getMatchesScore(item.id)} */}
+            <MatchScore matchId={item.id}></MatchScore>
+          </div>
+        }
+      })
+    } else {
+      return '';
+    }
+  }
+
+  const LeagueListTable = () => {
+    return leagueList.map((item, i) => {
+      return <Button
+          style={{ width: "250px" }}
+          onClick={() => setMatchId(item.id)}
+        >
+          {item.name}
+        </Button>
+    })
+  }
+
   const AddTable = () => {
-    // console.log(tableData);
     return tableData.map((item, i) => {
       return (
         <Collapse activeKey={i}>
@@ -140,13 +209,28 @@ const Leagues = (props: any) => {
 
   useEffect(() => {
     setLeagues(null);
-    getMatchesData();
+    // getMatchesData();
     getData();
   }, [sportsid]);
 
+  useEffect(() => {
+    ShowMatchList();
+  }, [leagues]);
+
+  useEffect(() => {
+    getMatchesData();
+  }, [currentMatchId]);
+
   return (
     <Card title="Top Leagues">
-      {leagues && (
+      <Row style={{ display: "flex", justifyContent: "space-around" }}>
+        {LeagueListTable()}
+        </Row>
+        <Card>
+          {ShowMatchList()}
+        </Card>
+        <Card>{tableData && (AddTable())}</Card>
+      {/* {leagues && (
         <div>
           <Row style={{ display: "flex", justifyContent: "space-around" }}>
             <Button
@@ -209,7 +293,7 @@ const Leagues = (props: any) => {
           </Row>
           <Card>{AddTable()}</Card>
         </div>
-      )}
+      )} */}
     </Card>
   );
 };
