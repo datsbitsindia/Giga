@@ -220,7 +220,7 @@ const Leagues = (props: any) => {
     if (odValue !== "0/0") {
       val = eval(odValue);
       val = val + 1;
-      return val;
+      return val.toFixed(2);
     }
     return 0;
   };
@@ -242,7 +242,7 @@ const Leagues = (props: any) => {
                     return (
                       <div>
                         {key !== "ID" && key !== "FI" && key !== "SU" ? (
-                          <Button
+                          <Button disabled = {parseInt(row.SU)}
                             onClick={() =>
                               SetValues(
                                 item.title,
@@ -275,6 +275,7 @@ const Leagues = (props: any) => {
     setLeagues(null);
     // getMatchesData();
     getData();
+    setCurrentMatchId('')
   }, [sportsid]);
 
   useEffect(() => {
