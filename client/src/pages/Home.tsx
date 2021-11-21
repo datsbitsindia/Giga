@@ -9,6 +9,11 @@ const { Header, Content, Footer } = Layout;
 const Home = (props: any) => {
   const { user } = useAuth();
 
+  const logout = () => {
+    localStorage.clear();
+    window.location.reload();
+  };
+
   return (
     <Layout className="layout" style={{ height: "100%" }}>
       <Header>
@@ -38,7 +43,9 @@ const Home = (props: any) => {
             </>
           ) : null}
 
-          <Menu.Item key="8">Logout</Menu.Item>
+          <Menu.Item key="8" onClick={() => logout()}>
+            Logout
+          </Menu.Item>
         </Menu>
       </Header>
       <Content style={{ padding: "50px 50px 0px 50px" }}>
