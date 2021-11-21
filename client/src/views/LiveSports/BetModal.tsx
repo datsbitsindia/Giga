@@ -1,6 +1,7 @@
 import { Modal, Form, Input, Button, message } from "antd";
 import { asyncWrap } from "../../utils/utils";
 import axios from "axios";
+import { useEffect, useState } from "react";
 
 const layout = {
   labelCol: { span: 8 },
@@ -12,61 +13,71 @@ const tailLayout = {
 };
 
 const BetModal = (props: any) => {
-  const { visible, setVisible } = props;
+  const { visible, setVisible, betId, fiId, eventName, sportsId, odValue } =
+    props;
+
+  const [odCalcValue, setOdCalcValue] = useState<number>(0);
+
+  const calculate = () => {
+    let val = eval(odValue);
+    val = val + 1;
+    setOdCalcValue(val.toFixed(2));
+  };
 
   const submit = async (values: any) => {
-    let data = {
-      credit: values.newcredit,
-      // userid: userId,
-      password: values.password,
-    };
-    const [err, result] = await asyncWrap(axios.post("credit", data));
-    if (err) {
+    if (values.amount > 0) {
+      let data = {
+        SportID: sportsId,
+        EventName: eventName,
+        FIID: fiId,
+        BetID: betId,
+        ODValue: odValue,
+        ODCalcValue: odCalcValue,
+        BetAmount: values.amount,
+        ReturnAmount: +(odCalcValue * values.amount),
+      };
+      console.log(data);
+      const [err, result] = await asyncWrap(axios.post("add-bet", data));
+      if (err) {
+        return message.error({
+          content: "Something Went Wrong!",
+          style: { marginTop: "5vh" },
+        });
+      }
+      //setUserId(null);
+      setVisible(false);
+      return message.success({
+        content: "Inserted successfully",
+      });
+    } else {
       return message.error({
-        content: "Something Went Wrong!",
+        content: "Please input amount!",
         style: { marginTop: "5vh" },
       });
     }
-    //setUserId(null);
-    setVisible(false);
-    return message.success({
-      content: "Inserted successfully",
-    });
   };
 
   const onCancel = () => {
-    // setUserId(null);
     setVisible(false);
   };
+
+  useEffect(() => {
+    calculate();
+  }, []);
 
   return (
     <div>
       <Modal
-        title="Credit"
+        title="Place Bet"
         visible={visible}
         footer={null}
         destroyOnClose={true}
         onCancel={onCancel}
       >
-        <Form {...layout} name="Generate Points" onFinish={submit}>
-          <Form.Item label="Old Credit" name="oldcredit">
-            <Input disabled />
-          </Form.Item>
+        <Form {...layout} onFinish={submit}>
           <Form.Item
-            label="New Credit"
-            name="newcredit"
-            rules={[
-              {
-                required: true,
-                message: "New Credit is required!",
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name="password"
-            label="Transaction Password"
+            name="amount"
+            label="Bet Amount"
             rules={[
               {
                 required: true,

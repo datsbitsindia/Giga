@@ -23,6 +23,12 @@ const Leagues = (props: any) => {
   const [currentMatchId, setCurrentMatchId] = useState<any>("");
   const [openBet, setOpenBet] = useState<boolean>(false);
 
+  const [eventName, setEventName] = useState<string>();
+  const [betId, setBetId] = useState<number>();
+  const [fiId, setFiId] = useState<number>();
+  const [odValue, setOdValue] = useState<string>();
+  const [marketGroup, setMarketGroup] = useState<string>();
+
   const { user } = useAuth();
 
   const columns = [
@@ -74,9 +80,14 @@ const Leagues = (props: any) => {
           break;
         case TABLE_CONSTANTS.PA:
           if (OD) {
-            table.rows.push({ [NA || table.columns[table.rows.length]]: OD, ID, FI });
+            table.rows.push({
+              [NA || table.columns[table.rows.length]]: OD,
+              ID,
+              FI,
+              SU,
+            });
           } else if (NA) {
-            table.rows.push({ [NA]: NA, FI, ID });
+            table.rows.push({ [NA]: NA, FI, ID, SU });
           }
           break;
         default:
@@ -195,6 +206,15 @@ const Leagues = (props: any) => {
   //   }
   // };
 
+  const SetValues = (eventName, fiId, betId, odValue, marketGroup) => {
+    setFiId(fiId);
+    setBetId(betId);
+    setEventName(eventName);
+    setOdValue(odValue);
+    setMarketGroup(marketGroup);
+    setOpenBet(true);
+  };
+
   const AddTable = () => {
     return tableData.map((item, i) => {
       return (
@@ -211,10 +231,23 @@ const Leagues = (props: any) => {
                   {Object.keys(row).map(function (key, index) {
                     return (
                       <div>
-                        {key !== 'ID' && key !== 'FI' ? 
-                        <Button onClick={() => setOpenBet(true)}>
-                          <span>{key}</span>:<span>{row[key]}</span>{" "}
-                        </Button> : ''}
+                        {key !== "ID" && key !== "FI" && key !== "SU" ? (
+                          <Button
+                            onClick={() =>
+                              SetValues(
+                                item.title,
+                                row.FI,
+                                row.ID,
+                                row[key],
+                                item.title
+                              )
+                            }
+                          >
+                            <span>{key}</span>:<span>{row[key]}</span>{" "}
+                          </Button>
+                        ) : (
+                          ""
+                        )}
                       </div>
                     );
                   })}
@@ -243,76 +276,27 @@ const Leagues = (props: any) => {
 
   return (
     <Card title="Top Leagues">
-      {openBet && <BetModal visible={openBet} setVisible={setOpenBet} />}
-      <Row style={{ display: "flex", justifyContent: "space-around" }}>
-        {LeagueListTable()}
-      </Row>
-      <Card>{ShowMatchList()}</Card>
-      <Card>{tableData && AddTable()}</Card>
-      {/* {leagues && (
-        <div>
+      {openBet && (
+        <BetModal
+          visible={openBet}
+          setVisible={setOpenBet}
+          betId={betId}
+          fiId={fiId}
+          eventName={eventName}
+          sportsId={sportsid}
+          odValue={odValue}
+        />
+      )}
+      {!currentMatchId ? (
+        <>
           <Row style={{ display: "flex", justifyContent: "space-around" }}>
-            <Button
-              style={{ width: "250px" }}
-              onClick={() => setMatchId(leagues[0]?.league.id)}
-            >
-              {leagues[0]?.league.name}
-            </Button>
-            <Button
-              style={{ width: "250px" }}
-              onClick={() => setMatchId(leagues[1]?.league.id)}
-            >
-              {leagues[1]?.league.name}
-            </Button>
-            <Button
-              style={{ width: "250px" }}
-              onClick={() => setMatchId(leagues[2]?.league.id)}
-            >
-              {leagues[2]?.league.name}
-            </Button>
-            <Button
-              style={{ width: "250px" }}
-              onClick={() => setMatchId(leagues[3]?.league.id)}
-            >
-              {leagues[3]?.league.name}
-            </Button>
+            {LeagueListTable()}
           </Row>
-          <Row
-            style={{
-              display: "flex",
-              justifyContent: "space-around",
-              marginTop: "10px",
-              marginBottom: "30px",
-            }}
-          >
-            <Button
-              style={{ width: "250px" }}
-              onClick={() => setMatchId(leagues[4]?.league.id)}
-            >
-              {leagues[4]?.league.name}
-            </Button>
-            <Button
-              style={{ width: "250px" }}
-              onClick={() => setMatchId(leagues[5]?.league.id)}
-            >
-              {leagues[5]?.league.name}
-            </Button>
-            <Button
-              style={{ width: "250px" }}
-              onClick={() => setMatchId(leagues[6]?.league.id)}
-            >
-              {leagues[6]?.league.name}
-            </Button>
-            <Button
-              style={{ width: "250px" }}
-              onClick={() => setMatchId(leagues[7]?.league.id)}
-            >
-              {leagues[7]?.league.name}
-            </Button>
-          </Row>
-          <Card>{AddTable()}</Card>
-        </div>
-      )} */}
+          <Card>{ShowMatchList()}</Card>
+        </>
+      ) : (
+        <Card>{tableData && AddTable()}</Card>
+      )}
     </Card>
   );
 };

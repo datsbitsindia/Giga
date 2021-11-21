@@ -20,7 +20,6 @@ export class AddBetController {
       ODCalcValue,
       BetAmount,
       ReturnAmount,
-      LoginUserID,
     } = req.body;
     const [error, result] = await asyncWrap(
       runSP("I_UsersBets", [
@@ -57,8 +56,12 @@ export class AddBetController {
           value: ReturnAmount,
         },
         {
+          name: "MarketGroup",
+          value: EventName,
+        },
+        {
           name: "LoginUserID",
-          value: LoginUserID,
+          value: req.payload.userId,
         },
       ])
     );
