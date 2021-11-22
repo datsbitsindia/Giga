@@ -123,11 +123,7 @@ const Leagues = (props: any) => {
 
   const getMatchesScore = async (Id) => {
     const [err, result] = await asyncWrap(
-<<<<<<< Updated upstream
       axios.get(`/api/matches?match_id=` + Id)
-=======
-      axios.get(`/api/matches?match_id=109874268`)
->>>>>>> Stashed changes
     );
     if (err) {
       return message.error({

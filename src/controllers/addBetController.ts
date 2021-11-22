@@ -11,46 +11,55 @@ export class AddBetController {
   @Post("")
   @Middleware(auth_role(ROLES["User"]))
   private async postBet(req: ISecureRequest, res: Response) {
-    const { SportID, EventName, FIID,  BetID,ODValue, ODCalcValue, BetAmount, ReturnAmount, LoginUserID } = req.body;
+    const {
+      SportID,
+      EventName,
+      FIID,
+      BetID,
+      ODValue,
+      ODCalcValue,
+      BetAmount,
+      ReturnAmount,
+      LoginUserID,
+    } = req.body;
     const [error, result] = await asyncWrap(
       runSP("I_UsersBets", [
         {
-            name:'SportID',
-            value: SportID
+          name: "SportID",
+          value: SportID,
         },
         {
-            name:'EventName',
-            value: EventName,
+          name: "EventName",
+          value: EventName,
         },
         {
-            name:'FIID',
-            value: FIID
+          name: "FIID",
+          value: FIID,
         },
         {
-            name:'BetID',
-            value: BetID,
+          name: "BetID",
+          value: BetID,
         },
         {
-            name:'ODValue',
-            value: ODValue
+          name: "ODValue",
+          value: ODValue,
         },
         {
-            name:'ODCalcValue',
-            value: ODCalcValue,
-        }
-        {
-            name:'BetAmount',
-            value: BetAmount
+          name: "ODCalcValue",
+          value: ODCalcValue,
         },
         {
-            name:'ReturnAmount',
-            value: ReturnAmount,
+          name: "BetAmount",
+          value: BetAmount,
         },
         {
-            name:'LoginUserID',
-            value: LoginUserID
+          name: "ReturnAmount",
+          value: ReturnAmount,
         },
-        
+        {
+          name: "LoginUserID",
+          value: LoginUserID,
+        },
       ])
     );
 
@@ -67,4 +76,3 @@ export class AddBetController {
     });
   }
 }
-

@@ -23,16 +23,12 @@ const App = () => {
     <React.Suspense fallback={<Loading />}>
       <BrowserRouter>
         <Route exact path="/" component={Home} />
+        <Route path="/home" component={home} />
         <Route path="/login" component={UserLogin} />
         <Route path="/signup" component={UserSignup} />
         <Route path="/admin/login" component={Login} />
-<<<<<<< Updated upstream
-        <Route path="/admin" component={AdminPage} />
-        <Route path="/home" component={home} />
-=======
         <Route path="/admin/user-list" component={AdminPage} />
         <Route path="/admin/add-user" component={AddUser} />
->>>>>>> Stashed changes
       </BrowserRouter>
     </React.Suspense>
   );
