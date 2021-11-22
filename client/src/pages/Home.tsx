@@ -8,6 +8,16 @@ import "../css/Interface_Normal.woff2";
 import "../css/Interface_Bold.woff2";
 import "../css/demo.css";
 import "../css/demo2.css"; 
+import "../css/EventListsDesktop.min.css"; 
+import "../css/EventListsDesktop.min.css"; 
+
+// import "../css/PromotionsCoreDesktop.min.css"; 
+import "../css/PromotionsSportsDesktop.min.css"; 
+import "../css/dynamicfilteringdesktop.min.css"; 
+import "../css/eventsdesktop.min.css"; 
+import "../css/quicksearchdesktop.min.css"; 
+
+
 // import "../js/AceBootstrap.min.js";
 // import "../js/custom2.js";
 
