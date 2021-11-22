@@ -5,6 +5,7 @@ import { useAuth } from "./context/auth-context";
 import AddUser from "./views/AddUser/AddUser";
 import UserLogin from "./pages/userLogin";
 import UserSignup from "./pages/UserSignup";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Loading = () => (
   <div className="animated fadeIn pt-3 text-center">Loading...</div>
