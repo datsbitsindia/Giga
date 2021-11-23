@@ -35,7 +35,8 @@ const Home = (props: any) => {
   };
   return (
     <div>
-      <Route exact path="/" component={AllSports} />
+      <h1> Hello</h1>
+      <Route exact path="/sports" component={AllSports} />
     </div>
   );
 };

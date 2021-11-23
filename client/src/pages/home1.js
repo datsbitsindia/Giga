@@ -55,7 +55,7 @@ const Home = (props) => {
 		      	
 		        <li className="nav-item">
 		        	
-		          	<a className="nav-link title-logo" href="#">
+		          	<a className="nav-link title-logo" href="/sports">
 
 		          		
 				    	<img src={s1} alt="Card Back"></img>
