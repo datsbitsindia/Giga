@@ -687,10 +687,10 @@
     margin-bottom: 2px;
 }
 .boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherHandLeft {
-    background-image: url(../../../../Global/images/donBest/LeftHandedLabelGrey.svg?v=f7d9a8a7);
+    /* background-image: url(../../../../Global/images/donBest/LeftHandedLabelGrey.svg?v=f7d9a8a7); */
 }
 .boardContainer.BaseballUpcomingScoreboardComponent .baseballEventTitle .teamNameWrapper .pitcherHandRight {
-    background-image: url(../../../../Global/images/donBest/RightHandedLabelGrey.svg?v=1b6e3624);
+    /* background-image: url(../../../../Global/images/donBest/RightHandedLabelGrey.svg?v=1b6e3624); */
 }
 .boardContainer.BaseballUpcomingScoreboardComponent .boardContainer .mainContainer .gameDetailsHeader .titleTextHolder {
     height: auto;
@@ -1551,7 +1551,7 @@ body[data-active-channel="vegas"] .cashOutIndicator .cashOutLozenge .cashOutIcon
     display: inline-block;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-image: url(../../../../Global/images/ic_iceHockeyIcons.png?v=8e082cb0);
+    /* background-image: url(../../../../Global/images/ic_iceHockeyIcons.png?v=8e082cb0); */
     background-size: 20px;
     height: 22px;
     width: 20px;
@@ -1566,7 +1566,7 @@ body[data-active-channel="vegas"] .cashOutIndicator .cashOutLozenge .cashOutIcon
     display: inline-block;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-image: url(../../../../Global/images/ic_rugbystatsLarge.png?v=6054e6a7);
+    /* background-image: url(../../../../Global/images/ic_rugbystatsLarge.png?v=6054e6a7); */
     background-size: 30px;
     height: 30px;
     width: 30px;
@@ -1594,7 +1594,7 @@ body[data-active-channel="vegas"] .cashOutIndicator .cashOutLozenge .cashOutIcon
 .statisticsboardIcon.runOuts {
     overflow: hidden;
     background-repeat: no-repeat;
-    background-image: url(../../../../Global/images/ic_cricketstats.png?v=3fc485c0);
+    /* background-image: url(../../../../Global/images/ic_cricketstats.png?v=3fc485c0); */
     width: 31px;
     height: 31px;
     background-size: 37px;
@@ -1611,14 +1611,14 @@ body[data-active-channel="vegas"] .cashOutIndicator .cashOutLozenge .cashOutIcon
 .statisticsboardIcon.footballYellowCards {
     overflow: hidden;
     background-repeat: no-repeat;
-    background-image: url(../../../../Global/images/ic_footballStats.png?v=bc5eb89f);
+    /* background-image: url(../../../../Global/images/ic_footballStats.png?v=bc5eb89f); */
     background-size: 26px auto;
     height: 22px;
     width: 22px;
 }
 .ic_baseballBasesBackground,
 .ic_baseballBasesMask {
-    background-image: url(../../../../Global/images/ic_baseballstats.png?v=63e36eb4);
+    /* background-image: url(../../../../Global/images/ic_baseballstats.png?v=63e36eb4); */
     background-size: cover;
 }
 .statisticsboardIcon.corners {

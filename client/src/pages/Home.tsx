@@ -20,6 +20,7 @@ import "../css/PromotionsSportsDesktop.min.css";
 import "../css/dynamicfilteringdesktop.min.css";
 import "../css/eventsdesktop.min.css";
 import "../css/quicksearchdesktop.min.css";
+import "../css/SportsCoreDesktop.min.css";
 
 // import "../js/AceBootstrap.min.js";
 // import "../js/custom2.js";
