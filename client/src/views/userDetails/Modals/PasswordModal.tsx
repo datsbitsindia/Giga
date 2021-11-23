@@ -15,7 +15,6 @@ const PasswordModal = (props: any) => {
   const { visible, setVisible, userId, setUserId } = props;
 
   const submit = async (values: any) => {
-    console.log(values.newpassword, values.confirmpassword);
     if (values.newpassword === values.confirmpassword) {
       let data = {
         changePassword: values.newpassword,
