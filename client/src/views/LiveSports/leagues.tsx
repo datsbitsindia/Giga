@@ -170,13 +170,181 @@ const Leagues = (props: any) => {
       return leagues.map((item, i) => {
         if (item.league.id === matchId) {
           return (
-            <div onClick={() => setCurrentMatchId(item.id)}>
-              {/* <span>{new Date(parseInt(item.time)).toString()}</span> */}
-              <span>{item.home.name}</span>
-              <span>{item.away.name}</span>
-              {/* {getMatchesScore(item.id)} */}
-              <MatchScore matchId={item.id}></MatchScore>
+            // <div >
+            //   {/* <span>{new Date(parseInt(item.time)).toString()}</span> */}
+            //   <span>{item.home.name}</span>
+            //   <span>{item.away.name}</span>
+            //   {/* {getMatchesScore(item.id)} */}
+            //   <MatchScore matchId={item.id}></MatchScore>
+            // </div>
+            <div className="oneLineEventItem" onClick={() => setCurrentMatchId(item.id)}>
+            <article className="eventListItem">
+            <div className="eventHolder">
+                <div className="eventDetails">
+                <header>
+                    <div className="headerEventDetails">
+                    <div
+                        className="eventSummaryContainer"
+                        data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer].EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga].EventListWidget[soccer_spain_la-liga, 2021-11-20].EventSummaryWidgetContainer[8559838]"
+                    >
+                        <div
+                        className="oneLineScoreboard soccer upcoming"
+                        data-widget="EventSummaryWidget[soccer_spain_la-liga, 8559838]"
+                        >
+                        <div className="scoreAndTime">
+                            <div
+                            className="scoresContainer empty"
+                            data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer].EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga].EventListWidget[soccer_spain_la-liga, 2021-11-20].EventSummaryWidget[soccer_spain_la-liga, 8559838].ScoreWidget[8559838]"
+                            />
+                            <div className="oneLineDateTime">
+                            -
+                            </div>
+                        </div>
+                        <div className="scoreboardInfoNamesWrapper">
+                            <a
+                            className="scoreboardInfoNames"
+                            href="#/evt/8559838"
+                            >
+                            <div className="teamNameHome teamName">
+                                <div className="teamNameTextWrapper">
+                                <span className="serveIndicator homeServe">
+                                    ●
+                                </span>
+                                <span className="teamNameEllipsisContainer">
+                                    <span className="teamNameFirstPart teamNameHomeTextFirstPart">
+                                    {item.home.name}
+                                    </span>
+                                    <span className="teamNameSecondPart teamNameHomeTextSecondPart" />
+                                </span>
+                                <span className="teamNameTextSeparator">
+                                    -
+                                </span>
+                                </div>
+                            </div>
+                            <div className="teamNameAway teamName">
+                                <div className="teamNameTextWrapper">
+                                <span className="teamNameEllipsisContainer">
+                                    <span className="teamNameFirstPart teamNameAwayTextFirstPart smallFont">
+                                    {item.away.name}
+                                    </span>
+                                    <span className="teamNameSecondPart teamNameAwayTextSecondPart" />
+                                </span>
+                                <span className="serveIndicator awayServe">
+                                    ●
+                                </span>
+                                </div>
+                            </div>
+                            <div className="eventNameWrapper">
+                                <span className="eventName displayNone" />
+                            </div>
+                            </a>
+                        </div>
+                        <div className="infoTextContainer infoText">
+                            <div className="periodComment displayNone" />
+                            <div className="secondaryScoreContainer empty" />
+                            <div className="periodSeparator displayNone">
+                            ,
+                            </div>
+                            <div className="time displayNone" />
+                        </div>
+                        <div
+                            className="quickBuildIndicatorContainer"
+                            data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer].EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga].EventListWidget[soccer_spain_la-liga, 2021-11-20].EventSummaryWidget[soccer_spain_la-liga, 8559838].QuickBuildIndicator[8559838]"
+                        >
+                            <div
+                            className="quickBuildIndicator quickBuildIndicatorContainer"
+                            data-widget="QuickBuildIndicatorWidget"
+                            >
+                            <div className="quickBuildIcon icon-hash" />
+                            </div>
+                        </div>
+                        <div
+                            className="cashOutMarketIndicatorContainer"
+                            data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer].EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga].EventListWidget[soccer_spain_la-liga, 2021-11-20].EventSummaryWidget[soccer_spain_la-liga, 8559838].CashOutMarketIndicator[8559838]"
+                        >
+                            <div
+                            className="cashOutIndicator"
+                            data-widget="CashOutMarketIndicatorWidget[214647319]"
+                            >
+                            <div className="cashOutIcon icon-cashout" />
+                            </div>
+                        </div>
+                        <div
+                            className="liveStatusIconsContainer"
+                            data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer].EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga].EventListWidget[soccer_spain_la-liga, 2021-11-20].EventSummaryWidget[soccer_spain_la-liga, 8559838].EventStatus[8559838]"
+                        >
+                            <div
+                            className="eventStatusContainer"
+                            data-widget="EventStatusWidget[8559838]"
+                            >
+                            <div className="eventStatus">
+                                <div className="eventStatusText" />
+                                <div className="eventStatusIcon icon-channel-inplay upcomingEventStatus" />
+                                <div className="liveStreamingIcon displayNone" />
+                                <div className="statisticsIcon" />
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </header>
+                </div>
+                <div className="eventMarket">
+                <div
+                    className="switchableMarketContainer"
+                    data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer].EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga].EventListWidget[soccer_spain_la-liga, 2021-11-20].SwitchableMarketWidgetContainer[8559838]"
+                >
+                    <div
+                    className="switchableMarketLayout"
+                    data-widget="SwitchableMarkeOnScheduletWidget[soccer_spain_la-liga_2021-11-20, 8559838]"
+                    >
+                    <div className="moreBetsButton moreBets displayNone">
+                        <div
+                        className="button"
+                        data-tap-recogniser="true"
+                        >
+                        More
+                        Bets
+                        </div>
+                    </div>
+                    <div
+                        className="container"
+                        data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer].EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga].EventListWidget[soccer_spain_la-liga, 2021-11-20].MarketWidgetContainer[8559838]"
+                    >
+                        <div
+                        className="simplifiedStandardMarket"
+                        data-widget="StandardMarketWidget[214647319]"
+                        >
+                        <div className="suspended displayNone">
+                            Suspended
+                        </div>
+                        <div
+                            className="outcomeCollection outcomes3x"
+                            data-tap-recogniser="true"
+                        >
+                            <div className="moreMarkets displayNone">
+                            <div
+                                className="button outcomeButton"
+                                data-tap-recogniser="true"
+                            >
+                                <div className="content">
+                                More
+                                Bets
+                                </div>
+                            </div>
+                            </div>
+                            <MatchScore matchId={item.id}></MatchScore>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
+            <div className="quickbetContainer empty" />
+            </article>
+        </div>
           );
         }
       });
@@ -191,9 +359,90 @@ const Leagues = (props: any) => {
         return "";
       }
       return (
-        <Button style={{ width: "250px" }} onClick={() => setMatchId(item.id)}>
-          {item.name}
-        </Button>
+        <div  onClick={() => setMatchId(item.id)}
+        className="mainContent"
+        data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[cricket].cricket.MAIN_WIDGET_CONTAINER"
+      >
+        <div
+          className="topGroupEventList"
+          data-widget="TopGroupEventListWidget[cricket]"
+        >
+          
+          <div
+            className="eventListContainer"
+            data-container="EVENT_TABLE_LIST[SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[cricket].TopGroupEventListWidget[cricket],cricket]"
+          >
+            <div
+              className="eventTableItemCollection"
+              data-widget="EventTableListWidget[cricket_international_twenty20-internationals, cricket_international_twenty20-internationals]"
+            >
+              <div className="collapsablePanel cricket_international_twenty20-internationals_2021-11-19">
+                <div
+                  className="collapsableHeader"
+                  // collapsed="false"
+                  data-tap-recogniser="true"
+                >
+                  <div className="arrow iconHolder">
+                    <div className="arrowIcon icon-arrow-down" />
+                  </div>
+                  <div className="titleTextWrapper">
+                    <div className="titleText">
+                    {item.name}
+                    </div>
+                    <div className="subTitle" />
+                  </div>
+                  <div className="Message" />
+                  <div
+                    className="marketFilteringHeaderContainer"
+                    data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[cricket].TopGroupEventListWidget[cricket].EventTableListWidget[cricket_international_twenty20-internationals, cricket_international_twenty20-internationals].MarketFilteringWidgetContainer[cricket_international_twenty20-internationals_2021-11-19]"
+                  >
+                    <div
+                      className="marketFilteringHeaderWrapper"
+                      data-widget="MarketFilteringHeaderWidget[cricket_international_twenty20-internationals_2021-11-19, cricket_international_twenty20-internationals]"
+                    >
+                      <div className="headerLoaderWrapper displayNone">
+                        <div className="loading" />
+                      </div>
+                      <div className="headerContainer headers2x">
+                        <div className="0">
+                          <span>
+                            {/* Home */}
+                          </span>
+                        </div>
+                        <div className="1">
+                          <span>
+                            {/* Away */}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="collapsableContent"
+                  // collapsed="false"
+                  data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[cricket].TopGroupEventListWidget[cricket].EventTableListWidget[cricket_international_twenty20-internationals, cricket_international_twenty20-internationals].EventListWidgetContainer[cricket_international_twenty20-internationals_2021-11-19]"
+                >
+                  <div
+                    className="eventItemCollection"
+                    data-tap-recogniser="true"
+                    data-widget="EventListWidget[cricket_international_twenty20-internationals, 2021-11-19]"
+                  >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="spinner displayNone">
+            <div className="emptyTextWrapper">
+              <div className="empty displayNone">
+                <div className="emptyText" />
+              </div>
+              <div className="loading" />
+            </div>
+          </div>
+        </div>
+      </div>
       );
     });
   };
@@ -287,29 +536,146 @@ const Leagues = (props: any) => {
   }, [currentMatchId]);
 
   return (
-    <Card title="Top Leagues">
-      {openBet && (
-        <BetModal
-          visible={openBet}
-          setVisible={setOpenBet}
-          betId={betId}
-          fiId={fiId}
-          eventName={eventName}
-          sportsId={sportsid}
-          odValue={odValue}
-        />
-      )}
-      {!currentMatchId ? (
-        <>
-          <Row style={{ display: "flex", justifyContent: "space-around" }}>
-            {LeagueListTable()}
-          </Row>
-          <Card>{ShowMatchList()}</Card>
-        </>
-      ) : (
-        <Card>{tableData && AddTable()}</Card>
-      )}
-    </Card>
+    <>
+    <div className="cricket">
+                                        <article className="topCategoryFirstGroupWrapper">
+                                          <div
+                                            className="categoryTopGroupContainer"
+                                            data-container="CATEGORY_TOP_GROUP_CONTAINER.cricket"
+                                          >
+                                            <div
+                                              className="categoryTopGroupWithHeaderComponent"
+                                              data-widget="CategoryTopGroupWithHeaderWidget[cricket]"
+                                            >
+                                              <header className="headerBar topCategoryHeader">
+                                                <div
+                                                  className="headerWidgetContainer"
+                                                  data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[cricket].cricket.HEADER_WIDGET_CONTAINER"
+                                                >
+                                                  <div
+                                                    className="headerBar topCategory"
+                                                    data-widget="DynamicHeaderBarWidget[cricket]"
+                                                  >
+                                                    <div className="headerBarContent">
+                                                      <div className="headerIcon">
+                                                        <img
+                                                          className="iconContainer ic_sports"
+                                                          src="img/015-cricket.png"
+                                                        />
+                                                      </div>
+                                                      <div className="headerTitle">
+                                                        Top League
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                
+                                              </header>
+                                              {LeagueListTable()}
+                                            </div>
+                                          </div>
+                                        </article>
+                                      </div>
+                                      <div className="soccer">
+                                        <article className="topCategoryFirstGroupWrapper">
+                                          <div
+                                            className="categoryTopGroupContainer"
+                                            data-container="CATEGORY_TOP_GROUP_CONTAINER.soccer"
+                                          >
+                                            <div
+                                              className="categoryTopGroupWithHeaderComponent"
+                                              data-widget="CategoryTopGroupWithHeaderWidget[soccer]"
+                                            >
+                                              <header className="headerBar topCategoryHeader">
+                                                <div
+                                                  className="headerWidgetContainer"
+                                                  data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].soccer.HEADER_WIDGET_CONTAINER"
+                                                >
+                                                  <div
+                                                    className="headerBar topCategory"
+                                                    data-widget="DynamicHeaderBarWidget[soccer]"
+                                                  >
+                                                    <div className="headerBarContent">
+                                                      <div className="headerIcon">
+                                                        <img
+                                                          className="iconContainer ic_sports"
+                                                          src="img/045-soccer.png"
+                                                        />
+                                                      </div>
+                                                      <div className="headerTitle">
+                                                        Football
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div
+                                                  className="seeMoreButtonWidgetContainer"
+                                                  data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].soccer.SEE_MORE_WIDGET_CONTAINER"
+                                                >
+                                                  <div
+                                                    className="button icon-arrow-right simpleText"
+                                                    data-tap-recogniser="true"
+                                                    data-widget="SimpleTextWidget[b08697d4-195b-4f5e-9fda-82a546eb1558, See more Football]"
+                                                  >
+                                                    <span className="innerText">
+                                                      See more Football
+                                                    </span>
+                                                  </div>
+                                                </div>
+                                              </header>
+                                              <div
+                                                className="mainContent"
+                                                data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].soccer.MAIN_WIDGET_CONTAINER"
+                                              >
+                                                <div
+                                                  className="topGroupEventList"
+                                                  data-widget="TopGroupEventListWidget[soccer]"
+                                                >
+                                               
+                                                  <div
+                                                    className="eventListContainer"
+                                                    data-container="EVENT_TABLE_LIST[SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer],soccer]"
+                                                  >
+                                                    <div
+                                                      className="eventTableItemCollection"
+                                                      data-widget="EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga]"
+                                                    >
+                                                      <div className="collapsablePanel soccer_spain_la-liga_2021-11-20">
+                                                        
+                                                        <div
+                                                          className="collapsableContent"
+                                                          // collapsed="false"
+                                                          data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer].EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga].EventListWidgetContainer[soccer_spain_la-liga_2021-11-20]"
+                                                        >
+                                                          <div
+                                                            className="eventItemCollection"
+                                                            data-tap-recogniser="true"
+                                                            data-widget="EventListWidget[soccer_spain_la-liga, 2021-11-20]"
+                                                          >
+                                                            <div class="collapsableHeader" data-tap-recogniser="true"><div class="arrow iconHolder"><div class="arrowIcon icon-arrow-down"></div></div><div class="titleTextWrapper"><div class="titleText">Today</div><div class="subTitle"></div></div><div class="Message"></div><div class="marketFilteringHeaderContainer" data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[tennis].TopGroupEventListWidget[tennis].EventTableListWidget[tennis_atp_world-tour-finals, tennis_atp_world-tour-finals].MarketFilteringWidgetContainer[tennis_atp_world-tour-finals_2021-11-19]"><div class="marketFilteringHeaderWrapper" data-widget="MarketFilteringHeaderWidget[tennis_atp_world-tour-finals_2021-11-19, tennis_atp_world-tour-finals]"><div class="headerLoaderWrapper displayNone"><div class="loading"></div></div><div class="headerContainer headers2x"><div><span></span></div><div><span></span></div></div></div></div></div>
+                                                            {ShowMatchList()}
+                                                            
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      
+                                                    </div>
+                                                  </div>
+                                                  <div className="spinner displayNone">
+                                                    <div className="emptyTextWrapper">
+                                                      <div className="empty displayNone">
+                                                        <div className="emptyText" />
+                                                      </div>
+                                                      <div className="loading" />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </article>
+                                      </div>
+    </>
   );
 };
 

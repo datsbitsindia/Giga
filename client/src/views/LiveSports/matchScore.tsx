@@ -104,10 +104,58 @@ const MatchScore = (props: any) => {
     <>
     {/* {gamedata && gamedata[0] && gamedata[0].title && (<span>{gamedata[0].title}</span>)} */}
     {/* {showScore()} */}
-    <span>== {home} == </span> 
+    {/* <span>== {home} == </span> 
     <span>{draw} == </span>
-    <span>{away} == </span>
+    <span>{away} == </span> */}
     {/* <span>Hello</span> */}
+    <div className="baseOutcomeItem">
+                            <div className="outcomeButton">
+                                <div className="oddsChange" />
+                                <div className="cornerMarker" />
+                                <div className="lineContainer displayNone">
+                                <div className="lineAbove" />
+                                <div className="line" />
+                                <div className="lineBelow" />
+                                </div>
+                                <div className="oddsDisplay">
+                                <div className="odds">
+                                {home}
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="baseOutcomeItem">
+                            <div className="outcomeButton">
+                                <div className="oddsChange" />
+                                <div className="cornerMarker" />
+                                <div className="lineContainer displayNone">
+                                <div className="lineAbove" />
+                                <div className="line" />
+                                <div className="lineBelow" />
+                                </div>
+                                <div className="oddsDisplay">
+                                <div className="odds">
+                                {draw}
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="baseOutcomeItem">
+                            <div className="outcomeButton">
+                                <div className="oddsChange" />
+                                <div className="cornerMarker" />
+                                <div className="lineContainer displayNone">
+                                <div className="lineAbove" />
+                                <div className="line" />
+                                <div className="lineBelow" />
+                                </div>
+                                <div className="oddsDisplay">
+                                <div className="odds">
+                                {away}
+                                </div>
+                                </div>
+                            </div>
+                            </div>
     </>
   );
 };
