@@ -12,6 +12,7 @@ const Loading = () => (
 
 const Login = React.lazy(() => import("./pages/login"));
 const Home = React.lazy(() => import("./pages/Home"));
+const SPORTSDetails = React.lazy(() => import("./pages/SPORTSDetails"));
 const AdminPage = React.lazy(() => import("./pages/AdminHome"));
 const home = React.lazy(() => import("./pages/home1"));
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <BrowserRouter>
         
         <Route exact path="/sports" component={Home} />
+        <Route exact path="/sports/details" component={SPORTSDetails} />
         <Route path="/login" component={UserLogin} />
         <Route path="/signup" component={UserSignup} />
          <Route path="/signup" component={UserSignup} />

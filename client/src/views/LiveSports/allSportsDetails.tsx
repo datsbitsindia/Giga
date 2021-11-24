@@ -9,7 +9,7 @@ import cricket from '../../img/015-cricket.png';
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
-const AllSports = () => {
+const AllSportsDetails = () => {
   const [menu, setMenu] = useState<any>();
   const [sportsid, setsportsid] = useState<any>();
   const [changeID, setchangeID] = useState<any>();
@@ -738,7 +738,7 @@ const AllSports = () => {
                               >
                                {menu &&
                                 menu.map((item: any) => (
-                                  <a className="categoryListItem" onClick={() => {setsportsid(item.SportID); setchangeID(Math.random())}}
+                                  <a className="categoryListItem" onClick={() => setsportsid(item.SportID)}
                                   key={item.SportID}>
                                     <div className="categoryListItemWrapper">
                                       <span className="button_text">
@@ -866,11 +866,20 @@ const AllSports = () => {
                                       </div>
                                     </div>
                                   </div>
-                                  
+                                  <div
+                                    className="9255 node"
+                                    data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.9255"
+                                  >
+                                    <div
+                                      className="topCategoriesFirstGroup homePageTheme bottomSeparator"
+                                      data-widget="TopCategoriesFirstGroupWidget"
+                                    >
                                       
-                                      {sportsid && <Leagues sportsid={sportsid} changeID={changeID} />}
                                       
-                                    
+                                      
+                                    </div>
+                                  </div>
+                                  {sportsid && <Leagues sportsid={sportsid} changeID={changeID} />}
                                   <div
                                     className="9256 node 9256"
                                     data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.9256"
@@ -1141,4 +1150,4 @@ const AllSports = () => {
   );
 };
 
-export default AllSports;
+export default AllSportsDetails;

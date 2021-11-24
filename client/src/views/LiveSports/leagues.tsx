@@ -13,7 +13,7 @@ import { Redirect } from "react-router-dom";
 const { Panel } = Collapse;
 
 const Leagues = (props: any) => {
-  const { sportsid } = props;
+  const { sportsid, changeID } = props;
   const [matchId, setMatchId] = useState<any>();
   const [leagues, setLeagues] = useState<any>();
   const [leagueList, setLeagueList] = useState<any>([]);
@@ -521,6 +521,7 @@ const Leagues = (props: any) => {
   };
 
   useEffect(() => {
+    console.log('new');
     setLeagues(null);
     // getMatchesData();
     getData();
@@ -528,16 +529,45 @@ const Leagues = (props: any) => {
   }, [sportsid]);
 
   useEffect(() => {
+    console.log('in');
+    setCurrentMatchId('');
+    setTableData([]);
+  }, [changeID])
+
+  useEffect(() => {
+    setCurrentMatchId('');
     ShowMatchList();
   }, [leagues]);
 
   useEffect(() => {
     getMatchesData();
+    setCurrentMatchId('');
+    setTableData([]);
   }, [currentMatchId]);
 
   return (
     <>
-    <div className="cricket">
+    {openBet && (
+        <BetModal
+          visible={openBet}
+          setVisible={setOpenBet}
+          betId={betId}
+          fiId={fiId}
+          eventName={eventName}
+          sportsId={sportsid}
+          odValue={odValue}
+        />
+      )}
+    <div
+                                    className="9255 node"
+                                    data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.9255"
+                                  >
+                                    <div
+                                      className="topCategoriesFirstGroup homePageTheme bottomSeparator"
+                                      data-widget="TopCategoriesFirstGroupWidget"
+                                    >
+                                      {tableData.length == 0 ? <>
+                                    <div className="cricket">
                                         <article className="topCategoryFirstGroupWrapper">
                                           <div
                                             className="categoryTopGroupContainer"
@@ -674,6 +704,9 @@ const Leagues = (props: any) => {
                                             </div>
                                           </div>
                                         </article>
+                                      </div> </> : ''}
+                                      {tableData && AddTable()}
+                                      </div> 
                                       </div>
     </>
   );

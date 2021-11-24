@@ -3,7 +3,7 @@ import { Layout, Menu } from "antd";
 import cricket from '../img/015-cricket.png';
 
 import { Switch, Route } from "react-router-dom";
-import AllSports from "../views/LiveSports/allSports";
+import AllSportsDetails from "../views/LiveSports/allSportsDetails";
 import { useAuth } from "../context/auth-context";
 
 import "../css/spinsporticons.woff2";
@@ -27,7 +27,7 @@ import "../css/SportsCoreDesktop.min.css";
 
 const { Header, Content, Footer } = Layout;
 
-const Home = (props: any) => {
+const SPORTSDetails = (props: any) => {
   const { user } = useAuth();
 
   const logout = () => {
@@ -36,9 +36,9 @@ const Home = (props: any) => {
   };
   return (
     <div>
-      <Route exact path="/sports" component={AllSports} />
+      <Route exact path="/sports/details" component={AllSportsDetails} />
     </div>
   );
 };
 
-export default Home;
+export default SPORTSDetails;
