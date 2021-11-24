@@ -648,7 +648,7 @@ const Leagues = (props: any) => {
                                                     data-widget="SimpleTextWidget[b08697d4-195b-4f5e-9fda-82a546eb1558, See more Football]"
                                                   >
                                                     <span className="innerText">
-                                                      See more Football
+                                                      {/* See more Football */}
                                                     </span>
                                                   </div>
                                                 </div>
@@ -682,7 +682,7 @@ const Leagues = (props: any) => {
                                                             data-tap-recogniser="true"
                                                             data-widget="EventListWidget[soccer_spain_la-liga, 2021-11-20]"
                                                           >
-                                                            <div class="collapsableHeader" data-tap-recogniser="true"><div class="arrow iconHolder"><div class="arrowIcon icon-arrow-down"></div></div><div class="titleTextWrapper"><div class="titleText">Today</div><div class="subTitle"></div></div><div class="Message"></div><div class="marketFilteringHeaderContainer" data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[tennis].TopGroupEventListWidget[tennis].EventTableListWidget[tennis_atp_world-tour-finals, tennis_atp_world-tour-finals].MarketFilteringWidgetContainer[tennis_atp_world-tour-finals_2021-11-19]"><div class="marketFilteringHeaderWrapper" data-widget="MarketFilteringHeaderWidget[tennis_atp_world-tour-finals_2021-11-19, tennis_atp_world-tour-finals]"><div class="headerLoaderWrapper displayNone"><div class="loading"></div></div><div class="headerContainer headers2x"><div><span></span></div><div><span></span></div></div></div></div></div>
+                                                            <div class="collapsableHeader" data-tap-recogniser="true"><div class="arrow iconHolder"><div class=""></div></div><div class="titleTextWrapper"><div class="titleText"></div><div class="subTitle"></div></div><div class="Message"></div><div class="marketFilteringHeaderContainer" data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.TopCategoriesFirstGroupWidget.CategoryTopGroupWithHeaderWidget[soccer].TopGroupEventListWidget[soccer].EventTableListWidget[soccer_spain_la-liga, soccer_spain_la-liga].MarketFilteringWidgetContainer[soccer_spain_la-liga_2021-11-22]"><div class="marketFilteringHeaderWrapper" data-widget="MarketFilteringHeaderWidget[soccer_spain_la-liga_2021-11-22, soccer_spain_la-liga]"><div class="headerLoaderWrapper displayNone"><div class="loading"></div></div><div class="headerContainer headers3x"><div><span>Home</span></div><div><span>Draw</span></div><div><span>Away</span></div></div></div></div></div>
                                                             {ShowMatchList()}
                                                             
                                                           </div>
