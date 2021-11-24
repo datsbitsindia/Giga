@@ -8,11 +8,8 @@ import cricket from "../../img/015-cricket.png";
 import soccer from "../../img/045-soccer.png";
 import tennis from "../../img/048-tennis.png";
 import boosts from "../../img/060-betway-boosts.png";
-<<<<<<< HEAD
 import { useAuth } from "../../context/auth-context";
-=======
 import logo from "../../img/logo.png";
->>>>>>> 7139b77bde3efa7d93c51bf73ef27eed7da10889
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
