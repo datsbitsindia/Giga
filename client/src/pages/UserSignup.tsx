@@ -1,4 +1,4 @@
-import { Card, Form, Input, Button, message, Row, Col } from "antd";
+import { Card, Form, Input, Button, message } from "antd";
 import { asyncWrap } from "../utils/utils";
 import axios from "axios";
 
@@ -14,18 +14,21 @@ const tailLayout = {
 const UserSignup = (props: any) => {
   const submit = async (values: any) => {
     let data = {
-      amount: values.amount,
-      remark: values.remarks,
+      fullName: values.fullName,
+      email: values.email,
+      mobileNumber: values.mobile,
+      roleId: 3,
+      userName: values.username,
       password: values.password,
     };
-    const [err, result] = await asyncWrap(axios.post("deposit", data));
+    const [err, result] = await asyncWrap(axios.post("signup", data));
     if (err) {
       return message.error({
         content: "Something Went Wrong!",
         style: { marginTop: "5vh" },
       });
     }
-
+    props.history.push("/login");
     return message.success({
       content: "Inserted successfully",
     });
@@ -61,7 +64,7 @@ const UserSignup = (props: any) => {
           </Form.Item>
           <Form.Item
             label="Pan card Number"
-            name="phone"
+            name="panNumber"
             rules={[
               {
                 required: true,
@@ -131,7 +134,6 @@ const UserSignup = (props: any) => {
           >
             <Input placeholder="Enter same as password" />
           </Form.Item>
-
           <Form.Item {...tailLayout}>
             <Button
               type="primary"

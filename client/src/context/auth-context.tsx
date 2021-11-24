@@ -20,7 +20,7 @@ export interface IAuthContext {
   isAllowedToRole: (roles: Roles[]) => boolean;
 }
 
-export type Roles = "SuperAdmin" | "User";
+export type Roles = "SuperAdmin" | "Admin" | "Users";
 
 export const AuthContext = React.createContext<Partial<IAuthContext>>({});
 AuthContext.displayName = "AuthContext";

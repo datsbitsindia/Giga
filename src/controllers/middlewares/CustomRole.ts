@@ -6,7 +6,8 @@ var set = require("lodash.set");
 
 export enum ROLES {
   "Super Admin" = 1,
-  "User" = 2,
+  "Admin" = 2,
+  "Users" = 3,
 }
 
 const send401WithMessage = (res: Response) => {

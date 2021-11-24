@@ -2,29 +2,20 @@ import { Controller, Middleware, Post } from "@overnightjs/core";
 import { INTERNAL_SERVER_ERROR, OK } from "http-status-codes";
 import { runSP } from "../Dal/db";
 import { asyncWrap } from "../utils/asyncWrap";
-import { auth_role, ROLES } from "./middlewares/CustomRole";
+import { hashPassword } from "../utils/passwordHash";
 
 @Controller("signup")
 export class SignupController {
   @Post("")
-  @Middleware(auth_role(ROLES["Super Admin"]))
   private async signupNewUser(req: any, res: any) {
-    const {
-      fullName,
-      email,
-      mobileNumber,
-      roleId,
-      userId,
-      userName,
-      password,
-      TransctionCode,
-    } = req.body;
+    const { fullName, email, mobileNumber, roleId, userName, password } =
+      req.body;
 
     const [error, result] = await asyncWrap(
       runSP("IU_Users", [
         {
           name: "UserID",
-          value: userId,
+          value: 0,
         },
         {
           name: "RoleID",
@@ -48,19 +39,7 @@ export class SignupController {
         },
         {
           name: "Password",
-          value: password,
-        },
-        {
-          name: "Email",
-          value: email,
-        },
-        {
-          name: "TransctionCode",
-          value: TransctionCode,
-        },
-        {
-          name: "LoginUserID",
-          value: +req.payload.userId,
+          value: hashPassword(password),
         },
       ])
     );
@@ -75,7 +54,7 @@ export class SignupController {
 
     return res.status(OK).send({
       success: true,
-      code: +result.recordset[0].status,
+      code: 1,
       message: result.recordset[0].message,
     });
   }
