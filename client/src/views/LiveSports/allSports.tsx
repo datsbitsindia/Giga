@@ -8,6 +8,7 @@ import cricket from "../../img/015-cricket.png";
 import soccer from "../../img/045-soccer.png";
 import tennis from "../../img/048-tennis.png";
 import boosts from "../../img/060-betway-boosts.png";
+import logo from "../../img/logo.png";
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
@@ -187,7 +188,9 @@ const AllSports = (props: any) => {
                       data-tap-recogniser="true"
                       className="siteLogo"
                       data-widget="SimpleButtonWidget[abfda4bf-a8c4-4c9b-8cb6-4662b1f817a1]"
-                    />
+                    >
+                      <img src={logo} alt="logo" />
+                    </div>
                   </div>
                   <div
                     className="siteControls node"
@@ -680,7 +683,7 @@ const AllSports = (props: any) => {
                                 /> */}
                               </div>
                               <div className="textWrapper">
-                                <div className="button_text">Betway Boosts</div>
+                                <div className="button_text">Baseball</div>
                               </div>
                             </div>
                           </a>
@@ -1084,7 +1087,7 @@ const AllSports = (props: any) => {
             </div>
           </div>
         </div>
-        <div className="testy-div">
+        {/* <div className="testy-div">
           <div className="testimonial-reel-2 container">
             <div>
               <div className="box">
@@ -1143,7 +1146,7 @@ const AllSports = (props: any) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="container">
           <div className="copyright">
             <p>Copyright © 2021 GIGABITE. All rights reserved.</p>
