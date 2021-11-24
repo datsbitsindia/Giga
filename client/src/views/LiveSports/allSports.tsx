@@ -1,6 +1,6 @@
 import axios from "axios";
 import { asyncWrap } from "../../utils/utils";
-import { Layout, Menu, message } from "antd";
+import { Layout, Menu, message, Button } from "antd";
 import { useEffect, useState } from "react";
 import Leagues from "./leagues";
 import { Content } from "antd/lib/layout/layout";
@@ -8,11 +8,15 @@ import cricket from "../../img/015-cricket.png";
 import soccer from "../../img/045-soccer.png";
 import tennis from "../../img/048-tennis.png";
 import boosts from "../../img/060-betway-boosts.png";
+import { useAuth } from "../../context/auth-context";
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
 const AllSports = (props: any) => {
+  const { user } = useAuth();
+
+  const [balance, setBalance] = useState<number>();
   const [menu, setMenu] = useState<any>();
   const [sportsid, setsportsid] = useState<any>();
   const [changeID, setchangeID] = useState<any>();
@@ -30,9 +34,26 @@ const AllSports = (props: any) => {
     setMenu(result.data.data);
   };
 
+  const getUserBalance = async () => {
+    const [err, result] = await asyncWrap(
+      axios.get(`/balance/${user?.role.userId}`)
+    );
+    if (err) {
+      message.error({
+        content: "Something went wrong",
+        style: { marginTop: "5vh" },
+      });
+    }
+    setBalance(result.data.data[0].UserBalance);
+  };
+
   useEffect(() => {
     getSports();
   }, []);
+
+  useEffect(() => {
+    getUserBalance();
+  }, [user]);
 
   return (
     <>
@@ -431,16 +452,18 @@ const AllSports = (props: any) => {
                                 data-widget="LoginWidget"
                               >
                                 <form className="loginForm">
-                                  <input
-                                    className="registerButton button"
-                                    defaultValue="Register"
-                                    type="button"
-                                    style={{ color: "black" }}
-                                    data-tap-recogniser="true"
-                                    onClick={() =>
-                                      props.history.push("/signup")
-                                    }
-                                  />
+                                  {!user ? (
+                                    <input
+                                      className="registerButton button"
+                                      defaultValue="Register"
+                                      type="button"
+                                      style={{ color: "black" }}
+                                      data-tap-recogniser="true"
+                                      onClick={() =>
+                                        props.history.push("/signup")
+                                      }
+                                    />
+                                  ) : null}
                                   {/* <div className="loginInputs">
                                     <div className="errorContainer" />
                                     <div className="inputContainer usernameInput">
@@ -490,20 +513,31 @@ const AllSports = (props: any) => {
                                     </span>
                                     <div className="loading displayNone" />
                                   </div> */}
-                                  <input
-                                    className="registerButton button"
-                                    defaultValue="Log in"
-                                    type="button"
-                                    style={{
-                                      color: "black",
-                                      marginLeft: "10px",
-                                    }}
-                                    data-tap-recogniser="true"
-                                    onClick={() => props.history.push("/login")}
-                                  />
+                                  {!user ? (
+                                    <input
+                                      className="registerButton button"
+                                      defaultValue="Log in"
+                                      type="button"
+                                      style={{
+                                        color: "black",
+                                        marginLeft: "10px",
+                                      }}
+                                      data-tap-recogniser="true"
+                                      onClick={() =>
+                                        props.history.push("/login")
+                                      }
+                                    />
+                                  ) : null}
                                 </form>
                               </div>
                             </div>
+                          </div>
+                          <div>
+                            {user ? (
+                              <Button type="default">
+                                My Balance : {balance}
+                              </Button>
+                            ) : null}
                           </div>
                           <div
                             className="quickSearchIconButton node"
@@ -634,10 +668,7 @@ const AllSports = (props: any) => {
                           <a className="categoryListItem" href="#">
                             <div className="categoryListItemWrapper">
                               <div className="icon_container">
-                                <img
-                                  className="ic_sports"
-                                  src={soccer}
-                                />
+                                <img className="ic_sports" src={soccer} />
                                 {/* <img
                                   className="categoryBadge"
                                   //   // badge_type="live"
@@ -652,10 +683,7 @@ const AllSports = (props: any) => {
                           <a className="categoryListItem" href="#">
                             <div className="categoryListItemWrapper">
                               <div className="icon_container">
-                                <img
-                                  className="ic_sports"
-                                  src={tennis}
-                                />
+                                <img className="ic_sports" src={tennis} />
                                 {/* <img
                                   className="categoryBadge"
                                   //   // badge_type="live"
@@ -670,10 +698,7 @@ const AllSports = (props: any) => {
                           <a className="categoryListItem" href="#">
                             <div className="categoryListItemWrapper">
                               <div className="icon_container">
-                                <img
-                                  className="ic_sports"
-                                  src={boosts}
-                                />{" "}
+                                <img className="ic_sports" src={boosts} />{" "}
                                 {/* <img
                                   className="categoryBadge displayNone"
                                   //   // badge_type="live"
@@ -1155,4 +1180,3 @@ const AllSports = (props: any) => {
 };
 
 export default AllSports;
-

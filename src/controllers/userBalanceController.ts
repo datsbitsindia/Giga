@@ -9,7 +9,7 @@ import { auth_role, ROLES } from "./middlewares/CustomRole";
 @Controller("balance")
 export class UserBalanceController {
   @Get(":userid")
-  @Middleware(auth_role(ROLES["Super Admin"]))
+  @Middleware(auth_role(ROLES.Users))
   private async getUserBalance(req: ISecureRequest, res: Response) {
     const { userid } = req.params;
     const [error, result] = await asyncWrap(
