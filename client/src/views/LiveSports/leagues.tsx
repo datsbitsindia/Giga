@@ -465,6 +465,7 @@ const Leagues = (props: any) => {
   };
 
   const calculate = (odValue) => {
+    console.log(odValue)
     let val;
     if (odValue !== "0/0") {
       val = eval(odValue);
@@ -633,7 +634,7 @@ const Leagues = (props: any) => {
                                                         />
                                                       </div>
                                                       <div className="headerTitle">
-                                                        Football
+                                                        Match List
                                                       </div>
                                                     </div>
                                                   </div>

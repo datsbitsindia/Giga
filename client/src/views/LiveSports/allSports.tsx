@@ -4,12 +4,15 @@ import { Layout, Menu, message } from "antd";
 import { useEffect, useState } from "react";
 import Leagues from "./leagues";
 import { Content } from "antd/lib/layout/layout";
-import cricket from '../../img/015-cricket.png';
+import cricket from "../../img/015-cricket.png";
+import soccer from "../../img/045-soccer.png";
+import tennis from "../../img/048-tennis.png";
+import boosts from "../../img/060-betway-boosts.png";
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
-const AllSports = () => {
+const AllSports = (props: any) => {
   const [menu, setMenu] = useState<any>();
   const [sportsid, setsportsid] = useState<any>();
   const [changeID, setchangeID] = useState<any>();
@@ -33,7 +36,6 @@ const AllSports = () => {
 
   return (
     <>
-      
       <div>
         <div data-application-root className="data-container root">
           <div
@@ -215,7 +217,7 @@ const AllSports = () => {
                           className="layout controls collection horizontal"
                           data-widget="controls"
                         >
-                          <div
+                          {/* <div
                             className="odds node re-di-no"
                             data-container="SpinSport.Application.topBarLayout.ConfiguredLayoutWidget[sports-site-controls].controls.odds"
                           >
@@ -263,8 +265,8 @@ const AllSports = () => {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div
+                          </div> */}
+                          {/* <div
                             className="support node re-di-no"
                             data-container="SpinSport.Application.topBarLayout.ConfiguredLayoutWidget[sports-site-controls].controls.support"
                           >
@@ -300,8 +302,8 @@ const AllSports = () => {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div
+                          </div> */}
+                          {/* <div
                             className="language node re-di-no"
                             data-container="SpinSport.Application.topBarLayout.ConfiguredLayoutWidget[sports-site-controls].controls.language"
                           >
@@ -405,7 +407,7 @@ const AllSports = () => {
                                 </div>
                               </div>
                             </div>
-                          </div>
+                          </div> */}
                           <div
                             className="bank node"
                             data-container="SpinSport.Application.topBarLayout.ConfiguredLayoutWidget[sports-site-controls].controls.bank"
@@ -433,9 +435,13 @@ const AllSports = () => {
                                     className="registerButton button"
                                     defaultValue="Register"
                                     type="button"
+                                    style={{ color: "black" }}
                                     data-tap-recogniser="true"
+                                    onClick={() =>
+                                      props.history.push("/signup")
+                                    }
                                   />
-                                  <div className="loginInputs">
+                                  {/* <div className="loginInputs">
                                     <div className="errorContainer" />
                                     <div className="inputContainer usernameInput">
                                       <input
@@ -474,20 +480,26 @@ const AllSports = () => {
                                         Forgot Login?
                                       </div>
                                     </div>
-                                  </div>
-                                  <div
+                                  </div> */}
+                                  {/* <div
                                     className="loginButton button submitButton"
                                     data-tap-recogniser="true"
-                                  >
-                                    <span className="content innerText">
+                                  > */}
+                                  {/* <span className="content innerText">
                                       Log in
                                     </span>
                                     <div className="loading displayNone" />
-                                  </div>
+                                  </div> */}
                                   <input
-                                    className="loginSubmit"
+                                    className="registerButton button"
                                     defaultValue="Log in"
-                                    type="submit"
+                                    type="button"
+                                    style={{
+                                      color: "black",
+                                      marginLeft: "10px",
+                                    }}
+                                    data-tap-recogniser="true"
+                                    onClick={() => props.history.push("/login")}
                                   />
                                 </form>
                               </div>
@@ -608,11 +620,11 @@ const AllSports = () => {
                                   src={cricket}
                                   // src={require('../img/015-cricket.png')}
                                 />
-                                <img
+                                {/* <img
                                   className="categoryBadge"
                                   //   // badge_type="live"
                                   src="img/live.png"
-                                />
+                                /> */}
                               </div>
                               <div className="textWrapper">
                                 <div className="button_text">Cricket</div>
@@ -624,13 +636,13 @@ const AllSports = () => {
                               <div className="icon_container">
                                 <img
                                   className="ic_sports"
-                                  src="img/045-soccer.png"
+                                  src={soccer}
                                 />
-                                <img
+                                {/* <img
                                   className="categoryBadge"
                                   //   // badge_type="live"
                                   src="img/live.png"
-                                />
+                                /> */}
                               </div>
                               <div className="textWrapper">
                                 <div className="button_text">Football</div>
@@ -642,13 +654,13 @@ const AllSports = () => {
                               <div className="icon_container">
                                 <img
                                   className="ic_sports"
-                                  src="img/048-tennis.png"
+                                  src={tennis}
                                 />
-                                <img
+                                {/* <img
                                   className="categoryBadge"
                                   //   // badge_type="live"
                                   src="img/live.png"
-                                />
+                                /> */}
                               </div>
                               <div className="textWrapper">
                                 <div className="button_text">Tennis</div>
@@ -660,12 +672,12 @@ const AllSports = () => {
                               <div className="icon_container">
                                 <img
                                   className="ic_sports"
-                                  src="img/060-betway-boosts.png"
+                                  src={boosts}
                                 />{" "}
-                                <img
+                                {/* <img
                                   className="categoryBadge displayNone"
                                   //   // badge_type="live"
-                                />
+                                /> */}
                               </div>
                               <div className="textWrapper">
                                 <div className="button_text">Betway Boosts</div>
@@ -736,23 +748,28 @@ const AllSports = () => {
                                 className="categoryList baseCategoryListItem"
                                 data-tap-recogniser="true"
                               >
-                               {menu &&
-                                menu.map((item: any) => (
-                                  <a className="categoryListItem" onClick={() => {setsportsid(item.SportID); setchangeID(Math.random())}}
-                                  key={item.SportID}>
-                                    <div className="categoryListItemWrapper">
-                                      <span className="button_text">
-                                      {item.SportName}
-                                      </span>{" "}
-                                      <img
-                                        className="categoryBadge"
-                                        //   // badge_type="live"
-                                        src="img/live.png"
-                                      />
-                                    </div>
-                                  </a>
-                                  
-                                ))}
+                                {menu &&
+                                  menu.map((item: any) => (
+                                    <a
+                                      className="categoryListItem"
+                                      onClick={() => {
+                                        setsportsid(item.SportID);
+                                        setchangeID(Math.random());
+                                      }}
+                                      key={item.SportID}
+                                    >
+                                      <div className="categoryListItemWrapper">
+                                        <span className="button_text">
+                                          {item.SportName}
+                                        </span>{" "}
+                                        <img
+                                          className="categoryBadge"
+                                          //   // badge_type="live"
+                                          // src="img/live.png"
+                                        />
+                                      </div>
+                                    </a>
+                                  ))}
                               </div>
                             </div>
                           </div>
@@ -806,7 +823,6 @@ const AllSports = () => {
                               </div>
                             </div>
                           </div>
-
                         </div>
 
                         <div>
@@ -838,13 +854,10 @@ const AllSports = () => {
                                   className="layout 9250 collection vertical"
                                   data-widget={9250}
                                 >
-                                  
                                   <div
                                     className="9253 node"
                                     data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.9253"
-                                  >
-                                 
-                                  </div>
+                                  ></div>
                                   <div
                                     className="9254 node"
                                     data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.9254"
@@ -853,10 +866,8 @@ const AllSports = () => {
                                       className="inplayScreenContent"
                                       data-widget="premium"
                                     >
-                                      <div className="selectionBar">
-                                        
-                                      </div>
-                                      
+                                      <div className="selectionBar"></div>
+
                                       <div className="scrollableAreaMask displayNone">
                                         <div className="loadingWrapper displayNone">
                                           <div className="loadingModal">
@@ -866,11 +877,14 @@ const AllSports = () => {
                                       </div>
                                     </div>
                                   </div>
-                                  
-                                      
-                                      {sportsid && <Leagues sportsid={sportsid} changeID={changeID} />}
-                                      
-                                    
+
+                                  {sportsid && (
+                                    <Leagues
+                                      sportsid={sportsid}
+                                      changeID={changeID}
+                                    />
+                                  )}
+
                                   <div
                                     className="9256 node 9256"
                                     data-container="SpinSport.Application.mainLayout.firstRowContainer.ConfiguredLayoutWidget[sports-home-layout].9250.9256"
@@ -1136,9 +1150,9 @@ const AllSports = () => {
           </div>
         </div>
       </footer>
-         
     </>
   );
 };
 
 export default AllSports;
+

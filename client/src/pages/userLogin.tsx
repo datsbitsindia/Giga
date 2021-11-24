@@ -19,7 +19,7 @@ const UserLogin = (props: any) => {
     } else {
       let data = { ...result.data.data, userName: username };
       if (setUser) setUser(data);
-      props.history.push("/");
+      props.history.push("/sports");
       message.success({
         content: result.data.message,
         style: { marginTop: "5vh" },
