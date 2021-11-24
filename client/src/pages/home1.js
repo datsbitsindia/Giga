@@ -86,10 +86,10 @@ const Home = (props) => {
 		    </ul>
 		    <ul className="betway-ul2 navbar-nav ms-auto mb-2 mb-lg-0">
 		        <li className="nav-item bs-1">
-		          <a className="nav-link" href="#">Login up</a>
+		          <a className="nav-link" href="/login">Login up</a>
 		        </li>
 		        <li className="nav-item bs-2">
-		          <a className="nav-link" href="#">Sign up</a>
+		          <a className="nav-link" href="/signup">Sign up</a>
 		        </li>
 		      </ul>
 		    </div>
