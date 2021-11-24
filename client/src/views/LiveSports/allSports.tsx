@@ -8,7 +8,11 @@ import cricket from "../../img/015-cricket.png";
 import soccer from "../../img/045-soccer.png";
 import tennis from "../../img/048-tennis.png";
 import boosts from "../../img/060-betway-boosts.png";
+<<<<<<< HEAD
 import { useAuth } from "../../context/auth-context";
+=======
+import logo from "../../img/logo.png";
+>>>>>>> 7139b77bde3efa7d93c51bf73ef27eed7da10889
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
@@ -208,7 +212,9 @@ const AllSports = (props: any) => {
                       data-tap-recogniser="true"
                       className="siteLogo"
                       data-widget="SimpleButtonWidget[abfda4bf-a8c4-4c9b-8cb6-4662b1f817a1]"
-                    />
+                    >
+                      <img src={logo} alt="logo" />
+                    </div>
                   </div>
                   <div
                     className="siteControls node"
@@ -646,69 +652,84 @@ const AllSports = (props: any) => {
                           className="categoryList baseCategoryListItem"
                           data-tap-recogniser="true"
                         >
-                          <a className="categoryListItem" href="#">
+                            {menu &&
+                                  menu.map((item: any) => (
+                                    <a
+                                      className="categoryListItem"
+                                      onClick={() => {
+                                        setsportsid(item.SportID);
+                                        setchangeID(Math.random());
+                                      }}
+                                      key={item.SportID}
+                                    >
+                                      <div className="categoryListItemWrapper">
+                                      <div className="textWrapper">
+                                        <div className="button_text">
+                                          {item.SportName}
+                                        </div>
+                                        </div>
+                                        <img
+                                          className="categoryBadge"
+                                          //   // badge_type="live"
+                                          // src="img/live.png"
+                                        />
+                                      </div>
+                                    </a>
+                                  ))}
+                         
+                          {/* <a className="categoryListItem" href="#">
                             <div className="categoryListItemWrapper">
                               <div className="icon_container">
                                 <img
                                   className="ic_sports"
-                                  src={cricket}
-                                  // src={require('../img/015-cricket.png')}
+                                  src={soccer}
                                 />
-                                {/* <img
+                                <img
                                   className="categoryBadge"
                                   //   // badge_type="live"
                                   src="img/live.png"
-                                /> */}
-                              </div>
-                              <div className="textWrapper">
-                                <div className="button_text">Cricket</div>
-                              </div>
-                            </div>
-                          </a>
-                          <a className="categoryListItem" href="#">
-                            <div className="categoryListItemWrapper">
-                              <div className="icon_container">
-                                <img className="ic_sports" src={soccer} />
-                                {/* <img
-                                  className="categoryBadge"
-                                  //   // badge_type="live"
-                                  src="img/live.png"
-                                /> */}
+                                />
                               </div>
                               <div className="textWrapper">
                                 <div className="button_text">Football</div>
                               </div>
                             </div>
-                          </a>
-                          <a className="categoryListItem" href="#">
+                          </a> */}
+                          {/* <a className="categoryListItem" href="#">
                             <div className="categoryListItemWrapper">
                               <div className="icon_container">
-                                <img className="ic_sports" src={tennis} />
-                                {/* <img
+                                <img
+                                  className="ic_sports"
+                                  src={tennis}
+                                />
+                                <img
                                   className="categoryBadge"
                                   //   // badge_type="live"
                                   src="img/live.png"
-                                /> */}
+                                />
                               </div>
                               <div className="textWrapper">
                                 <div className="button_text">Tennis</div>
                               </div>
                             </div>
-                          </a>
-                          <a className="categoryListItem" href="#">
+                          </a> */}
+                          {/* <a className="categoryListItem" href="#">
                             <div className="categoryListItemWrapper">
                               <div className="icon_container">
-                                <img className="ic_sports" src={boosts} />{" "}
-                                {/* <img
+                                <img
+                                  className="ic_sports"
+                                  src={boosts}
+                                />{" "}
+                                <img
                                   className="categoryBadge displayNone"
                                   //   // badge_type="live"
-                                /> */}
+                                />
                               </div>
                               <div className="textWrapper">
-                                <div className="button_text">Betway Boosts</div>
+                                <div className="button_text">Baseball</div>
                               </div>
                             </div>
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
@@ -1109,7 +1130,7 @@ const AllSports = (props: any) => {
             </div>
           </div>
         </div>
-        <div className="testy-div">
+        {/* <div className="testy-div">
           <div className="testimonial-reel-2 container">
             <div>
               <div className="box">
@@ -1168,7 +1189,7 @@ const AllSports = (props: any) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="container">
           <div className="copyright">
             <p>Copyright © 2021 GIGABITE. All rights reserved.</p>
