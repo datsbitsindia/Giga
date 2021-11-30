@@ -6,7 +6,7 @@ import { Response } from "express";
 import axios from "axios";
 
 const api_service_url = "https://api.b365api.com/v1/bet365/event";
-const token = "97205-QBhTyEQKRoffkC";
+const token = "96242-aRioV3da5ZTOXg";
 
 @Controller("api/matches")
 export class MatchesContoller {
