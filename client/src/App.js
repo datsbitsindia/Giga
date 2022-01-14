@@ -11,11 +11,9 @@ const Loading = () => (
 );
 
 const Login = React.lazy(() => import("./pages/login"));
-const Home = React.lazy(() => import("./pages/Home"));
-const SPORTSDetails = React.lazy(() => import("./pages/SPORTSDetails"));
+const Sports = React.lazy(() => import("./pages/Sports"));
 const AdminPage = React.lazy(() => import("./pages/AdminHome"));
-const home = React.lazy(() => import("./pages/home1"));
-
+const Home = React.lazy(() => import("./pages/Home"));
 
 const App = () => {
   const { user } = useAuth();
@@ -25,9 +23,8 @@ const App = () => {
   return (
     <React.Suspense fallback={<Loading />}>
       <BrowserRouter>
-
-        <Route exact path="/" component={home} />
-        <Route path="/sports" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route path="/sports" component={Sports} />
         <Route path="/login" component={UserLogin} />
         <Route path="/signup" component={UserSignup} />
         <Route path="/admin/login" component={Login} />
