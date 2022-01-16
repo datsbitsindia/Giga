@@ -21,6 +21,10 @@ import hockey from "../../img/031-ice-hockey.png";
 import baseball from "../../img/007-baseball.png";
 import volleyball from "../../img/051-volleyball.png";
 import tableTennis from "../../img/047-table-tennis.png";
+import bg2 from "../../img/bg-2.jpg";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import "../../css/style1.css";
 
@@ -51,7 +55,7 @@ const AllSports = (props: any) => {
     );
     if (err) {
       message.error({
-        content: "Something went wrong",
+        content: "Balance not fetched",
         style: { marginTop: "5vh" },
       });
     }
@@ -1239,7 +1243,7 @@ const AllSports = (props: any) => {
             <div className="login-wrapper">
               <div className="logo">
                 <a href="#">
-                  <img src={logo} />
+                  <img src={logo} alt="logo" />
                 </a>
               </div>
               <div className="login d-flex align-items-start">
@@ -1308,9 +1312,9 @@ const AllSports = (props: any) => {
                     <div className="inplay w-50">
                       <div className="icon">
                         <div className="cricket">
-                          <img src={cricket} />
+                          <img src={cricket} alt="cricket" />
                           <div className="badge-text">
-                            <img src={live} />
+                            <img src={live} alt="live" />
                           </div>
                         </div>
                         <a href="#">Cricket</a>
@@ -1319,9 +1323,9 @@ const AllSports = (props: any) => {
                     <div className="inplay w-50">
                       <div className="icon">
                         <div className="cricket">
-                          <img src={soccer} />
+                          <img src={soccer} alt="soccer" />
                           <div className="badge-text">
-                            <img src={live} />
+                            <img src={live} alt="live" />
                           </div>
                         </div>
                         <a href="#">Football</a>
@@ -1330,9 +1334,9 @@ const AllSports = (props: any) => {
                     <div className="inplay w-50">
                       <div className="icon">
                         <div className="cricket">
-                          <img src={tennis} />
+                          <img src={tennis} alt="tennis" />
                           <div className="badge-text">
-                            <img src={live} />
+                            <img src={live} alt="live" />
                           </div>
                         </div>
                         <a href="#">Tennis</a>
@@ -1341,7 +1345,7 @@ const AllSports = (props: any) => {
                     <div className="inplay w-50">
                       <div className="icon">
                         <div className="cricket">
-                          <img src={boosts} />
+                          <img src={boosts} alt="betway" />
                         </div>
                         <a href="">Betway Boosts</a>
                       </div>
@@ -1373,19 +1377,19 @@ const AllSports = (props: any) => {
                       <div className="imgslider">
                         <section className="customer-logos slider">
                           <div className="slide">
-                            <img src={webp1} />
+                            <img src={webp1} alt="" />
                           </div>
                           <div className="slide active">
-                            <img src={webp2} />
+                            <img src={webp2} alt="" />
                           </div>
                           <div className="slide">
-                            <img src={webp3} />
+                            <img src={webp3} alt="" />
                           </div>
                           <div className="slide">
-                            <img src={webp4} />
+                            <img src={webp4} alt="" />
                           </div>
                           <div className="slide">
-                            <img src={webp5} />
+                            <img src={webp5} alt="  " />
                           </div>
                         </section>
                       </div>
@@ -1444,9 +1448,9 @@ const AllSports = (props: any) => {
                             <div className="register-button border-right">
                               <button type="button" className="button-primary">
                                 <div className="cricket">
-                                  <img src={tennis} />
+                                  <img src={tennis} alt="tennis" />
                                   <div className="badge-text">
-                                    <img src={live} />
+                                    <img src={live} alt="live" />
                                   </div>
                                 </div>
                                 <p>Cricket</p>
@@ -1471,7 +1475,6 @@ const AllSports = (props: any) => {
                         <div className="sport">
                           <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
                             <p>
-                              {" "}
                               <img src={basketBall} alt="basketBall" />
                               Basketball
                             </p>
@@ -1481,47 +1484,44 @@ const AllSports = (props: any) => {
                           </div>
                           <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
                             <p>
-                              {" "}
-                              <img src={esports} /> Basketball
+                              <img src={esports} alt="basketball" /> Basketball
                             </p>
                             <div className="badge-text">
-                              <img src={live} />
+                              <img src={live} alt="live" />
                             </div>
                           </div>
                           <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
                             <p>
-                              {" "}
-                              <img src={hockey} /> Basketball
+                              <img src={hockey} alt="hockey" /> Basketball
                             </p>
                             <div className="badge-text">
-                              <img src={live} />
+                              <img src={live} alt="live" />
                             </div>
                           </div>
                           <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
                             <p>
-                              {" "}
-                              <img src={baseball} /> Basketball
+                              <img src={baseball} alt="baseball" /> Basketball
                             </p>
                             <div className="badge-text">
-                              <img src={live} />
+                              <img src={live} alt="live" />
                             </div>
                           </div>
                           <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
                             <p>
-                              {" "}
-                              <img src={volleyball} /> Basketball
+                              <img src={volleyball} alt="volleyball" />{" "}
+                              Basketball
                             </p>
                             <div className="badge-text">
-                              <img src={live} />
+                              <img src={live} alt="live" />
                             </div>
                           </div>
                           <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
                             <p>
-                              {" "}
-                              <img src={volleyball} /> Basketball
+                              <img src={volleyball} alt="volleyball" />{" "}
+                              Basketball
                             </p>
                             <div className="badge-text">
-                              <img src={live} />
+                              <img src={live} alt="live" />
                             </div>
                           </div>
                           <div className="expand-menu">
@@ -1537,29 +1537,29 @@ const AllSports = (props: any) => {
                                 <div className="actions">
                                   <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
                                     <p>
-                                      {" "}
-                                      <img src={baseball} /> Basketball
+                                      <img src={baseball} alt="baseball" />{" "}
+                                      Basketball
                                     </p>
                                     <div className="badge-text">
-                                      <img src={live} />
+                                      <img src={live} alt="live" />
                                     </div>
                                   </div>
                                   <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
                                     <p>
-                                      {" "}
-                                      <img src={volleyball} /> Basketball
+                                      <img src={volleyball} alt="volleyball" />{" "}
+                                      Basketball
                                     </p>
                                     <div className="badge-text">
-                                      <img src={live} />
+                                      <img src={live} alt="live" />
                                     </div>
                                   </div>
                                   <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
                                     <p>
-                                      {" "}
-                                      <img src={volleyball} /> Basketball
+                                      <img src={volleyball} alt="volleyball" />{" "}
+                                      Basketball
                                     </p>
                                     <div className="badge-text">
-                                      <img src={live} />
+                                      <img src={live} alt="live" />
                                     </div>
                                   </div>
                                 </div>
@@ -1568,7 +1568,7 @@ const AllSports = (props: any) => {
                           </div>
                         </div>
                       </div>
-                      <div className="favourite quick-link">
+                      {/* <div className="favourite quick-link">
                         <span
                           style={{
                             backgroundColor: "#444",
@@ -1618,11 +1618,11 @@ const AllSports = (props: any) => {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="logo-responsive">
-                    <img src={logo} />
+                    <img src={logo} alt="live" />
                   </div>
                 </div>
               </div>
@@ -1673,32 +1673,20 @@ const AllSports = (props: any) => {
               <div className="col-lg-3 leftmenu">
                 <div className="quik-link">
                   <div className="heading">
-                    <h3>Quick Links</h3>
-                  </div>
-                  <div className="body-text">
-                    <span>Daily Cricket Matches</span>
-                    <span>Daily Football Matches</span>
-                    <span>Daily Tennis Matches</span>
-                    <span>Daily Basketball Games</span>
-                    <span>Betway Boosts</span>
-                    <span>T20 Internationals</span>
-                    <span>Syed Mushtaq Ali Trophy</span>
-                    <span>Premier League</span>
-                  </div>
-                </div>
-                <div className="quik-link">
-                  <div className="heading">
                     <h3>All Sports</h3>
                   </div>
                   <div className="body-text">
                     <span className="d-flex align-items-center justify-content-between">
-                      Cricket <img src={live} className="badge-text" />{" "}
+                      Cricket{" "}
+                      <img src={live} alt="live" className="badge-text" />{" "}
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Football <img src={live} className="badge-text" />{" "}
+                      Football{" "}
+                      <img src={live} alt="live" className="badge-text" />{" "}
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Tennis <img src={live} className="badge-text" />{" "}
+                      Tennis{" "}
+                      <img src={live} alt="live" className="badge-text" />{" "}
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
                       Betway Boosts{" "}
@@ -1707,127 +1695,98 @@ const AllSports = (props: any) => {
                       Basketball{" "}
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Esports <img src={live} className="badge-text" />{" "}
+                      Esports{" "}
+                      <img src={live} alt="live" className="badge-text" />{" "}
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Hockey{" "}
+                      Hockey
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Baseball{" "}
+                      Baseball
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
                       UFC / Martial Arts
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Golf <img src={live} className="badge-text" />{" "}
+                      Golf <img src={live} alt="live" className="badge-text" />{" "}
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
                       American Football
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Aussie Rules{" "}
+                      Aussie Rules
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Bandy{" "}
+                      Bandy
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Boxing{" "}
+                      Boxing
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Cycling{" "}
+                      Cycling
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Darts{" "}
+                      Darts
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Floorball{" "}
+                      Floorball
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Formula 1{" "}
+                      Formula 1
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Futsal{" "}
+                      Futsal
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
-                      Gaelic Sports{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket <img src={live} className="badge-text" />{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket <img src={live} className="badge-text" />{" "}
+                      Gaelic Sports
                     </span>
                     <span className="d-flex align-items-center justify-content-between">
                       Cricket
+                    </span>
+                    <span className="d-flex align-items-center justify-content-between">
+                      Cricket{" "}
+                      <img src={live} alt="live" className="badge-text" />{" "}
                     </span>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="body-image">
-                  <img src="img/bg-2.jpg" className="img-fluid" />
-                  <div className="carousel-wrap slider1">
-                    <div className="owl-carousel">
-                      <div className="item">
-                        <h3>Welcome Offer</h3>
-                        <p>Register</p>
+                  <img src={bg2} className="img-fluid" />
+                  {/* <div className="carousel-wrap slider1">
+                    <OwlCarousel className="owl-theme" loop margin={10}>
+                      <div className="owl-carousel">
+                        <div className="item">
+                          <h3>Welcome Offer</h3>
+                          <p>Register</p>
+                        </div>
+                        <div className="item">
+                          <h3>Welcome Offer</h3>
+                          <p>Register</p>
+                        </div>
+                        <div className="item">
+                          <h3>Welcome Offer</h3>
+                          <p>Register</p>
+                        </div>
+                        <div className="item">
+                          <h3>Welcome Offer</h3>
+                          <p>Register</p>
+                        </div>
+                        <div className="item">
+                          <h3>Welcome Offer</h3>
+                          <p>Register</p>
+                        </div>
+                        <div className="item">
+                          <h3>Welcome Offer</h3>
+                          <p>Register</p>
+                        </div>
+                        <div className="item">
+                          <h3>Welcome Offer</h3>
+                          <p>Register</p>
+                        </div>
                       </div>
-                      <div className="item">
-                        <h3>Welcome Offer</h3>
-                        <p>Register</p>
-                      </div>
-                      <div className="item">
-                        <h3>Welcome Offer</h3>
-                        <p>Register</p>
-                      </div>
-                      <div className="item">
-                        <h3>Welcome Offer</h3>
-                        <p>Register</p>
-                      </div>
-                      <div className="item">
-                        <h3>Welcome Offer</h3>
-                        <p>Register</p>
-                      </div>
-                      <div className="item">
-                        <h3>Welcome Offer</h3>
-                        <p>Register</p>
-                      </div>
-                      <div className="item">
-                        <h3>Welcome Offer</h3>
-                        <p>Register</p>
-                      </div>
-                    </div>
-                  </div>
+                    </OwlCarousel>
+                  </div> */}
                   <div className="highlight">
                     <div className="heading d-flex align-items-center justify-content-between">
                       <h3>Highlights</h3>
@@ -2032,7 +1991,7 @@ const AllSports = (props: any) => {
                     <div className="heading d-flex align-items-center justify-content-between">
                       <h3>
                         {" "}
-                        <img src="img/015-cricket.png" width={24} /> Cricket
+                        <img src={cricket} width={24} alt="cricket" /> Cricket
                       </h3>
                       <div className="footer-link">
                         <a href="#" className="link">
@@ -2142,7 +2101,7 @@ const AllSports = (props: any) => {
                     <div className="heading d-flex align-items-center justify-content-between">
                       <h3>
                         {" "}
-                        <img src={soccer} width={24} /> Football
+                        <img src={soccer} width={24} alt="football" /> Football
                       </h3>
                       <div className="footer-link">
                         <a href="#" className="link">
@@ -4366,7 +4325,7 @@ const AllSports = (props: any) => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3">
+              {/* <div className="col-lg-3">
                 <div className="quik-link">
                   <div className="heading">
                     <h3>Quick Links</h3>
@@ -4382,7 +4341,7 @@ const AllSports = (props: any) => {
                     <span>Premier League</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
