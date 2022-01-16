@@ -433,14 +433,14 @@ const Leagues = (props: any) => {
       );
     });
   };
-  // need to add logic of rediect
-  // const CheckUserLoggedIn = () => {
-  //   if (!user) {
-  //     props.history.push('/login')
-  //   } else {
-  //     setOpenBet(true);
-  //   }
-  // };
+  //need to add logic of rediect
+  const CheckUserLoggedIn = () => {
+    if (!user) {
+      props.history.push('/login')
+    } else {
+      setOpenBet(true);
+    }
+  };
 
   const SetValues = (eventName, fiId, betId, odValue, marketGroup) => {
     setFiId(fiId);
@@ -454,7 +454,10 @@ const Leagues = (props: any) => {
   const calculate = (odValue) => {
     console.log(odValue);
     let val;
-    if (odValue !== "0/0") {
+    if (!odValue.includes("/") || odValue.includes(".")) {
+      val = parseInt(odValue) + 1;
+      return val.toFixed(2);
+    } else if (odValue.includes('/')) {
       val = eval(odValue);
       val = val + 1;
       return val.toFixed(2);

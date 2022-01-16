@@ -1,27 +1,36 @@
-import React from "react";
-import { Tabs, Dropdown, Menu } from "antd";
-import { DownOutlined } from "@ant-design/icons";
+import { useEffect, useState } from "react";
+import { Tabs, message } from "antd";
+import { asyncWrap } from "../../utils/utils";
+import axios from "axios";
+
+const { TabPane } = Tabs;
 
 const Mybets = () => {
-  const menu = (
-    <Menu>
-      <Menu.Item key="0">
-        <a href="https://www.antgroup.com">1st menu item</a>
-      </Menu.Item>
-      <Menu.Item key="1">
-        <a href="https://www.aliyun.com">2nd menu item</a>
-      </Menu.Item>
-      <Menu.Divider />
-      <Menu.Item key="3">3rd menu item</Menu.Item>
-    </Menu>
-  );
+  const [bets, setBets] = useState<any>();
+
+  const getBets = async () => {
+    const [err, result] = await asyncWrap(axios.get("/bets"));
+    if (err) {
+      message.error({
+        content: "Somthing went wrong!",
+        style: { marginTop: "5vh" },
+      });
+    }
+  };
+
+  useEffect(() => {
+    getBets();
+  }, []);
 
   return (
-    <Dropdown overlay={menu}>
-      <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
-        Click me <DownOutlined />
-      </a>
-    </Dropdown>
+    <Tabs defaultActiveKey="1">
+      <TabPane tab="Active" key="1">
+        Active Bets
+      </TabPane>
+      <TabPane tab="Settled" key="2">
+        Settled Bets
+      </TabPane>
+    </Tabs>
   );
 };
 

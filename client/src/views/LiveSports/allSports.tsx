@@ -53,7 +53,9 @@ const AllSports = (props: any) => {
   }, []);
 
   useEffect(() => {
-    getUserBalance();
+    if (user) {
+      getUserBalance();
+    }
   }, [user]);
 
   return (
