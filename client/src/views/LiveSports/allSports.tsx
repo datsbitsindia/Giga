@@ -1,3 +1,4 @@
+import Slider from "react-slick";
 import axios from "axios";
 import { asyncWrap } from "../../utils/utils";
 import { message } from "antd";
@@ -22,11 +23,10 @@ import baseball from "../../img/007-baseball.png";
 import volleyball from "../../img/051-volleyball.png";
 import tableTennis from "../../img/047-table-tennis.png";
 import bg2 from "../../img/bg-2.jpg";
+import "../../css/style1.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-
-import "../../css/style1.css";
 
 const AllSports = (props: any) => {
   const { user } = useAuth();
@@ -1417,208 +1417,6 @@ const AllSports = (props: any) => {
                           My Account
                         </button>
                       </div>
-                      <div className="favourite">
-                        <span>Favourites</span>
-                        <div className="reglogin-button">
-                          <div className="d-flex align-items-center border-bottom">
-                            <div className="register-button border-right">
-                              <button type="button" className="button-primary">
-                                <div className="cricket">
-                                  <img src={cricket} alt="cricket" />
-                                  <div className="badge-text">
-                                    <img src={live} alt="live" />
-                                  </div>
-                                </div>
-                                <p>Cricket</p>
-                              </button>
-                            </div>
-                            <div className="register-button border-right">
-                              <button type="button" className="button-primary">
-                                <div className="cricket">
-                                  <img src={soccer} alt="soccer" />
-                                  <div className="badge-text">
-                                    <img src={live} alt="live" />
-                                  </div>
-                                </div>
-                                <p>Cricket</p>
-                              </button>
-                            </div>
-                          </div>
-                          <div className="d-flex align-items-center">
-                            <div className="register-button border-right">
-                              <button type="button" className="button-primary">
-                                <div className="cricket">
-                                  <img src={tennis} alt="tennis" />
-                                  <div className="badge-text">
-                                    <img src={live} alt="live" />
-                                  </div>
-                                </div>
-                                <p>Cricket</p>
-                              </button>
-                            </div>
-                            <div className="register-button border-right">
-                              <button type="button" className="button-primary">
-                                <div className="cricket">
-                                  <img src={boosts} alt="betway boost" />
-                                  <div className="badge-text">
-                                    <img src={live} alt="live" />
-                                  </div>
-                                </div>
-                                <p>Cricket</p>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="favourite">
-                        <span>All Sports</span>
-                        <div className="sport">
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <p>
-                              <img src={basketBall} alt="basketBall" />
-                              Basketball
-                            </p>
-                            <div className="badge-text">
-                              <img src={live} alt="live" />
-                            </div>
-                          </div>
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <p>
-                              <img src={esports} alt="basketball" /> Basketball
-                            </p>
-                            <div className="badge-text">
-                              <img src={live} alt="live" />
-                            </div>
-                          </div>
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <p>
-                              <img src={hockey} alt="hockey" /> Basketball
-                            </p>
-                            <div className="badge-text">
-                              <img src={live} alt="live" />
-                            </div>
-                          </div>
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <p>
-                              <img src={baseball} alt="baseball" /> Basketball
-                            </p>
-                            <div className="badge-text">
-                              <img src={live} alt="live" />
-                            </div>
-                          </div>
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <p>
-                              <img src={volleyball} alt="volleyball" />{" "}
-                              Basketball
-                            </p>
-                            <div className="badge-text">
-                              <img src={live} alt="live" />
-                            </div>
-                          </div>
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <p>
-                              <img src={volleyball} alt="volleyball" />{" "}
-                              Basketball
-                            </p>
-                            <div className="badge-text">
-                              <img src={live} alt="live" />
-                            </div>
-                          </div>
-                          <div className="expand-menu">
-                            <div id="expandy-bit" className="z-depth-2">
-                              <div className="shapebg-color">
-                                <div className="clip-shape">
-                                  <a href="#" className="expandy-control">
-                                    <span className="fa fa-chevron-down expand-arrow p-0" />
-                                  </a>
-                                </div>
-                              </div>
-                              <div id="content">
-                                <div className="actions">
-                                  <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                                    <p>
-                                      <img src={baseball} alt="baseball" />{" "}
-                                      Basketball
-                                    </p>
-                                    <div className="badge-text">
-                                      <img src={live} alt="live" />
-                                    </div>
-                                  </div>
-                                  <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                                    <p>
-                                      <img src={volleyball} alt="volleyball" />{" "}
-                                      Basketball
-                                    </p>
-                                    <div className="badge-text">
-                                      <img src={live} alt="live" />
-                                    </div>
-                                  </div>
-                                  <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                                    <p>
-                                      <img src={volleyball} alt="volleyball" />{" "}
-                                      Basketball
-                                    </p>
-                                    <div className="badge-text">
-                                      <img src={live} alt="live" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      {/* <div className="favourite quick-link">
-                        <span
-                          style={{
-                            backgroundColor: "#444",
-                            color: "#fff",
-                            display: "block",
-                          }}
-                        >
-                          Quick Links
-                        </span>
-                        <div className="sport">
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <a href="#"> Basketball</a>
-                          </div>
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <a href="#"> Basketball</a>
-                          </div>
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <a href="#"> Basketball</a>
-                          </div>
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <a href="#"> Basketball</a>
-                          </div>
-                          <div className="cricket sportdata d-flex align-items-center justify-content-between w-100">
-                            <div id="accordion">
-                              <div className="card custom-card">
-                                <div className="card-header custom-card-header">
-                                  <a
-                                    className="card-link"
-                                    data-toggle="collapse"
-                                    href="#collapseOne"
-                                  >
-                                    <div className="arrowIcon icon-arrow-right">
-                                      Help &amp; Support
-                                    </div>
-                                  </a>
-                                </div>
-                                <div
-                                  id="collapseOne"
-                                  className="collapse "
-                                  data-parent="#accordion"
-                                >
-                                  <div className="card-body">
-                                    <a className="#">Help &amp; Support</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> */}
                     </div>
                   </div>
                   <div className="logo-responsive">
@@ -1626,43 +1424,7 @@ const AllSports = (props: any) => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 w-50">
-                <div className="right d-flex align-items-center justify-content-end">
-                  <div className="button">
-                    <a href="#">
-                      {" "}
-                      <span className=" icon-padlock"> Log in </span>{" "}
-                    </a>
-                  </div>
-                  <div className=" icon-search iconsize" />
-                  <div className="icon-betslip iconsize" />
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div className="topnav-responsive">
-          <div className="links d-flex align-items-center">
-            <a href="#" className="active">
-              {" "}
-              sports
-            </a>
-            <a href="#" className="blue">
-              {" "}
-              live casino
-            </a>
-            <a href="#" className="purple">
-              {" "}
-              esports
-            </a>
-            <a href="#" className="green">
-              {" "}
-              blog
-            </a>
-            <a href="#" className="yellow">
-              {" "}
-              promotions
-            </a>
           </div>
         </div>
       </header>
@@ -1676,86 +1438,26 @@ const AllSports = (props: any) => {
                     <h3>All Sports</h3>
                   </div>
                   <div className="body-text">
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                      <img src={live} alt="live" className="badge-text" />{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Football{" "}
-                      <img src={live} alt="live" className="badge-text" />{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Tennis{" "}
-                      <img src={live} alt="live" className="badge-text" />{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Betway Boosts{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Basketball{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Esports{" "}
-                      <img src={live} alt="live" className="badge-text" />{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Hockey
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Baseball
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      UFC / Martial Arts
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Golf <img src={live} alt="live" className="badge-text" />{" "}
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      American Football
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Aussie Rules
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Bandy
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Boxing
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cycling
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Darts
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Floorball
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Formula 1
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Futsal
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Gaelic Sports
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket
-                    </span>
-                    <span className="d-flex align-items-center justify-content-between">
-                      Cricket{" "}
-                      <img src={live} alt="live" className="badge-text" />{" "}
-                    </span>
+                    {menu &&
+                      menu.map((item: any) => (
+                        <span
+                          onClick={() => {
+                            setsportsid(item.SportID);
+                            setchangeID(Math.random());
+                          }}
+                          className="d-flex align-items-center justify-content-between"
+                        >
+                          {item.SportName}
+                          <img src={live} alt="live" className="badge-text" />
+                        </span>
+                      ))}
                   </div>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="body-image">
                   <img src={bg2} className="img-fluid" />
-                  {/* <div className="carousel-wrap slider1">
-                    <OwlCarousel className="owl-theme" loop margin={10}>
-                      <div className="owl-carousel">
+                  {/* <OwlCarousel loop nav className="owl-theme" margin={10}>
                         <div className="item">
                           <h3>Welcome Offer</h3>
                           <p>Register</p>
@@ -1784,41 +1486,8 @@ const AllSports = (props: any) => {
                           <h3>Welcome Offer</h3>
                           <p>Register</p>
                         </div>
-                      </div>
-                    </OwlCarousel>
-                  </div> */}
-                  <div className="highlight">
-                    <div className="heading d-flex align-items-center justify-content-between">
-                      <h3>Highlights</h3>
-                      <div className="arrow">
-                        <span className="icon-arrow-left" />
-                        <span className="icon-arrow-right" />
-                      </div>
-                    </div>
-                    <div className="body-text-cricket">
-                      <div className="heading-text">
-                        <img src={cricket} />
-                        <span>T20 Internationals</span>
-                      </div>
-                      <div className="data-wrapper">
-                        <div className="data">
-                          <p>India</p>
-                          <p>New Zealand</p>
-                        </div>
-                        <div className="number">
-                          <p>1.30</p>
-                          <p>3.50</p>
-                        </div>
-                      </div>
-                      <div className="footer-data d-flex align-items-center justify-content-between">
-                        <p>19:00 Fri 19 Nov</p>
-                        <div className="icon">
-                          <span className=" icon-cashout" />
-                          <span className=" icon-channel-inplay " />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                      </OwlCarousel> */}
+
                   <div className="highlight">
                     <div className="heading d-flex align-items-center justify-content-between">
                       <h3>
@@ -1826,52 +1495,39 @@ const AllSports = (props: any) => {
                         <span className="play icon-channel-inplay" /> In-Play
                       </h3>
                     </div>
+
                     <div className="body-text-cricket">
-                      <div className="carousel-wrap">
-                        <div className="owl-slider">
-                          <div id="carousel" className="owl-carousel">
-                            <div className="item">
-                              <img src={cricket} />
-                              <span>Cricket (2)</span>
-                            </div>
-                            <div className="item">
-                              <img src={soccer} />
-                              <span>Football (5)</span>
-                            </div>
-                            <div className="item">
-                              <img src={tennis} />
-                              <span>Tennis (9)</span>
-                            </div>
-                            <div className="item">
-                              <img src={tableTennis} />
-                              <span>Table Tennis (6)</span>
-                            </div>
-                            <div className="item">
-                              <img src={volleyball} />
-                              <span>Volleyball (1)</span>
-                            </div>
-                            <div className="item">
-                              <img src={tableTennis} />
-                              <span>Table Tennis (6)</span>
-                            </div>
-                            <div className="item">
-                              <img src={volleyball} />
-                              <span>Volleyball (1)</span>
-                            </div>
-                            <div className="item">
-                              <img src={volleyball} />
-                              <span>Volleyball (1)</span>
-                            </div>
-                            <div className="item">
-                              <img src={volleyball} />
-                              <span>Volleyball (1)</span>
-                            </div>
-                            <div className="item">
-                              <img src={volleyball} />
-                              <span>Volleyball (1)</span>
-                            </div>
+                      <div style={{ padding: "10px" }}>
+                        <OwlCarousel className="owl-theme" loop margin={10} nav>
+                          <div className="item" onClick={() => setsportsid(3)}>
+                            <img src={cricket} />
+                            <span>Cricket (3)</span>
                           </div>
-                        </div>
+                          <div className="item" onClick={() => setsportsid(1)}>
+                            <img src={soccer} />
+                            <span>Football (1)</span>
+                          </div>
+                          <div className="item" onClick={() => setsportsid(13)}>
+                            <img src={tennis} />
+                            <span>Tennis (13)</span>
+                          </div>
+                          <div className="item" onClick={() => setsportsid(92)}>
+                            <img src={tableTennis} />
+                            <span>Table Tennis (92)</span>
+                          </div>
+                          <div className="item" onClick={() => setsportsid(91)}>
+                            <img src={volleyball} />
+                            <span>Volleyball (91)</span>
+                          </div>
+                          <div className="item" onClick={() => setsportsid(16)}>
+                            <img src={baseball} />
+                            <span>Base Ball (16)</span>
+                          </div>
+                          <div className="item" onClick={() => setsportsid(18)}>
+                            <img src={basketBall} />
+                            <span>Basket ball (18)</span>
+                          </div>
+                        </OwlCarousel>
                       </div>
                       <div className="live d-flex align-items-center justify-content-between">
                         <div className="header-tab">
@@ -1987,7 +1643,7 @@ const AllSports = (props: any) => {
                       </div>
                     </div>
                   </div>
-                  <div className="highlight">
+                  {/* <div className="highlight">
                     <div className="heading d-flex align-items-center justify-content-between">
                       <h3>
                         {" "}
@@ -2096,8 +1752,11 @@ const AllSports = (props: any) => {
                         <span className=" icon-arrow-right" />
                       </div>
                     </div>
-                  </div>
-                  <div className="highlight">
+                  </div> */}
+                  {sportsid && (
+                    <Leagues sportsid={sportsid} changeID={changeID} />
+                  )}
+                  {/* <div className="highlight">
                     <div className="heading d-flex align-items-center justify-content-between">
                       <h3>
                         {" "}
@@ -2926,8 +2585,8 @@ const AllSports = (props: any) => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="highlight">
+                  </div> */}
+                  {/* <div className="highlight">
                     <div className="heading d-flex align-items-center justify-content-between">
                       <h3>
                         {" "}
@@ -3076,8 +2735,8 @@ const AllSports = (props: any) => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="highlight">
+                  </div> */}
+                  {/* <div className="highlight">
                     <div className="heading d-flex align-items-center justify-content-between">
                       <h3>
                         {" "}
@@ -4322,7 +3981,7 @@ const AllSports = (props: any) => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               {/* <div className="col-lg-3">
