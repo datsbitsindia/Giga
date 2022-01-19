@@ -92,12 +92,12 @@ const Home = () => {
               </ul>
               <ul className="betway-ul2 navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item bs-1">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/login">
                     Login
                   </a>
                 </li>
                 <li className="nav-item bs-2">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/signup">
                     Sign up
                   </a>
                 </li>

@@ -4,13 +4,13 @@ import { useLocalStorage } from "../hooks";
 interface Role {
   id: string;
   name: Roles;
-  userId: string;
 }
 interface User {
   name?: string;
   token: string;
   role: Role;
   userName: string;
+  userId: string;
 }
 
 export interface IAuthContext {

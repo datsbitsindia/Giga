@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import axios from "axios";
 import { asyncWrap } from "../../utils/utils";
-import { message } from "antd";
+import { message, Button } from "antd";
 import { useEffect, useState } from "react";
 import Leagues from "./leagues";
 import cricket from "../../img/015-cricket.png";
@@ -51,7 +51,7 @@ const AllSports = (props: any) => {
 
   const getUserBalance = async () => {
     const [err, result] = await asyncWrap(
-      axios.get(`/balance/${user?.role.userId}`)
+      axios.get(`/balance/${user?.userId}`)
     );
     if (err) {
       message.error({
@@ -67,8 +67,10 @@ const AllSports = (props: any) => {
   }, []);
 
   useEffect(() => {
-    getUserBalance();
-  }, [user]);
+    if (user) {
+      getUserBalance();
+    }
+  }, []);
 
   // return (
   //     <>
@@ -1286,6 +1288,11 @@ const AllSports = (props: any) => {
                   <a href="#">
                     <i className="fas fa-search" />
                   </a>
+                  <div>
+                    {user ? (
+                      <Button type="default">My Balance : {balance}</Button>
+                    ) : null}{" "}
+                  </div>
                 </div>
               </div>
             </div>
@@ -1541,7 +1548,7 @@ const AllSports = (props: any) => {
                         </div>
                       </div>
                       <div id="accordion">
-                        <div className="card custom-card">
+                        {/* <div className="card custom-card">
                           <div className="card-header custom-card-header">
                             <div className="row align-items-center">
                               <div className="col-lg-8">
@@ -1589,8 +1596,8 @@ const AllSports = (props: any) => {
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="card custom-card">
+                        </div> */}
+                        {/* <div className="card custom-card">
                           <div className="card-header custom-card-header">
                             <div className="row align-items-center">
                               <div className="col-lg-8">
@@ -1635,7 +1642,7 @@ const AllSports = (props: any) => {
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                       <div className="footer-link">
                         <a href="#">See more In-Play</a>

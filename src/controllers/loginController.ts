@@ -62,11 +62,11 @@ export class LoginController {
             message: "Login success.",
             data: {
               userName: userRecord.UserName,
+              userId: userRecord.UserID,
               token,
               role: {
                 roleId: userRecord.RoleID,
                 name: userRecord.RoleName,
-                userId: userRecord.UserID,
               },
             },
           });
