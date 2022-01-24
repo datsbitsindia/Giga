@@ -83,7 +83,7 @@ const MatchScore = (props: any) => {
     gamedata.map((item, i) => {
       if (item.title === "Fulltime Result") {
         setHome(
-          (eval(item.rows[0][Object.keys(item.rows[0])[0]]) + 1).toFixed(2)
+          (eval(gamedata[0].rows[0][Object.keys(item.rows[0])[0]]) + 1).toFixed(2)
         );
         setDraw(
           (eval(item.rows[1][Object.keys(item.rows[1])[0]]) + 1).toFixed(2)

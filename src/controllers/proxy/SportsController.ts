@@ -6,7 +6,7 @@ import { Response } from "express";
 import axios from "axios";
 
 const api_service_url = "https://api.b365api.com/v1/bet365/inplay_filter";
-const token = "110884-038p3PWNV82SN5";
+const { token } = process.env;
 
 @Controller("api/sports")
 export class ProxyController {

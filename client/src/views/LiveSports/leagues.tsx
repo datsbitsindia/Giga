@@ -471,9 +471,11 @@ const Leagues = (props: any) => {
     if (odValue !== "0/0") {
       val = eval(odValue);
       val = val + 1;
-      return val.toFixed(2);
+      val.toFixed(2);
+    } else {
+      val = 0;
     }
-    return 0;
+    return val;
   };
 
   const AddTable = () => {
@@ -483,7 +485,23 @@ const Leagues = (props: any) => {
           <Panel header={item.title} key={i}>
             {item.columns &&
               item.columns.map((col, keys) => {
-                return <span>{col}</span>;
+                return (
+                  // <span>{col}</span>
+                  // <div class="card-header custom-card-header">
+                  <div class="row align-items-center">
+                    <div class="col-lg-6">
+                      {/* <a
+                          class="card-link d-flex align-items-center"
+                          data-toggle="collapse"
+                          href="#collapsefortin"
+                        >
+                          <p class=" icon-arrow-down"></p>
+                        </a> */}
+                      <div class="data-text"></div>
+                    </div>
+                  </div>
+                  // </div>
+                );
               })}
 
             {item.rows.map((row) => {
@@ -491,26 +509,60 @@ const Leagues = (props: any) => {
                 <span>
                   {Object.keys(row).map(function (key, index) {
                     return (
-                      <div>
-                        {key !== "ID" && key !== "FI" && key !== "SU" ? (
-                          <Button
-                            disabled={parseInt(row.SU)}
-                            onClick={() =>
-                              SetValues(
-                                item.title,
-                                row.FI,
-                                row.ID,
-                                row[key],
-                                item.title
-                              )
-                            }
-                          >
-                            <span>{key}</span>:
-                            <span>{calculate(row[key])}</span>{" "}
-                          </Button>
-                        ) : (
-                          ""
-                        )}
+                      <div id="accordion " class="football-data highlight ">
+                        <div data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="data-wrapper ">
+                              <div class="border-bottom">
+                                <div class="row">
+                                  {key !== "ID" &&
+                                  key !== "FI" &&
+                                  key !== "SU" ? (
+                                    <>
+                                      {/* <div class="col-lg-6">
+                                        <div class="data-header d-flex align-items-center">
+                                          <div class="badge-icon red">
+                                            0 - 2
+                                          </div>
+                                          <div class="text">Half-Time 45'</div>
+                                          <div class=" icon-cashout"></div>
+                                        </div>
+                                        <div class="other-text">
+                                          <span>Al Masry</span>
+                                          <span>Pyramids FC</span>
+                                        </div>
+                                      </div> */}
+                                      <div class="col-lg-6">
+                                        <div class="number d-flex">
+                                          <p class="border">
+                                            {calculate(row[key])}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </>
+                                  ) : (
+                                    // <Button
+                                    //   disabled={parseInt(row.SU)}
+                                    //   onClick={() =>
+                                    //     SetValues(
+                                    //       item.title,
+                                    //       row.FI,
+                                    //       row.ID,
+                                    //       row[key],
+                                    //       item.title
+                                    //     )
+                                    //   }
+                                    // >
+                                    //   <span>{key}</span>:
+                                    //   <span>{calculate(row[key])}</span>
+                                    // </Button>
+                                    ""
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     );
                   })}
@@ -518,6 +570,58 @@ const Leagues = (props: any) => {
               );
             })}
           </Panel>
+          {/* <div id="accordion " class="football-data highlight ">
+            <div data-parent="#accordion">
+              <div class="card-body">
+                <div class="data-wrapper ">
+                  <div class="border-bottom">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="data-header d-flex align-items-center">
+                          <div class="badge-icon red">0 - 2</div>
+                          <div class="text">Half-Time 45'</div>
+                          <div class=" icon-cashout"></div>
+                        </div>
+                        <div class="other-text">
+                          <span>Al Masry</span>
+                          <span>Pyramids FC</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="number d-flex">
+                          <p class="border">1.30</p>
+                          <p class="border">1.30</p>
+                          <p>1.30</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-bottom">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="data-header d-flex align-items-center">
+                          <div class="badge-icon red">0 - 2</div>
+                          <div class="text">Half-Time 45'</div>
+                          <div class=" icon-cashout"></div>
+                        </div>
+                        <div class="other-text">
+                          <span>Al Masry</span>
+                          <span>Pyramids FC</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="number d-flex">
+                          <p class="border">1.30</p>
+                          <p class="border">1.30</p>
+                          <p>1.30</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
         </Collapse>
       );
     });

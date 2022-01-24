@@ -6,15 +6,18 @@ import util from "util";
 import { cimp } from "simple-color-print";
 // import getFromCache from './redis/getCachedSpData';
 // import cacheSpData from './redis/cacheSpData';
+require("dotenv").config();
 
-// const { DB_PASSWORD, DB_USERNAME, DB_NAME, DB_SERVER } = process.env;
+const { DB_PASSWORD, DB_USERNAME, DB_NAME, DB_SERVER } = process.env;
+
+console.log(DB_SERVER, DB_NAME, DB_USERNAME, DB_PASSWORD);
 
 var sqlConfig: sql.config = {
-  user: "Gigabetz",
-  password: "Qf91v1%q",
-  server: "209.205.211.2",
+  user: DB_USERNAME,
+  password: DB_PASSWORD,
+  server: String(DB_SERVER),
   port: 1433,
-  database: "Gigabetz",
+  database: DB_NAME,
   pool: {
     max: 100,
     min: 3,
