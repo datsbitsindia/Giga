@@ -5,6 +5,7 @@ import { Button, message, Row, Col, Card, Table, Collapse } from "antd";
 import { asyncWrap } from "../../utils/utils";
 import { useEffect, useState } from "react";
 import LeagueMatches from "./LeagueMatches";
+import matchdata from "./matchData";
 
 const { Panel } = Collapse;
 
@@ -30,60 +31,75 @@ const MatchScore = (props: any) => {
   const tableParser = (rawData: any) => {
     const aTables = [];
     let table: any;
-    for (let i = 0; i < rawData.length; i++) {
-      const item = rawData[i];
-      const { type, NA, OD } = item;
+    let row = -1;
+    let column = -1;
+
+    rawData.forEach(({ type, NA, OD }) => {
       switch (type) {
         case TABLE_CONSTANTS.MG:
           if (table) {
+            row = -1;
+            column = -1;
             aTables.push(table);
           }
-          table = new Object({
+          table = {
             title: NA,
             columns: [],
             rows: [],
-          });
+          };
           break;
+
         case TABLE_CONSTANTS.MA:
+          column++;
+          row = -1;
           table.columns.push(NA);
           break;
+
         case TABLE_CONSTANTS.PA:
-          if (OD) {
-            table.rows.push({ [NA || table.columns[table.rows.length]]: OD });
-          } else if (NA) {
-            table.rows.push({ [NA]: NA });
+          {
+            row++;
+            const key = table.columns[column] || NA;
+            const cellValue = OD || NA;
+            const rowItem = table.rows[row];
+            table.rows[row] = rowItem?.length
+              ? [...rowItem, { [key]: cellValue }]
+              : [{ [key]: cellValue }];
           }
           break;
+
         default:
           break;
       }
-    }
-    if (table?.title !== aTables[aTables.length - 1]?.title) {
+    });
+
+    if (table && table?.title !== aTables[aTables.length - 1]?.title) {
       aTables.push(table);
     }
-    console.log(aTables);
     return aTables;
   };
 
-  const getMatchesScore = async () => {
-    const [err, result] = await asyncWrap(
-      axios.get(`/api/matches?match_id=${matchId}`)
-    );
-    if (err) {
-      return message.error({
-        content: "something went wrong",
-        style: { margintop: "5vh" },
-      });
-    }
+  const getMatchesScore = () => {
+    // const [err, result] = await asyncWrap(
+    //   axios.get(`/api/matches?match_id=${matchId}`)
+    // );
+    // if (err) {
+    //   return message.error({
+    //     content: "something went wrong",
+    //     style: { margintop: "5vh" },
+    //   });
+    // }
     // console.log(tableParser(result.data.data.results[0]));
-    setgamedata(tableParser(result.data.data.results[0]));
+    setgamedata(tableParser(matchdata));
   };
 
   const showScore = () => {
+    console.log(gamedata);
     gamedata.map((item, i) => {
       if (item.title === "Fulltime Result") {
         setHome(
-          (eval(gamedata[0].rows[0][Object.keys(item.rows[0])[0]]) + 1).toFixed(2)
+          (eval(gamedata[0].rows[0][Object.keys(item.rows[0])[0]]) + 1).toFixed(
+            2
+          )
         );
         setDraw(
           (eval(item.rows[1][Object.keys(item.rows[1])[0]]) + 1).toFixed(2)
@@ -98,6 +114,7 @@ const MatchScore = (props: any) => {
   useEffect(() => {
     getMatchesScore();
   }, []);
+
   useEffect(() => {
     showScore();
   }, [gamedata]);
